@@ -21,7 +21,7 @@ const port=process.env.PORT || 3000;
 
 
 // Starting the server
-app.listen(port,(req,res)=>{
+app.listen(port, '0.0.0.0',(req,res)=>{
     console.log(`Server started at port ${port}`);
     //call function to connect to mongodb
     db_connect();
