@@ -2,10 +2,12 @@ import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { useUser } from "../UserContext/UserContext";
+import { useWebSocket } from "../WebSocket/WebSocketContext"; //for websocket connection
 
 export default function Loading() {
   const { setUserInfo } = useUser(); // Access the setUserInfo function from context
   const navigate = useNavigate();
+  const { connectToStation } = useWebSocket(); // Access WebSocket contex
 
   useEffect(() => {
     const verifyToken = async () => {
@@ -19,20 +21,22 @@ export default function Loading() {
         }
         
         // Verify the token with the backend
-        const response = await axios.post("http://localhost:3000/api/v1/web/verifyToken", 
+        const response = await axios.post("http://localhost:3001/api/v1/web/verifyToken", 
             {},
             {
           headers: {
             authorization: `Bearer ${token}`,
           },
         });
-        const policeStationId= response.data.user.policeStation;
+        const policeStation= response.data.user.policeStation;
         setUserInfo(response.data.user); // Set the user info in context
 
         // Redirect based on policeStationId
-        if (policeStationId === null || policeStationId === "Not Applicable") {
+        if (policeStation === null || policeStation === "Not Applicable") {
           navigate("/districtHomePage"); // District homepage
         } else {
+          //websocket connection is only for police staations
+          connectToStation(policeStation._id); // Register police station on WebSocket
           navigate("/policeHomePage"); // Police homepage
         }
       } catch (error) {

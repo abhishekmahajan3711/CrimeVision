@@ -1,5 +1,6 @@
 import React from 'react';
 import { useUser } from '../UserContext/UserContext';
+import { Link } from 'react-router-dom';
 
 export default function Police_home_page() {
   const { userInfo }=useUser();
@@ -19,6 +20,7 @@ export default function Police_home_page() {
       ) : (
         <p>No Police Station Assigned</p>
       )}
+    <Link to="/police_DA">Data Analytics</Link>
     </div>
     
   )

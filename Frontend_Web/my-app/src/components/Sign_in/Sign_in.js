@@ -26,7 +26,7 @@ const Sign_in = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:3000/api/v1/web/signin",
+        "http://localhost:3001/api/v1/web/signin",
         formData
       );
       // Save token in localStorage
@@ -108,9 +108,6 @@ const Sign_in = () => {
               <option value="Faraskhana Police Station">
                 Faraskhana Police Station
               </option>
-              <option value="Hadapsar Police Station">
-                Hadapsar Police Station
-              </option>
               <option value="Katraj Police Station">
                 Katraj Police Station
               </option> */}
@@ -120,8 +117,8 @@ const Sign_in = () => {
               <option value="Kondhwa Police Station">
                 Kondhwa Police Station
               </option>
-              <option value="Kondhwa Police Station">
-                Kondhwa Police Station
+              <option value="Hadapsar Police Station">
+                Hadapsar Police Station
               </option>
               <option value="Koregaon Park Police Station">
                 Koregaon Park Police Station
