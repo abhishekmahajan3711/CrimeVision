@@ -37,9 +37,10 @@ async function web_signin(req, res) {
       }
     }
 
+    let policeStationExists;
     // Validate police station if applicable
     if (policeStation !== "Not Applicable") {
-      const policeStationExists = await PoliceStation.findOne({
+      policeStationExists = await PoliceStation.findOne({
         name: policeStation,
         authority_id: user._id,
       });
@@ -54,7 +55,7 @@ async function web_signin(req, res) {
         userId: user._id,
         districtId: districtExists._id,
         policeStationId:
-          policeStation !== "Not Applicable" ? policeStation : null,
+          policeStation !== "Not Applicable" ? policeStationExists._id : null,
       },
       process.env.JWT_SECRET,
       { expiresIn: "3h" }
