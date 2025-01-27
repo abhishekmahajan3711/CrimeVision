@@ -24,7 +24,11 @@ const police_stationSchema=new mongoose.Schema({
     no_of_cases_last_month:{
         type:Number,
         default:0
+    },
+    address:{
+        type:String
     }
+
 })
 
 const PoliceStation=mongoose.model('PoliceStation',police_stationSchema);

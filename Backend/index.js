@@ -26,8 +26,6 @@ const port = process.env.PORT || 3001;
 //   db_connect();
 // });
 
-
-
 //websocket connection
 //creating a server
 const server = http.createServer(app);
@@ -72,7 +70,7 @@ io.on("connection", (socket) => {
 });
 
 server.listen(port, "0.0.0.0", () => {
-    console.log(`Server started at http://localhost:${port}`);
-    db_connect();
-  });
+  console.log(`Server started at http://localhost:${port}`);
+  db_connect();
+});
 

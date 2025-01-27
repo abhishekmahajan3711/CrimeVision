@@ -1,27 +1,51 @@
 import React from 'react';
-import { useUser } from '../UserContext/UserContext';
 import { Link } from 'react-router-dom';
+import Alerts from '../Alerts/Alerts';
+import { useUser } from '../UserContext/UserContext';
 
-export default function Police_home_page() {
-  const { userInfo }=useUser();
+export default function PoliceHomePage() {
+  const { userInfo } = useUser();
+
   return (
-    <div>
-      <h1>Police Station Home Page</h1>
-      <p><strong>Name:</strong> {userInfo.name}</p>
-      <p><strong>Email:</strong> {userInfo.email}</p>
-      <p><strong>Phone:</strong> {userInfo.phone}</p>
-      <h2>District Details:</h2>
-      <p><strong>District Name:</strong> {userInfo.district.name}</p>
-      <p><strong>Cases This Month:</strong> {userInfo.district.no_of_cases_this_month}</p>
-      <p><strong>Cases Last Month:</strong> {userInfo.district.no_of_cases_last_month}</p>
-      <h2>Police Station:</h2>
-      {userInfo.policeStation ? (
-        <p><strong>Police Station Name:</strong> {userInfo.policeStation.name}</p>
-      ) : (
-        <p>No Police Station Assigned</p>
-      )}
-    <Link to="/police_DA">Data Analytics</Link>
+    <div className="bg-gray-100 min-h-screen">
+      {/* Full Screen Container */}
+      <div className="w-full h-screen bg-green-50 flex flex-col">
+        {/* Header Section */}
+        <header className="bg-[#003366] text-white p-4 text-center font-bold text-lg">
+          Police Station : {userInfo.policeStation.name}
+        </header>
+
+        {/* Main Content */}
+        <div className="flex flex-1">
+          {/* Left Panel */}
+          <div className="w-1/4 bg-gray-100 p-4">
+            <Link to="/police_DA">
+              <button className="w-full bg-[#ffcc00] text-black py-2 mb-4 rounded-md font-semibold hover:bg-yellow-600">
+                Data Visualisation
+              </button>
+            </Link>
+            <Link to="/police_filter_cases">
+            <button className="w-full bg-[#ffcc00] text-black py-2 mb-4 rounded-md font-semibold hover:bg-yellow-600">
+              List of Cases (Filter)
+            </button>
+            </Link>
+            <button className="w-full bg-[#ffcc00] text-black py-2 mb-4 rounded-md font-semibold hover:bg-yellow-600">
+              Crime Prediction
+            </button>
+            <button className="w-full bg-[#ffcc00] text-black py-2 mb-4 rounded-md font-semibold hover:bg-yellow-600">
+               Warnings
+            </button>
+            <Link to="/aboutme_policestation">
+            <button className="w-full bg-[#ffcc00] text-black py-2 mb-4 rounded-md font-semibold hover:bg-yellow-600">
+               About Me
+            </button>
+            </Link>
+          </div>
+
+          {/* Right Panel */}
+           <Alerts />
+        </div>
+      </div>
     </div>
-    
-  )
+  );
 }

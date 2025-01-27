@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 // Notification sound
 const notificationSound = new Audio("/siren_alert.mp3"); // Path to your sound file
@@ -33,13 +34,13 @@ const AlertPopup = ({ alert, onClose, onSeeDetails, hasInteracted }) => {
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
       <div
-        className="bg-white rounded-lg shadow-lg p-6 max-w-sm w-full border-4 border-red-200"
+        className="bg-red-100 rounded-lg shadow-lg p-6 max-w-sm w-full border-4 border-red-200"
         style={{
           borderRadius: "12px",
           animation: "pulseGlow 1s infinite", // Apply the glowing animation directly
         }}
       >
-        <h2 className="text-xl font-bold text-gray-800 mb-4">New Alert</h2>
+        <h2 className="text-xl font-bold text-gray-800 mb-4">Alert !!!! </h2>
         <p className="text-gray-600 mb-6">{alert.message}</p>
         <div className="flex justify-end space-x-4">
           <button
@@ -47,19 +48,21 @@ const AlertPopup = ({ alert, onClose, onSeeDetails, hasInteracted }) => {
               handleStopSound(); // Stop the sound when clicked
               onClose();
             }}
-            className="bg-gray-500 text-white px-4 py-2 rounded-lg hover:bg-gray-600"
+            className="bg-[#003366] text-white px-4 py-2 rounded-lg hover:bg-gray-600"
           >
             OK
           </button>
+          <Link to="/detail_case">
           <button
             onClick={() => {
               handleStopSound(); // Stop the sound when clicked
               onSeeDetails(alert);
             }}
-            className="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600"
+            className="bg-red-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600"
           >
             See Details
           </button>
+          </Link>
         </div>
       </div>
 
@@ -73,7 +76,7 @@ const AlertPopup = ({ alert, onClose, onSeeDetails, hasInteracted }) => {
           }
           50% {
             border-color: rgba(255, 0, 0, 1);
-            box-shadow: 0 0 40px rgba(255, 0, 0, 0.8);
+            box-shadow: 0 0 40px rgba(255, 0, 0, 1);
           }
           100% {
             border-color: rgba(255, 0, 0, 0.7);

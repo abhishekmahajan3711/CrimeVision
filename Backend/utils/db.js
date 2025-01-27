@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 
-// const uri="mongodb+srv://abhimahajan:abhi@abhi.o2dflsk.mongodb.net/?retryWrites=true&w=majority";
-const uri = "mongodb://localhost:27017/CrimeVision"
+ const uri="mongodb+srv://abhimahajan:abhi@abhi.o2dflsk.mongodb.net/?retryWrites=true&w=majority";
+// const uri = "mongodb://localhost:27017/CrimeVision"
 
 export async function db_connect() {
     try{
