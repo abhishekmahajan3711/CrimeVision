@@ -34,7 +34,7 @@ export default function SignUp() {
 
     try {
       // Send data to the backend
-      const response = await fetch('http://localhost:3000/api/v1/app/signup', {
+      const response = await fetch('http://172.16.14.247:3001/api/v1/app/signup', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -54,7 +54,7 @@ export default function SignUp() {
       console.error(error);
       Alert.alert('Error', 'Something went wrong. Please try again.');
     }
-    Alert.alert('Account Created Successfully');
+    //Alert.alert('Account Created Successfully');
   };
 
   return (

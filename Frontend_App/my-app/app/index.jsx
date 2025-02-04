@@ -3,7 +3,7 @@ import { View, Text, TextInput, Button, StyleSheet, Alert } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useRouter } from 'expo-router';
 
-export default function SignInScreen({ setIsAuthenticated }) {
+export default function SignInScreen() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const router = useRouter();
@@ -15,7 +15,6 @@ export default function SignInScreen({ setIsAuthenticated }) {
       if (token) {
         const isValid = await validateToken(token);
         if (isValid) {
-          setIsAuthenticated(true);
           router.replace('/home');
         }
       }
@@ -30,7 +29,7 @@ export default function SignInScreen({ setIsAuthenticated }) {
     }
 
     try {
-      const response = await fetch('http://localhost:3000/api/v1/app/signup', {
+      const response = await fetch('http://172.16.14.247:3001/api/v1/app/signin', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -47,7 +46,6 @@ export default function SignInScreen({ setIsAuthenticated }) {
       if (data.token) {
         await AsyncStorage.setItem('authToken', data.token); // Store token in AsyncStorage
         Alert.alert('Success', 'You are now signed in!');
-        setIsAuthenticated(true);
         router.replace('/home'); // Redirect to Home page
       } else {
         Alert.alert('Error', 'Sign-in failed');
@@ -60,7 +58,7 @@ export default function SignInScreen({ setIsAuthenticated }) {
   // Function to validate token
   const validateToken = async (token) => {
     try {
-      const response = await fetch('https://localhost:3000/api/v1/app/validatetoken', {
+      const response = await fetch('https://172.16.14.247:3001/api/v1/app/validatetoken', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
