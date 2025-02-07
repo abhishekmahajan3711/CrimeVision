@@ -30,9 +30,11 @@ export default function RootLayout() {
   return (
     <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
       <Stack>
-        <Stack.Screen name="home" options={{ headerShown: false }} />
+        <Stack.Screen name="home/index" options={{ headerShown: false }} />
         <Stack.Screen name="index" options={{headerShown:false}}/>
         <Stack.Screen name="signup" options={{headerShown:false}}/>
+        <Stack.Screen name="home/dashboard" options={{headerShown:false}}/>
+        {/* <Stack.Screen name="CrimeSelection" options={{headerShown:false}}/> */}
         <Stack.Screen name="CrimeSelection" options={{headerShown:false}}/>
         <Stack.Screen name="+not-found" />
       </Stack>
