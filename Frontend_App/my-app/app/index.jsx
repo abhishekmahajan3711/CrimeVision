@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { View, Text, TextInput, Button, StyleSheet, Alert } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useRouter } from 'expo-router';
-
+// import {BACKEND_URL} from "@env";
 export default function SignInScreen() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -29,7 +29,8 @@ export default function SignInScreen() {
     }
 
     try {
-      const response = await fetch('http://172.16.14.247:3001/api/v1/app/signin', {
+      // console.log(BACKEND_URL);
+      const response = await fetch(`${process.env.EXPO_PUBLIC_BACKEND_URL}/api/v1/app/signin`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -58,7 +59,7 @@ export default function SignInScreen() {
   // Function to validate token
   const validateToken = async (token) => {
     try {
-      const response = await fetch('https://172.16.14.247:3001/api/v1/app/validatetoken', {
+      const response = await fetch(`${process.env.EXPO_PUBLIC_BACKEND_URL}/api/v1/app/validatetoken`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { View, Text, TextInput, Button, StyleSheet, Alert } from 'react-native';
 import { useRouter } from 'expo-router';
-
+// import {BACKEND_URL} from "@env";
 export default function SignUp() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -34,7 +34,7 @@ export default function SignUp() {
 
     try {
       // Send data to the backend
-      const response = await fetch('http://172.16.14.247:3001/api/v1/app/signup', {
+      const response = await fetch(`${process.env.EXPO_PUBLIC_BACKEND_URL}/api/v1/app/signup`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
