@@ -1,0 +1,1830 @@
+DistrictName,PoliceStationName,AlertType,Date,No_of_Crimes
+Aurangabad,Cantonment Police Station,Accident,2025-01-28,10
+Aurangabad,Cantonment Police Station,Accident,2025-01-31,24
+Aurangabad,Cantonment Police Station,Cybercrime,2025-01-07,25
+Aurangabad,Cantonment Police Station,Cybercrime,2025-01-21,21
+Aurangabad,Cantonment Police Station,Fraud,2025-01-09,2
+Aurangabad,Cantonment Police Station,Fraud,2025-01-25,6
+Aurangabad,Cantonment Police Station,Hit and Run,2025-01-16,13
+Aurangabad,Cantonment Police Station,Hit and Run,2025-01-17,1
+Aurangabad,Cantonment Police Station,Kidnapping,2025-01-08,5
+Aurangabad,Cantonment Police Station,Kidnapping,2025-01-23,13
+Aurangabad,Cantonment Police Station,Murder,2025-01-02,24
+Aurangabad,Cantonment Police Station,Murder,2025-01-30,17
+Aurangabad,Cantonment Police Station,Other,2025-01-03,13
+Aurangabad,Cantonment Police Station,Other,2025-01-05,3
+Aurangabad,Cantonment Police Station,Other,2025-01-14,10
+Aurangabad,Cantonment Police Station,Rape,2025-01-06,7
+Aurangabad,Cantonment Police Station,Rape,2025-01-10,25
+Aurangabad,Cantonment Police Station,Rape,2025-01-13,23
+Aurangabad,Cantonment Police Station,Robbery,2025-01-20,19
+Aurangabad,Cantonment Police Station,Sexual Harassment,2025-01-15,22
+Aurangabad,Cantonment Police Station,Sexual Harassment,2025-01-18,25
+Aurangabad,Cantonment Police Station,Sexual Harassment,2025-01-27,4
+Aurangabad,Cantonment Police Station,Stalking,2025-01-01,10
+Aurangabad,Cantonment Police Station,Stalking,2025-01-24,21
+Aurangabad,Cantonment Police Station,Theft,2025-01-04,22
+Aurangabad,Cantonment Police Station,Theft,2025-01-11,4
+Aurangabad,Cantonment Police Station,Theft,2025-01-12,12
+Aurangabad,Cantonment Police Station,Theft,2025-01-19,4
+Aurangabad,Cantonment Police Station,Theft,2025-01-22,7
+Aurangabad,Cantonment Police Station,Theft,2025-01-26,1
+Aurangabad,Cantonment Police Station,Theft,2025-01-29,12
+Aurangabad,City Chowk Police Station,Accident,2025-01-14,15
+Aurangabad,City Chowk Police Station,Cybercrime,2025-01-01,10
+Aurangabad,City Chowk Police Station,Cybercrime,2025-01-09,21
+Aurangabad,City Chowk Police Station,Cybercrime,2025-01-15,11
+Aurangabad,City Chowk Police Station,Cybercrime,2025-01-26,5
+Aurangabad,City Chowk Police Station,Fight,2025-01-12,7
+Aurangabad,City Chowk Police Station,Fight,2025-01-21,12
+Aurangabad,City Chowk Police Station,Fraud,2025-01-18,13
+Aurangabad,City Chowk Police Station,Fraud,2025-01-22,20
+Aurangabad,City Chowk Police Station,Hit and Run,2025-01-17,2
+Aurangabad,City Chowk Police Station,Hit and Run,2025-01-25,21
+Aurangabad,City Chowk Police Station,Kidnapping,2025-01-03,1
+Aurangabad,City Chowk Police Station,Kidnapping,2025-01-20,9
+Aurangabad,City Chowk Police Station,Murder,2025-01-10,13
+Aurangabad,City Chowk Police Station,Other,2025-01-06,10
+Aurangabad,City Chowk Police Station,Other,2025-01-27,15
+Aurangabad,City Chowk Police Station,Other,2025-01-31,7
+Aurangabad,City Chowk Police Station,Rape,2025-01-28,18
+Aurangabad,City Chowk Police Station,Robbery,2025-01-07,3
+Aurangabad,City Chowk Police Station,Robbery,2025-01-11,19
+Aurangabad,City Chowk Police Station,Robbery,2025-01-30,13
+Aurangabad,City Chowk Police Station,Sexual Harassment,2025-01-02,22
+Aurangabad,City Chowk Police Station,Sexual Harassment,2025-01-05,3
+Aurangabad,City Chowk Police Station,Sexual Harassment,2025-01-08,23
+Aurangabad,City Chowk Police Station,Sexual Harassment,2025-01-16,2
+Aurangabad,City Chowk Police Station,Sexual Harassment,2025-01-19,1
+Aurangabad,City Chowk Police Station,Theft,2025-01-04,8
+Aurangabad,City Chowk Police Station,Theft,2025-01-13,19
+Aurangabad,City Chowk Police Station,Theft,2025-01-23,20
+Aurangabad,City Chowk Police Station,Theft,2025-01-24,25
+Aurangabad,City Chowk Police Station,Theft,2025-01-29,23
+Aurangabad,Kranti Chowk Police Station,Accident,2025-01-01,8
+Aurangabad,Kranti Chowk Police Station,Accident,2025-01-17,13
+Aurangabad,Kranti Chowk Police Station,Accident,2025-01-30,23
+Aurangabad,Kranti Chowk Police Station,Cybercrime,2025-01-10,24
+Aurangabad,Kranti Chowk Police Station,Cybercrime,2025-01-18,4
+Aurangabad,Kranti Chowk Police Station,Fight,2025-01-15,9
+Aurangabad,Kranti Chowk Police Station,Fight,2025-01-27,2
+Aurangabad,Kranti Chowk Police Station,Fraud,2025-01-11,25
+Aurangabad,Kranti Chowk Police Station,Fraud,2025-01-19,5
+Aurangabad,Kranti Chowk Police Station,Fraud,2025-01-31,14
+Aurangabad,Kranti Chowk Police Station,Hit and Run,2025-01-03,5
+Aurangabad,Kranti Chowk Police Station,Hit and Run,2025-01-21,4
+Aurangabad,Kranti Chowk Police Station,Kidnapping,2025-01-06,17
+Aurangabad,Kranti Chowk Police Station,Kidnapping,2025-01-08,1
+Aurangabad,Kranti Chowk Police Station,Kidnapping,2025-01-13,2
+Aurangabad,Kranti Chowk Police Station,Kidnapping,2025-01-14,15
+Aurangabad,Kranti Chowk Police Station,Kidnapping,2025-01-16,18
+Aurangabad,Kranti Chowk Police Station,Kidnapping,2025-01-22,16
+Aurangabad,Kranti Chowk Police Station,Kidnapping,2025-01-25,13
+Aurangabad,Kranti Chowk Police Station,Other,2025-01-24,6
+Aurangabad,Kranti Chowk Police Station,Other,2025-01-26,11
+Aurangabad,Kranti Chowk Police Station,Other,2025-01-29,17
+Aurangabad,Kranti Chowk Police Station,Rape,2025-01-07,10
+Aurangabad,Kranti Chowk Police Station,Rape,2025-01-09,1
+Aurangabad,Kranti Chowk Police Station,Rape,2025-01-23,8
+Aurangabad,Kranti Chowk Police Station,Robbery,2025-01-05,22
+Aurangabad,Kranti Chowk Police Station,Robbery,2025-01-12,11
+Aurangabad,Kranti Chowk Police Station,Robbery,2025-01-28,9
+Aurangabad,Kranti Chowk Police Station,Sexual Harassment,2025-01-04,6
+Aurangabad,Kranti Chowk Police Station,Theft,2025-01-02,17
+Aurangabad,Kranti Chowk Police Station,Theft,2025-01-20,19
+Aurangabad,Mukundwadi Police Station,Accident,2025-01-09,19
+Aurangabad,Mukundwadi Police Station,Accident,2025-01-13,23
+Aurangabad,Mukundwadi Police Station,Accident,2025-01-25,14
+Aurangabad,Mukundwadi Police Station,Accident,2025-01-29,8
+Aurangabad,Mukundwadi Police Station,Fight,2025-01-03,15
+Aurangabad,Mukundwadi Police Station,Hit and Run,2025-01-07,8
+Aurangabad,Mukundwadi Police Station,Hit and Run,2025-01-21,21
+Aurangabad,Mukundwadi Police Station,Kidnapping,2025-01-16,2
+Aurangabad,Mukundwadi Police Station,Kidnapping,2025-01-19,24
+Aurangabad,Mukundwadi Police Station,Murder,2025-01-05,9
+Aurangabad,Mukundwadi Police Station,Murder,2025-01-15,19
+Aurangabad,Mukundwadi Police Station,Murder,2025-01-17,7
+Aurangabad,Mukundwadi Police Station,Murder,2025-01-18,20
+Aurangabad,Mukundwadi Police Station,Other,2025-01-06,15
+Aurangabad,Mukundwadi Police Station,Other,2025-01-08,13
+Aurangabad,Mukundwadi Police Station,Other,2025-01-23,10
+Aurangabad,Mukundwadi Police Station,Other,2025-01-27,16
+Aurangabad,Mukundwadi Police Station,Rape,2025-01-30,16
+Aurangabad,Mukundwadi Police Station,Rape,2025-01-31,8
+Aurangabad,Mukundwadi Police Station,Robbery,2025-01-01,4
+Aurangabad,Mukundwadi Police Station,Robbery,2025-01-20,24
+Aurangabad,Mukundwadi Police Station,Robbery,2025-01-26,15
+Aurangabad,Mukundwadi Police Station,Sexual Harassment,2025-01-10,13
+Aurangabad,Mukundwadi Police Station,Sexual Harassment,2025-01-11,20
+Aurangabad,Mukundwadi Police Station,Sexual Harassment,2025-01-28,16
+Aurangabad,Mukundwadi Police Station,Stalking,2025-01-04,4
+Aurangabad,Mukundwadi Police Station,Stalking,2025-01-14,15
+Aurangabad,Mukundwadi Police Station,Stalking,2025-01-22,8
+Aurangabad,Mukundwadi Police Station,Theft,2025-01-02,17
+Aurangabad,Mukundwadi Police Station,Theft,2025-01-12,11
+Aurangabad,Mukundwadi Police Station,Theft,2025-01-24,22
+Buldhana,Buldhana City Police Station,Accident,2025-01-03,13
+Buldhana,Buldhana City Police Station,Cybercrime,2025-01-31,15
+Buldhana,Buldhana City Police Station,Fight,2025-01-06,10
+Buldhana,Buldhana City Police Station,Fight,2025-01-21,16
+Buldhana,Buldhana City Police Station,Fraud,2025-01-04,2
+Buldhana,Buldhana City Police Station,Fraud,2025-01-19,24
+Buldhana,Buldhana City Police Station,Fraud,2025-01-26,18
+Buldhana,Buldhana City Police Station,Hit and Run,2025-01-30,20
+Buldhana,Buldhana City Police Station,Kidnapping,2025-01-02,21
+Buldhana,Buldhana City Police Station,Kidnapping,2025-01-09,11
+Buldhana,Buldhana City Police Station,Kidnapping,2025-01-23,3
+Buldhana,Buldhana City Police Station,Murder,2025-01-24,7
+Buldhana,Buldhana City Police Station,Murder,2025-01-27,17
+Buldhana,Buldhana City Police Station,Murder,2025-01-29,12
+Buldhana,Buldhana City Police Station,Other,2025-01-01,6
+Buldhana,Buldhana City Police Station,Other,2025-01-05,16
+Buldhana,Buldhana City Police Station,Other,2025-01-22,20
+Buldhana,Buldhana City Police Station,Other,2025-01-28,16
+Buldhana,Buldhana City Police Station,Rape,2025-01-12,14
+Buldhana,Buldhana City Police Station,Rape,2025-01-13,2
+Buldhana,Buldhana City Police Station,Robbery,2025-01-11,4
+Buldhana,Buldhana City Police Station,Robbery,2025-01-17,10
+Buldhana,Buldhana City Police Station,Robbery,2025-01-20,11
+Buldhana,Buldhana City Police Station,Sexual Harassment,2025-01-08,24
+Buldhana,Buldhana City Police Station,Sexual Harassment,2025-01-14,18
+Buldhana,Buldhana City Police Station,Sexual Harassment,2025-01-15,20
+Buldhana,Buldhana City Police Station,Stalking,2025-01-07,10
+Buldhana,Buldhana City Police Station,Stalking,2025-01-10,25
+Buldhana,Buldhana City Police Station,Stalking,2025-01-16,21
+Buldhana,Buldhana City Police Station,Stalking,2025-01-18,15
+Buldhana,Buldhana City Police Station,Theft,2025-01-25,9
+Buldhana,Chikhli Police Station,Accident,2025-01-16,21
+Buldhana,Chikhli Police Station,Cybercrime,2025-01-27,11
+Buldhana,Chikhli Police Station,Fight,2025-01-12,19
+Buldhana,Chikhli Police Station,Fight,2025-01-13,18
+Buldhana,Chikhli Police Station,Fight,2025-01-25,21
+Buldhana,Chikhli Police Station,Fraud,2025-01-08,1
+Buldhana,Chikhli Police Station,Hit and Run,2025-01-02,7
+Buldhana,Chikhli Police Station,Hit and Run,2025-01-09,2
+Buldhana,Chikhli Police Station,Hit and Run,2025-01-15,25
+Buldhana,Chikhli Police Station,Hit and Run,2025-01-24,4
+Buldhana,Chikhli Police Station,Hit and Run,2025-01-29,17
+Buldhana,Chikhli Police Station,Kidnapping,2025-01-04,9
+Buldhana,Chikhli Police Station,Kidnapping,2025-01-20,9
+Buldhana,Chikhli Police Station,Murder,2025-01-19,13
+Buldhana,Chikhli Police Station,Other,2025-01-14,14
+Buldhana,Chikhli Police Station,Other,2025-01-17,21
+Buldhana,Chikhli Police Station,Other,2025-01-22,3
+Buldhana,Chikhli Police Station,Rape,2025-01-03,25
+Buldhana,Chikhli Police Station,Rape,2025-01-11,5
+Buldhana,Chikhli Police Station,Robbery,2025-01-01,8
+Buldhana,Chikhli Police Station,Robbery,2025-01-26,24
+Buldhana,Chikhli Police Station,Robbery,2025-01-30,13
+Buldhana,Chikhli Police Station,Sexual Harassment,2025-01-18,8
+Buldhana,Chikhli Police Station,Sexual Harassment,2025-01-21,1
+Buldhana,Chikhli Police Station,Sexual Harassment,2025-01-23,3
+Buldhana,Chikhli Police Station,Sexual Harassment,2025-01-31,3
+Buldhana,Chikhli Police Station,Stalking,2025-01-05,4
+Buldhana,Chikhli Police Station,Stalking,2025-01-06,18
+Buldhana,Chikhli Police Station,Stalking,2025-01-07,15
+Buldhana,Chikhli Police Station,Stalking,2025-01-10,7
+Buldhana,Chikhli Police Station,Theft,2025-01-28,14
+Buldhana,Khamgaon Police Station,Accident,2025-01-18,20
+Buldhana,Khamgaon Police Station,Accident,2025-01-22,19
+Buldhana,Khamgaon Police Station,Cybercrime,2025-01-13,16
+Buldhana,Khamgaon Police Station,Cybercrime,2025-01-30,2
+Buldhana,Khamgaon Police Station,Cybercrime,2025-01-31,9
+Buldhana,Khamgaon Police Station,Fight,2025-01-04,7
+Buldhana,Khamgaon Police Station,Fight,2025-01-15,1
+Buldhana,Khamgaon Police Station,Fight,2025-01-24,25
+Buldhana,Khamgaon Police Station,Fraud,2025-01-08,5
+Buldhana,Khamgaon Police Station,Fraud,2025-01-11,5
+Buldhana,Khamgaon Police Station,Fraud,2025-01-14,19
+Buldhana,Khamgaon Police Station,Fraud,2025-01-16,16
+Buldhana,Khamgaon Police Station,Hit and Run,2025-01-26,24
+Buldhana,Khamgaon Police Station,Kidnapping,2025-01-02,1
+Buldhana,Khamgaon Police Station,Kidnapping,2025-01-10,13
+Buldhana,Khamgaon Police Station,Kidnapping,2025-01-17,24
+Buldhana,Khamgaon Police Station,Kidnapping,2025-01-27,24
+Buldhana,Khamgaon Police Station,Murder,2025-01-19,3
+Buldhana,Khamgaon Police Station,Murder,2025-01-21,3
+Buldhana,Khamgaon Police Station,Other,2025-01-23,12
+Buldhana,Khamgaon Police Station,Other,2025-01-25,20
+Buldhana,Khamgaon Police Station,Other,2025-01-29,1
+Buldhana,Khamgaon Police Station,Rape,2025-01-20,13
+Buldhana,Khamgaon Police Station,Robbery,2025-01-03,23
+Buldhana,Khamgaon Police Station,Robbery,2025-01-05,9
+Buldhana,Khamgaon Police Station,Robbery,2025-01-07,9
+Buldhana,Khamgaon Police Station,Robbery,2025-01-09,4
+Buldhana,Khamgaon Police Station,Sexual Harassment,2025-01-12,15
+Buldhana,Khamgaon Police Station,Stalking,2025-01-06,25
+Buldhana,Khamgaon Police Station,Stalking,2025-01-28,11
+Buldhana,Khamgaon Police Station,Theft,2025-01-01,1
+Buldhana,Malkapur Police Station,Accident,2025-01-11,16
+Buldhana,Malkapur Police Station,Cybercrime,2025-01-22,25
+Buldhana,Malkapur Police Station,Fight,2025-01-07,5
+Buldhana,Malkapur Police Station,Fight,2025-01-10,25
+Buldhana,Malkapur Police Station,Fight,2025-01-20,22
+Buldhana,Malkapur Police Station,Fraud,2025-01-27,3
+Buldhana,Malkapur Police Station,Hit and Run,2025-01-04,14
+Buldhana,Malkapur Police Station,Hit and Run,2025-01-08,2
+Buldhana,Malkapur Police Station,Hit and Run,2025-01-21,25
+Buldhana,Malkapur Police Station,Hit and Run,2025-01-29,9
+Buldhana,Malkapur Police Station,Kidnapping,2025-01-09,9
+Buldhana,Malkapur Police Station,Kidnapping,2025-01-24,13
+Buldhana,Malkapur Police Station,Other,2025-01-02,25
+Buldhana,Malkapur Police Station,Other,2025-01-06,19
+Buldhana,Malkapur Police Station,Other,2025-01-14,9
+Buldhana,Malkapur Police Station,Other,2025-01-31,22
+Buldhana,Malkapur Police Station,Rape,2025-01-03,1
+Buldhana,Malkapur Police Station,Rape,2025-01-05,22
+Buldhana,Malkapur Police Station,Rape,2025-01-16,11
+Buldhana,Malkapur Police Station,Rape,2025-01-19,3
+Buldhana,Malkapur Police Station,Rape,2025-01-28,6
+Buldhana,Malkapur Police Station,Robbery,2025-01-26,12
+Buldhana,Malkapur Police Station,Sexual Harassment,2025-01-01,17
+Buldhana,Malkapur Police Station,Sexual Harassment,2025-01-12,6
+Buldhana,Malkapur Police Station,Sexual Harassment,2025-01-15,18
+Buldhana,Malkapur Police Station,Sexual Harassment,2025-01-18,21
+Buldhana,Malkapur Police Station,Stalking,2025-01-13,17
+Buldhana,Malkapur Police Station,Theft,2025-01-17,25
+Buldhana,Malkapur Police Station,Theft,2025-01-23,20
+Buldhana,Malkapur Police Station,Theft,2025-01-25,15
+Buldhana,Malkapur Police Station,Theft,2025-01-30,12
+Kolhapur,Karveer Police Station,Accident,2025-01-08,2
+Kolhapur,Karveer Police Station,Accident,2025-01-13,25
+Kolhapur,Karveer Police Station,Cybercrime,2025-01-02,16
+Kolhapur,Karveer Police Station,Cybercrime,2025-01-04,7
+Kolhapur,Karveer Police Station,Cybercrime,2025-01-06,14
+Kolhapur,Karveer Police Station,Cybercrime,2025-01-07,24
+Kolhapur,Karveer Police Station,Cybercrime,2025-01-19,10
+Kolhapur,Karveer Police Station,Cybercrime,2025-01-26,12
+Kolhapur,Karveer Police Station,Fight,2025-01-14,24
+Kolhapur,Karveer Police Station,Fight,2025-01-25,9
+Kolhapur,Karveer Police Station,Fight,2025-01-28,8
+Kolhapur,Karveer Police Station,Fraud,2025-01-01,8
+Kolhapur,Karveer Police Station,Hit and Run,2025-01-10,10
+Kolhapur,Karveer Police Station,Hit and Run,2025-01-21,21
+Kolhapur,Karveer Police Station,Hit and Run,2025-01-24,17
+Kolhapur,Karveer Police Station,Hit and Run,2025-01-29,8
+Kolhapur,Karveer Police Station,Hit and Run,2025-01-31,12
+Kolhapur,Karveer Police Station,Kidnapping,2025-01-03,12
+Kolhapur,Karveer Police Station,Kidnapping,2025-01-17,3
+Kolhapur,Karveer Police Station,Murder,2025-01-11,14
+Kolhapur,Karveer Police Station,Murder,2025-01-18,6
+Kolhapur,Karveer Police Station,Murder,2025-01-22,1
+Kolhapur,Karveer Police Station,Other,2025-01-27,2
+Kolhapur,Karveer Police Station,Rape,2025-01-16,18
+Kolhapur,Karveer Police Station,Robbery,2025-01-05,3
+Kolhapur,Karveer Police Station,Robbery,2025-01-15,24
+Kolhapur,Karveer Police Station,Stalking,2025-01-20,2
+Kolhapur,Karveer Police Station,Stalking,2025-01-30,11
+Kolhapur,Karveer Police Station,Theft,2025-01-09,21
+Kolhapur,Karveer Police Station,Theft,2025-01-12,9
+Kolhapur,Karveer Police Station,Theft,2025-01-23,16
+Kolhapur,Rajwada Police Station,Accident,2025-01-17,9
+Kolhapur,Rajwada Police Station,Accident,2025-01-18,18
+Kolhapur,Rajwada Police Station,Accident,2025-01-30,22
+Kolhapur,Rajwada Police Station,Cybercrime,2025-01-10,6
+Kolhapur,Rajwada Police Station,Cybercrime,2025-01-24,25
+Kolhapur,Rajwada Police Station,Cybercrime,2025-01-25,10
+Kolhapur,Rajwada Police Station,Fraud,2025-01-07,25
+Kolhapur,Rajwada Police Station,Fraud,2025-01-08,1
+Kolhapur,Rajwada Police Station,Fraud,2025-01-09,15
+Kolhapur,Rajwada Police Station,Hit and Run,2025-01-15,16
+Kolhapur,Rajwada Police Station,Hit and Run,2025-01-16,7
+Kolhapur,Rajwada Police Station,Hit and Run,2025-01-19,1
+Kolhapur,Rajwada Police Station,Kidnapping,2025-01-12,16
+Kolhapur,Rajwada Police Station,Kidnapping,2025-01-22,9
+Kolhapur,Rajwada Police Station,Kidnapping,2025-01-31,12
+Kolhapur,Rajwada Police Station,Murder,2025-01-01,18
+Kolhapur,Rajwada Police Station,Murder,2025-01-03,25
+Kolhapur,Rajwada Police Station,Murder,2025-01-21,18
+Kolhapur,Rajwada Police Station,Other,2025-01-14,10
+Kolhapur,Rajwada Police Station,Rape,2025-01-02,23
+Kolhapur,Rajwada Police Station,Rape,2025-01-13,1
+Kolhapur,Rajwada Police Station,Rape,2025-01-26,13
+Kolhapur,Rajwada Police Station,Robbery,2025-01-27,25
+Kolhapur,Rajwada Police Station,Robbery,2025-01-28,25
+Kolhapur,Rajwada Police Station,Sexual Harassment,2025-01-04,4
+Kolhapur,Rajwada Police Station,Sexual Harassment,2025-01-05,4
+Kolhapur,Rajwada Police Station,Sexual Harassment,2025-01-06,9
+Kolhapur,Rajwada Police Station,Sexual Harassment,2025-01-20,17
+Kolhapur,Rajwada Police Station,Sexual Harassment,2025-01-29,22
+Kolhapur,Rajwada Police Station,Stalking,2025-01-23,7
+Kolhapur,Rajwada Police Station,Theft,2025-01-11,15
+Kolhapur,Shahupuri Police Station,Accident,2025-01-29,20
+Kolhapur,Shahupuri Police Station,Accident,2025-01-31,3
+Kolhapur,Shahupuri Police Station,Cybercrime,2025-01-06,22
+Kolhapur,Shahupuri Police Station,Cybercrime,2025-01-16,2
+Kolhapur,Shahupuri Police Station,Fight,2025-01-08,17
+Kolhapur,Shahupuri Police Station,Fight,2025-01-12,25
+Kolhapur,Shahupuri Police Station,Fight,2025-01-15,15
+Kolhapur,Shahupuri Police Station,Fight,2025-01-18,20
+Kolhapur,Shahupuri Police Station,Fight,2025-01-24,17
+Kolhapur,Shahupuri Police Station,Fraud,2025-01-01,7
+Kolhapur,Shahupuri Police Station,Fraud,2025-01-02,4
+Kolhapur,Shahupuri Police Station,Fraud,2025-01-25,18
+Kolhapur,Shahupuri Police Station,Hit and Run,2025-01-04,12
+Kolhapur,Shahupuri Police Station,Hit and Run,2025-01-05,2
+Kolhapur,Shahupuri Police Station,Hit and Run,2025-01-30,11
+Kolhapur,Shahupuri Police Station,Kidnapping,2025-01-03,4
+Kolhapur,Shahupuri Police Station,Kidnapping,2025-01-07,23
+Kolhapur,Shahupuri Police Station,Kidnapping,2025-01-09,6
+Kolhapur,Shahupuri Police Station,Kidnapping,2025-01-23,4
+Kolhapur,Shahupuri Police Station,Murder,2025-01-22,19
+Kolhapur,Shahupuri Police Station,Other,2025-01-20,21
+Kolhapur,Shahupuri Police Station,Other,2025-01-21,13
+Kolhapur,Shahupuri Police Station,Rape,2025-01-14,14
+Kolhapur,Shahupuri Police Station,Rape,2025-01-26,10
+Kolhapur,Shahupuri Police Station,Sexual Harassment,2025-01-10,5
+Kolhapur,Shahupuri Police Station,Sexual Harassment,2025-01-13,19
+Kolhapur,Shahupuri Police Station,Sexual Harassment,2025-01-27,15
+Kolhapur,Shahupuri Police Station,Stalking,2025-01-11,11
+Kolhapur,Shahupuri Police Station,Stalking,2025-01-19,5
+Kolhapur,Shahupuri Police Station,Theft,2025-01-17,21
+Kolhapur,Shahupuri Police Station,Theft,2025-01-28,25
+Kolhapur,Shivaji Peth Police Station,Accident,2025-01-01,2
+Kolhapur,Shivaji Peth Police Station,Accident,2025-01-08,21
+Kolhapur,Shivaji Peth Police Station,Accident,2025-01-14,14
+Kolhapur,Shivaji Peth Police Station,Accident,2025-01-15,6
+Kolhapur,Shivaji Peth Police Station,Accident,2025-01-31,9
+Kolhapur,Shivaji Peth Police Station,Cybercrime,2025-01-07,7
+Kolhapur,Shivaji Peth Police Station,Cybercrime,2025-01-19,1
+Kolhapur,Shivaji Peth Police Station,Cybercrime,2025-01-30,9
+Kolhapur,Shivaji Peth Police Station,Fight,2025-01-13,10
+Kolhapur,Shivaji Peth Police Station,Fraud,2025-01-04,14
+Kolhapur,Shivaji Peth Police Station,Fraud,2025-01-05,10
+Kolhapur,Shivaji Peth Police Station,Hit and Run,2025-01-06,22
+Kolhapur,Shivaji Peth Police Station,Hit and Run,2025-01-29,3
+Kolhapur,Shivaji Peth Police Station,Kidnapping,2025-01-23,6
+Kolhapur,Shivaji Peth Police Station,Kidnapping,2025-01-25,12
+Kolhapur,Shivaji Peth Police Station,Murder,2025-01-10,2
+Kolhapur,Shivaji Peth Police Station,Murder,2025-01-18,20
+Kolhapur,Shivaji Peth Police Station,Murder,2025-01-27,20
+Kolhapur,Shivaji Peth Police Station,Other,2025-01-03,16
+Kolhapur,Shivaji Peth Police Station,Other,2025-01-09,21
+Kolhapur,Shivaji Peth Police Station,Other,2025-01-20,20
+Kolhapur,Shivaji Peth Police Station,Other,2025-01-24,12
+Kolhapur,Shivaji Peth Police Station,Rape,2025-01-02,11
+Kolhapur,Shivaji Peth Police Station,Rape,2025-01-17,12
+Kolhapur,Shivaji Peth Police Station,Robbery,2025-01-28,2
+Kolhapur,Shivaji Peth Police Station,Sexual Harassment,2025-01-11,5
+Kolhapur,Shivaji Peth Police Station,Sexual Harassment,2025-01-12,12
+Kolhapur,Shivaji Peth Police Station,Sexual Harassment,2025-01-22,14
+Kolhapur,Shivaji Peth Police Station,Sexual Harassment,2025-01-26,25
+Kolhapur,Shivaji Peth Police Station,Stalking,2025-01-16,20
+Kolhapur,Shivaji Peth Police Station,Theft,2025-01-21,22
+Mumbai,Andheri Police Station,Accident,2025-01-01,12
+Mumbai,Andheri Police Station,Accident,2025-01-10,8
+Mumbai,Andheri Police Station,Accident,2025-01-20,9
+Mumbai,Andheri Police Station,Cybercrime,2025-01-06,9
+Mumbai,Andheri Police Station,Cybercrime,2025-01-15,1
+Mumbai,Andheri Police Station,Fight,2025-01-09,6
+Mumbai,Andheri Police Station,Fight,2025-01-11,10
+Mumbai,Andheri Police Station,Fraud,2025-01-05,8
+Mumbai,Andheri Police Station,Fraud,2025-01-26,10
+Mumbai,Andheri Police Station,Fraud,2025-01-30,14
+Mumbai,Andheri Police Station,Hit and Run,2025-01-02,2
+Mumbai,Andheri Police Station,Kidnapping,2025-01-07,1
+Mumbai,Andheri Police Station,Murder,2025-01-18,14
+Mumbai,Andheri Police Station,Other,2025-01-21,14
+Mumbai,Andheri Police Station,Other,2025-01-25,8
+Mumbai,Andheri Police Station,Robbery,2025-01-12,22
+Mumbai,Andheri Police Station,Robbery,2025-01-13,9
+Mumbai,Andheri Police Station,Robbery,2025-01-23,20
+Mumbai,Andheri Police Station,Robbery,2025-01-28,7
+Mumbai,Andheri Police Station,Sexual Harassment,2025-01-08,14
+Mumbai,Andheri Police Station,Sexual Harassment,2025-01-16,9
+Mumbai,Andheri Police Station,Sexual Harassment,2025-01-17,7
+Mumbai,Andheri Police Station,Sexual Harassment,2025-01-27,20
+Mumbai,Andheri Police Station,Stalking,2025-01-14,21
+Mumbai,Andheri Police Station,Stalking,2025-01-29,17
+Mumbai,Andheri Police Station,Stalking,2025-01-31,23
+Mumbai,Andheri Police Station,Theft,2025-01-03,11
+Mumbai,Andheri Police Station,Theft,2025-01-04,25
+Mumbai,Andheri Police Station,Theft,2025-01-19,2
+Mumbai,Andheri Police Station,Theft,2025-01-22,15
+Mumbai,Andheri Police Station,Theft,2025-01-24,2
+Mumbai,Azad Maidan Police Station,Accident,2025-01-10,4
+Mumbai,Azad Maidan Police Station,Accident,2025-01-21,22
+Mumbai,Azad Maidan Police Station,Cybercrime,2025-01-08,10
+Mumbai,Azad Maidan Police Station,Cybercrime,2025-01-28,19
+Mumbai,Azad Maidan Police Station,Fight,2025-01-06,25
+Mumbai,Azad Maidan Police Station,Fight,2025-01-09,16
+Mumbai,Azad Maidan Police Station,Fraud,2025-01-25,15
+Mumbai,Azad Maidan Police Station,Hit and Run,2025-01-03,15
+Mumbai,Azad Maidan Police Station,Hit and Run,2025-01-07,17
+Mumbai,Azad Maidan Police Station,Hit and Run,2025-01-22,20
+Mumbai,Azad Maidan Police Station,Hit and Run,2025-01-27,18
+Mumbai,Azad Maidan Police Station,Hit and Run,2025-01-30,1
+Mumbai,Azad Maidan Police Station,Kidnapping,2025-01-16,19
+Mumbai,Azad Maidan Police Station,Kidnapping,2025-01-23,14
+Mumbai,Azad Maidan Police Station,Murder,2025-01-04,18
+Mumbai,Azad Maidan Police Station,Murder,2025-01-12,6
+Mumbai,Azad Maidan Police Station,Murder,2025-01-29,9
+Mumbai,Azad Maidan Police Station,Other,2025-01-11,14
+Mumbai,Azad Maidan Police Station,Other,2025-01-14,1
+Mumbai,Azad Maidan Police Station,Other,2025-01-26,16
+Mumbai,Azad Maidan Police Station,Rape,2025-01-01,9
+Mumbai,Azad Maidan Police Station,Robbery,2025-01-02,24
+Mumbai,Azad Maidan Police Station,Robbery,2025-01-20,12
+Mumbai,Azad Maidan Police Station,Robbery,2025-01-24,25
+Mumbai,Azad Maidan Police Station,Robbery,2025-01-31,4
+Mumbai,Azad Maidan Police Station,Sexual Harassment,2025-01-05,18
+Mumbai,Azad Maidan Police Station,Sexual Harassment,2025-01-15,5
+Mumbai,Azad Maidan Police Station,Sexual Harassment,2025-01-17,24
+Mumbai,Azad Maidan Police Station,Sexual Harassment,2025-01-19,21
+Mumbai,Azad Maidan Police Station,Stalking,2025-01-13,15
+Mumbai,Azad Maidan Police Station,Theft,2025-01-18,5
+Mumbai,Colaba Police Station,Accident,2025-01-08,13
+Mumbai,Colaba Police Station,Cybercrime,2025-01-04,12
+Mumbai,Colaba Police Station,Cybercrime,2025-01-11,17
+Mumbai,Colaba Police Station,Fight,2025-01-13,18
+Mumbai,Colaba Police Station,Fraud,2025-01-06,17
+Mumbai,Colaba Police Station,Fraud,2025-01-18,23
+Mumbai,Colaba Police Station,Fraud,2025-01-21,14
+Mumbai,Colaba Police Station,Fraud,2025-01-22,9
+Mumbai,Colaba Police Station,Hit and Run,2025-01-01,2
+Mumbai,Colaba Police Station,Hit and Run,2025-01-02,12
+Mumbai,Colaba Police Station,Hit and Run,2025-01-12,10
+Mumbai,Colaba Police Station,Hit and Run,2025-01-19,22
+Mumbai,Colaba Police Station,Hit and Run,2025-01-28,15
+Mumbai,Colaba Police Station,Hit and Run,2025-01-29,24
+Mumbai,Colaba Police Station,Kidnapping,2025-01-05,6
+Mumbai,Colaba Police Station,Kidnapping,2025-01-10,22
+Mumbai,Colaba Police Station,Kidnapping,2025-01-30,25
+Mumbai,Colaba Police Station,Other,2025-01-03,12
+Mumbai,Colaba Police Station,Other,2025-01-07,16
+Mumbai,Colaba Police Station,Other,2025-01-09,16
+Mumbai,Colaba Police Station,Other,2025-01-15,14
+Mumbai,Colaba Police Station,Other,2025-01-16,2
+Mumbai,Colaba Police Station,Other,2025-01-17,10
+Mumbai,Colaba Police Station,Other,2025-01-25,10
+Mumbai,Colaba Police Station,Robbery,2025-01-23,7
+Mumbai,Colaba Police Station,Robbery,2025-01-27,2
+Mumbai,Colaba Police Station,Sexual Harassment,2025-01-26,7
+Mumbai,Colaba Police Station,Sexual Harassment,2025-01-31,14
+Mumbai,Colaba Police Station,Stalking,2025-01-20,15
+Mumbai,Colaba Police Station,Theft,2025-01-14,4
+Mumbai,Colaba Police Station,Theft,2025-01-24,4
+Mumbai,Dadar Police Station,Accident,2025-01-09,6
+Mumbai,Dadar Police Station,Accident,2025-01-11,23
+Mumbai,Dadar Police Station,Cybercrime,2025-01-04,10
+Mumbai,Dadar Police Station,Fight,2025-01-02,25
+Mumbai,Dadar Police Station,Fight,2025-01-23,15
+Mumbai,Dadar Police Station,Fraud,2025-01-16,14
+Mumbai,Dadar Police Station,Fraud,2025-01-20,10
+Mumbai,Dadar Police Station,Hit and Run,2025-01-17,25
+Mumbai,Dadar Police Station,Hit and Run,2025-01-18,14
+Mumbai,Dadar Police Station,Hit and Run,2025-01-29,11
+Mumbai,Dadar Police Station,Kidnapping,2025-01-10,13
+Mumbai,Dadar Police Station,Kidnapping,2025-01-13,14
+Mumbai,Dadar Police Station,Kidnapping,2025-01-14,11
+Mumbai,Dadar Police Station,Kidnapping,2025-01-25,24
+Mumbai,Dadar Police Station,Kidnapping,2025-01-26,17
+Mumbai,Dadar Police Station,Murder,2025-01-12,1
+Mumbai,Dadar Police Station,Other,2025-01-03,12
+Mumbai,Dadar Police Station,Other,2025-01-06,22
+Mumbai,Dadar Police Station,Other,2025-01-15,18
+Mumbai,Dadar Police Station,Rape,2025-01-01,17
+Mumbai,Dadar Police Station,Rape,2025-01-05,3
+Mumbai,Dadar Police Station,Rape,2025-01-27,13
+Mumbai,Dadar Police Station,Robbery,2025-01-07,2
+Mumbai,Dadar Police Station,Robbery,2025-01-22,15
+Mumbai,Dadar Police Station,Robbery,2025-01-24,14
+Mumbai,Dadar Police Station,Robbery,2025-01-30,22
+Mumbai,Dadar Police Station,Sexual Harassment,2025-01-08,20
+Mumbai,Dadar Police Station,Sexual Harassment,2025-01-21,8
+Mumbai,Dadar Police Station,Stalking,2025-01-19,19
+Mumbai,Dadar Police Station,Theft,2025-01-28,13
+Mumbai,Dadar Police Station,Theft,2025-01-31,12
+Nagpur,Ajni Police Station,Accident,2025-01-02,2
+Nagpur,Ajni Police Station,Accident,2025-01-03,15
+Nagpur,Ajni Police Station,Accident,2025-01-08,20
+Nagpur,Ajni Police Station,Accident,2025-01-18,24
+Nagpur,Ajni Police Station,Accident,2025-01-28,9
+Nagpur,Ajni Police Station,Cybercrime,2025-01-04,7
+Nagpur,Ajni Police Station,Fight,2025-01-01,17
+Nagpur,Ajni Police Station,Fight,2025-01-07,5
+Nagpur,Ajni Police Station,Fight,2025-01-09,7
+Nagpur,Ajni Police Station,Hit and Run,2025-01-10,9
+Nagpur,Ajni Police Station,Hit and Run,2025-01-13,5
+Nagpur,Ajni Police Station,Hit and Run,2025-01-20,15
+Nagpur,Ajni Police Station,Hit and Run,2025-01-21,17
+Nagpur,Ajni Police Station,Kidnapping,2025-01-05,23
+Nagpur,Ajni Police Station,Murder,2025-01-14,7
+Nagpur,Ajni Police Station,Murder,2025-01-19,12
+Nagpur,Ajni Police Station,Murder,2025-01-29,19
+Nagpur,Ajni Police Station,Other,2025-01-22,22
+Nagpur,Ajni Police Station,Other,2025-01-24,5
+Nagpur,Ajni Police Station,Other,2025-01-25,19
+Nagpur,Ajni Police Station,Rape,2025-01-11,16
+Nagpur,Ajni Police Station,Rape,2025-01-27,4
+Nagpur,Ajni Police Station,Rape,2025-01-30,1
+Nagpur,Ajni Police Station,Rape,2025-01-31,14
+Nagpur,Ajni Police Station,Robbery,2025-01-12,12
+Nagpur,Ajni Police Station,Robbery,2025-01-17,4
+Nagpur,Ajni Police Station,Robbery,2025-01-23,10
+Nagpur,Ajni Police Station,Sexual Harassment,2025-01-16,23
+Nagpur,Ajni Police Station,Stalking,2025-01-15,17
+Nagpur,Ajni Police Station,Stalking,2025-01-26,6
+Nagpur,Ajni Police Station,Theft,2025-01-06,7
+Nagpur,Dhantoli Police Station,Cybercrime,2025-01-27,12
+Nagpur,Dhantoli Police Station,Fight,2025-01-07,15
+Nagpur,Dhantoli Police Station,Fight,2025-01-25,24
+Nagpur,Dhantoli Police Station,Fight,2025-01-28,13
+Nagpur,Dhantoli Police Station,Fight,2025-01-31,15
+Nagpur,Dhantoli Police Station,Fraud,2025-01-08,21
+Nagpur,Dhantoli Police Station,Fraud,2025-01-17,19
+Nagpur,Dhantoli Police Station,Fraud,2025-01-26,22
+Nagpur,Dhantoli Police Station,Hit and Run,2025-01-04,7
+Nagpur,Dhantoli Police Station,Hit and Run,2025-01-20,8
+Nagpur,Dhantoli Police Station,Hit and Run,2025-01-21,18
+Nagpur,Dhantoli Police Station,Kidnapping,2025-01-01,16
+Nagpur,Dhantoli Police Station,Kidnapping,2025-01-14,7
+Nagpur,Dhantoli Police Station,Kidnapping,2025-01-16,5
+Nagpur,Dhantoli Police Station,Murder,2025-01-05,23
+Nagpur,Dhantoli Police Station,Murder,2025-01-09,15
+Nagpur,Dhantoli Police Station,Murder,2025-01-11,2
+Nagpur,Dhantoli Police Station,Murder,2025-01-13,5
+Nagpur,Dhantoli Police Station,Murder,2025-01-15,22
+Nagpur,Dhantoli Police Station,Murder,2025-01-22,9
+Nagpur,Dhantoli Police Station,Other,2025-01-12,3
+Nagpur,Dhantoli Police Station,Other,2025-01-19,15
+Nagpur,Dhantoli Police Station,Other,2025-01-29,10
+Nagpur,Dhantoli Police Station,Robbery,2025-01-10,17
+Nagpur,Dhantoli Police Station,Robbery,2025-01-24,24
+Nagpur,Dhantoli Police Station,Sexual Harassment,2025-01-03,14
+Nagpur,Dhantoli Police Station,Stalking,2025-01-02,13
+Nagpur,Dhantoli Police Station,Stalking,2025-01-06,5
+Nagpur,Dhantoli Police Station,Stalking,2025-01-30,23
+Nagpur,Dhantoli Police Station,Theft,2025-01-18,14
+Nagpur,Dhantoli Police Station,Theft,2025-01-23,12
+Nagpur,Sadar Police Station,Accident,2025-01-11,12
+Nagpur,Sadar Police Station,Accident,2025-01-22,16
+Nagpur,Sadar Police Station,Accident,2025-01-24,23
+Nagpur,Sadar Police Station,Cybercrime,2025-01-18,7
+Nagpur,Sadar Police Station,Fight,2025-01-07,4
+Nagpur,Sadar Police Station,Fight,2025-01-21,24
+Nagpur,Sadar Police Station,Fight,2025-01-31,16
+Nagpur,Sadar Police Station,Fraud,2025-01-26,22
+Nagpur,Sadar Police Station,Hit and Run,2025-01-04,14
+Nagpur,Sadar Police Station,Hit and Run,2025-01-05,6
+Nagpur,Sadar Police Station,Hit and Run,2025-01-13,14
+Nagpur,Sadar Police Station,Hit and Run,2025-01-14,6
+Nagpur,Sadar Police Station,Hit and Run,2025-01-29,19
+Nagpur,Sadar Police Station,Kidnapping,2025-01-12,23
+Nagpur,Sadar Police Station,Kidnapping,2025-01-19,17
+Nagpur,Sadar Police Station,Murder,2025-01-01,11
+Nagpur,Sadar Police Station,Murder,2025-01-06,15
+Nagpur,Sadar Police Station,Murder,2025-01-20,24
+Nagpur,Sadar Police Station,Rape,2025-01-02,9
+Nagpur,Sadar Police Station,Rape,2025-01-03,18
+Nagpur,Sadar Police Station,Rape,2025-01-10,8
+Nagpur,Sadar Police Station,Rape,2025-01-27,8
+Nagpur,Sadar Police Station,Rape,2025-01-28,6
+Nagpur,Sadar Police Station,Robbery,2025-01-23,25
+Nagpur,Sadar Police Station,Robbery,2025-01-30,12
+Nagpur,Sadar Police Station,Sexual Harassment,2025-01-09,14
+Nagpur,Sadar Police Station,Stalking,2025-01-15,9
+Nagpur,Sadar Police Station,Stalking,2025-01-16,5
+Nagpur,Sadar Police Station,Stalking,2025-01-25,19
+Nagpur,Sadar Police Station,Theft,2025-01-08,10
+Nagpur,Sadar Police Station,Theft,2025-01-17,9
+Nagpur,Sitabuldi Police Station,Accident,2025-01-28,19
+Nagpur,Sitabuldi Police Station,Cybercrime,2025-01-17,6
+Nagpur,Sitabuldi Police Station,Cybercrime,2025-01-31,1
+Nagpur,Sitabuldi Police Station,Fight,2025-01-06,16
+Nagpur,Sitabuldi Police Station,Fraud,2025-01-19,9
+Nagpur,Sitabuldi Police Station,Hit and Run,2025-01-07,24
+Nagpur,Sitabuldi Police Station,Hit and Run,2025-01-26,18
+Nagpur,Sitabuldi Police Station,Kidnapping,2025-01-08,16
+Nagpur,Sitabuldi Police Station,Kidnapping,2025-01-27,18
+Nagpur,Sitabuldi Police Station,Murder,2025-01-11,11
+Nagpur,Sitabuldi Police Station,Murder,2025-01-22,25
+Nagpur,Sitabuldi Police Station,Murder,2025-01-24,11
+Nagpur,Sitabuldi Police Station,Murder,2025-01-30,21
+Nagpur,Sitabuldi Police Station,Other,2025-01-03,6
+Nagpur,Sitabuldi Police Station,Other,2025-01-04,9
+Nagpur,Sitabuldi Police Station,Other,2025-01-09,7
+Nagpur,Sitabuldi Police Station,Rape,2025-01-05,3
+Nagpur,Sitabuldi Police Station,Rape,2025-01-23,12
+Nagpur,Sitabuldi Police Station,Rape,2025-01-25,22
+Nagpur,Sitabuldi Police Station,Rape,2025-01-29,9
+Nagpur,Sitabuldi Police Station,Robbery,2025-01-15,25
+Nagpur,Sitabuldi Police Station,Robbery,2025-01-16,25
+Nagpur,Sitabuldi Police Station,Robbery,2025-01-18,20
+Nagpur,Sitabuldi Police Station,Sexual Harassment,2025-01-01,17
+Nagpur,Sitabuldi Police Station,Sexual Harassment,2025-01-12,1
+Nagpur,Sitabuldi Police Station,Stalking,2025-01-02,13
+Nagpur,Sitabuldi Police Station,Stalking,2025-01-10,3
+Nagpur,Sitabuldi Police Station,Stalking,2025-01-14,20
+Nagpur,Sitabuldi Police Station,Theft,2025-01-13,1
+Nagpur,Sitabuldi Police Station,Theft,2025-01-20,8
+Nagpur,Sitabuldi Police Station,Theft,2025-01-21,6
+Nashik,Bhadrakali Police Station,Accident,2025-01-30,11
+Nashik,Bhadrakali Police Station,Cybercrime,2025-01-03,22
+Nashik,Bhadrakali Police Station,Cybercrime,2025-01-18,21
+Nashik,Bhadrakali Police Station,Fight,2025-01-09,21
+Nashik,Bhadrakali Police Station,Fight,2025-01-28,20
+Nashik,Bhadrakali Police Station,Fraud,2025-01-01,1
+Nashik,Bhadrakali Police Station,Kidnapping,2025-01-06,12
+Nashik,Bhadrakali Police Station,Kidnapping,2025-01-17,9
+Nashik,Bhadrakali Police Station,Kidnapping,2025-01-24,24
+Nashik,Bhadrakali Police Station,Other,2025-01-02,7
+Nashik,Bhadrakali Police Station,Other,2025-01-13,24
+Nashik,Bhadrakali Police Station,Other,2025-01-19,3
+Nashik,Bhadrakali Police Station,Other,2025-01-22,19
+Nashik,Bhadrakali Police Station,Rape,2025-01-08,2
+Nashik,Bhadrakali Police Station,Rape,2025-01-16,17
+Nashik,Bhadrakali Police Station,Rape,2025-01-27,6
+Nashik,Bhadrakali Police Station,Robbery,2025-01-04,9
+Nashik,Bhadrakali Police Station,Robbery,2025-01-07,20
+Nashik,Bhadrakali Police Station,Robbery,2025-01-10,10
+Nashik,Bhadrakali Police Station,Robbery,2025-01-15,10
+Nashik,Bhadrakali Police Station,Robbery,2025-01-26,20
+Nashik,Bhadrakali Police Station,Robbery,2025-01-29,19
+Nashik,Bhadrakali Police Station,Robbery,2025-01-31,19
+Nashik,Bhadrakali Police Station,Sexual Harassment,2025-01-11,22
+Nashik,Bhadrakali Police Station,Sexual Harassment,2025-01-25,9
+Nashik,Bhadrakali Police Station,Stalking,2025-01-14,15
+Nashik,Bhadrakali Police Station,Stalking,2025-01-20,16
+Nashik,Bhadrakali Police Station,Theft,2025-01-05,24
+Nashik,Bhadrakali Police Station,Theft,2025-01-12,14
+Nashik,Bhadrakali Police Station,Theft,2025-01-21,21
+Nashik,Bhadrakali Police Station,Theft,2025-01-23,9
+Nashik,Gangapur Road Police Station,Accident,2025-01-03,23
+Nashik,Gangapur Road Police Station,Accident,2025-01-04,16
+Nashik,Gangapur Road Police Station,Accident,2025-01-20,19
+Nashik,Gangapur Road Police Station,Accident,2025-01-21,14
+Nashik,Gangapur Road Police Station,Cybercrime,2025-01-09,7
+Nashik,Gangapur Road Police Station,Fight,2025-01-02,17
+Nashik,Gangapur Road Police Station,Fight,2025-01-06,8
+Nashik,Gangapur Road Police Station,Fight,2025-01-30,20
+Nashik,Gangapur Road Police Station,Fraud,2025-01-05,9
+Nashik,Gangapur Road Police Station,Fraud,2025-01-27,11
+Nashik,Gangapur Road Police Station,Fraud,2025-01-28,24
+Nashik,Gangapur Road Police Station,Fraud,2025-01-31,1
+Nashik,Gangapur Road Police Station,Hit and Run,2025-01-07,20
+Nashik,Gangapur Road Police Station,Hit and Run,2025-01-15,17
+Nashik,Gangapur Road Police Station,Hit and Run,2025-01-22,21
+Nashik,Gangapur Road Police Station,Kidnapping,2025-01-10,1
+Nashik,Gangapur Road Police Station,Kidnapping,2025-01-25,20
+Nashik,Gangapur Road Police Station,Murder,2025-01-11,9
+Nashik,Gangapur Road Police Station,Murder,2025-01-12,11
+Nashik,Gangapur Road Police Station,Murder,2025-01-19,17
+Nashik,Gangapur Road Police Station,Murder,2025-01-23,10
+Nashik,Gangapur Road Police Station,Other,2025-01-01,15
+Nashik,Gangapur Road Police Station,Other,2025-01-08,23
+Nashik,Gangapur Road Police Station,Other,2025-01-13,6
+Nashik,Gangapur Road Police Station,Other,2025-01-24,5
+Nashik,Gangapur Road Police Station,Rape,2025-01-14,17
+Nashik,Gangapur Road Police Station,Robbery,2025-01-17,7
+Nashik,Gangapur Road Police Station,Sexual Harassment,2025-01-18,5
+Nashik,Gangapur Road Police Station,Theft,2025-01-16,15
+Nashik,Gangapur Road Police Station,Theft,2025-01-26,21
+Nashik,Gangapur Road Police Station,Theft,2025-01-29,7
+Nashik,Panchavati Police Station,Accident,2025-01-02,4
+Nashik,Panchavati Police Station,Accident,2025-01-07,1
+Nashik,Panchavati Police Station,Cybercrime,2025-01-16,23
+Nashik,Panchavati Police Station,Cybercrime,2025-01-22,10
+Nashik,Panchavati Police Station,Fight,2025-01-03,8
+Nashik,Panchavati Police Station,Fraud,2025-01-08,1
+Nashik,Panchavati Police Station,Fraud,2025-01-10,14
+Nashik,Panchavati Police Station,Fraud,2025-01-14,7
+Nashik,Panchavati Police Station,Fraud,2025-01-17,7
+Nashik,Panchavati Police Station,Fraud,2025-01-19,22
+Nashik,Panchavati Police Station,Hit and Run,2025-01-21,11
+Nashik,Panchavati Police Station,Hit and Run,2025-01-27,10
+Nashik,Panchavati Police Station,Kidnapping,2025-01-11,15
+Nashik,Panchavati Police Station,Kidnapping,2025-01-20,15
+Nashik,Panchavati Police Station,Kidnapping,2025-01-23,10
+Nashik,Panchavati Police Station,Kidnapping,2025-01-26,20
+Nashik,Panchavati Police Station,Kidnapping,2025-01-28,1
+Nashik,Panchavati Police Station,Kidnapping,2025-01-31,6
+Nashik,Panchavati Police Station,Murder,2025-01-06,6
+Nashik,Panchavati Police Station,Murder,2025-01-18,20
+Nashik,Panchavati Police Station,Other,2025-01-24,1
+Nashik,Panchavati Police Station,Other,2025-01-30,8
+Nashik,Panchavati Police Station,Rape,2025-01-12,9
+Nashik,Panchavati Police Station,Rape,2025-01-29,6
+Nashik,Panchavati Police Station,Robbery,2025-01-13,1
+Nashik,Panchavati Police Station,Robbery,2025-01-15,22
+Nashik,Panchavati Police Station,Sexual Harassment,2025-01-04,22
+Nashik,Panchavati Police Station,Stalking,2025-01-01,12
+Nashik,Panchavati Police Station,Stalking,2025-01-09,18
+Nashik,Panchavati Police Station,Theft,2025-01-05,15
+Nashik,Panchavati Police Station,Theft,2025-01-25,24
+Nashik,Satpur Police Station,Accident,2025-01-01,14
+Nashik,Satpur Police Station,Cybercrime,2025-01-13,24
+Nashik,Satpur Police Station,Cybercrime,2025-01-20,10
+Nashik,Satpur Police Station,Fight,2025-01-07,20
+Nashik,Satpur Police Station,Fight,2025-01-26,1
+Nashik,Satpur Police Station,Fraud,2025-01-06,20
+Nashik,Satpur Police Station,Hit and Run,2025-01-02,2
+Nashik,Satpur Police Station,Hit and Run,2025-01-08,6
+Nashik,Satpur Police Station,Hit and Run,2025-01-17,12
+Nashik,Satpur Police Station,Kidnapping,2025-01-10,11
+Nashik,Satpur Police Station,Kidnapping,2025-01-16,10
+Nashik,Satpur Police Station,Kidnapping,2025-01-18,16
+Nashik,Satpur Police Station,Kidnapping,2025-01-21,22
+Nashik,Satpur Police Station,Murder,2025-01-03,19
+Nashik,Satpur Police Station,Murder,2025-01-09,25
+Nashik,Satpur Police Station,Murder,2025-01-19,16
+Nashik,Satpur Police Station,Murder,2025-01-27,23
+Nashik,Satpur Police Station,Other,2025-01-04,25
+Nashik,Satpur Police Station,Other,2025-01-11,6
+Nashik,Satpur Police Station,Other,2025-01-12,9
+Nashik,Satpur Police Station,Other,2025-01-23,16
+Nashik,Satpur Police Station,Other,2025-01-24,19
+Nashik,Satpur Police Station,Rape,2025-01-25,21
+Nashik,Satpur Police Station,Rape,2025-01-28,10
+Nashik,Satpur Police Station,Rape,2025-01-29,22
+Nashik,Satpur Police Station,Robbery,2025-01-05,9
+Nashik,Satpur Police Station,Robbery,2025-01-31,22
+Nashik,Satpur Police Station,Sexual Harassment,2025-01-14,8
+Nashik,Satpur Police Station,Sexual Harassment,2025-01-15,7
+Nashik,Satpur Police Station,Stalking,2025-01-22,15
+Nashik,Satpur Police Station,Stalking,2025-01-30,9
+Pune,Airport Police Station,Accident,2025-01-07,4
+Pune,Airport Police Station,Accident,2025-01-21,21
+Pune,Airport Police Station,Accident,2025-01-28,10
+Pune,Airport Police Station,Fight,2025-01-04,16
+Pune,Airport Police Station,Fight,2025-01-12,6
+Pune,Airport Police Station,Fight,2025-01-22,19
+Pune,Airport Police Station,Fight,2025-01-23,25
+Pune,Airport Police Station,Fight,2025-01-25,18
+Pune,Airport Police Station,Fight,2025-01-27,15
+Pune,Airport Police Station,Fraud,2025-01-06,2
+Pune,Airport Police Station,Hit and Run,2025-01-01,16
+Pune,Airport Police Station,Hit and Run,2025-01-13,13
+Pune,Airport Police Station,Hit and Run,2025-01-18,3
+Pune,Airport Police Station,Hit and Run,2025-01-20,12
+Pune,Airport Police Station,Kidnapping,2025-01-14,2
+Pune,Airport Police Station,Murder,2025-01-05,15
+Pune,Airport Police Station,Other,2025-01-09,1
+Pune,Airport Police Station,Other,2025-01-11,5
+Pune,Airport Police Station,Other,2025-01-24,13
+Pune,Airport Police Station,Other,2025-01-29,15
+Pune,Airport Police Station,Rape,2025-01-03,9
+Pune,Airport Police Station,Rape,2025-01-08,20
+Pune,Airport Police Station,Rape,2025-01-10,12
+Pune,Airport Police Station,Rape,2025-01-17,22
+Pune,Airport Police Station,Robbery,2025-01-19,4
+Pune,Airport Police Station,Robbery,2025-01-30,22
+Pune,Airport Police Station,Robbery,2025-01-31,13
+Pune,Airport Police Station,Theft,2025-01-02,20
+Pune,Airport Police Station,Theft,2025-01-15,3
+Pune,Airport Police Station,Theft,2025-01-16,24
+Pune,Airport Police Station,Theft,2025-01-26,2
+Pune,Bharti Vidyapeeth Police Station,Accident,2025-01-06,8
+Pune,Bharti Vidyapeeth Police Station,Accident,2025-01-23,11
+Pune,Bharti Vidyapeeth Police Station,Cybercrime,2025-01-15,14
+Pune,Bharti Vidyapeeth Police Station,Cybercrime,2025-01-26,18
+Pune,Bharti Vidyapeeth Police Station,Fight,2025-01-01,3
+Pune,Bharti Vidyapeeth Police Station,Fight,2025-01-02,15
+Pune,Bharti Vidyapeeth Police Station,Fight,2025-01-13,18
+Pune,Bharti Vidyapeeth Police Station,Fraud,2025-01-07,8
+Pune,Bharti Vidyapeeth Police Station,Fraud,2025-01-18,22
+Pune,Bharti Vidyapeeth Police Station,Fraud,2025-01-25,10
+Pune,Bharti Vidyapeeth Police Station,Hit and Run,2025-01-22,16
+Pune,Bharti Vidyapeeth Police Station,Kidnapping,2025-01-10,12
+Pune,Bharti Vidyapeeth Police Station,Kidnapping,2025-01-11,1
+Pune,Bharti Vidyapeeth Police Station,Kidnapping,2025-01-20,1
+Pune,Bharti Vidyapeeth Police Station,Kidnapping,2025-01-29,14
+Pune,Bharti Vidyapeeth Police Station,Murder,2025-01-08,13
+Pune,Bharti Vidyapeeth Police Station,Murder,2025-01-21,15
+Pune,Bharti Vidyapeeth Police Station,Murder,2025-01-27,1
+Pune,Bharti Vidyapeeth Police Station,Other,2025-01-03,25
+Pune,Bharti Vidyapeeth Police Station,Other,2025-01-12,8
+Pune,Bharti Vidyapeeth Police Station,Other,2025-01-30,23
+Pune,Bharti Vidyapeeth Police Station,Other,2025-01-31,13
+Pune,Bharti Vidyapeeth Police Station,Rape,2025-01-05,5
+Pune,Bharti Vidyapeeth Police Station,Rape,2025-01-14,3
+Pune,Bharti Vidyapeeth Police Station,Rape,2025-01-17,2
+Pune,Bharti Vidyapeeth Police Station,Sexual Harassment,2025-01-04,19
+Pune,Bharti Vidyapeeth Police Station,Sexual Harassment,2025-01-16,16
+Pune,Bharti Vidyapeeth Police Station,Sexual Harassment,2025-01-28,23
+Pune,Bharti Vidyapeeth Police Station,Stalking,2025-01-09,24
+Pune,Bharti Vidyapeeth Police Station,Theft,2025-01-19,19
+Pune,Bharti Vidyapeeth Police Station,Theft,2025-01-24,14
+Pune,Bhosari Police Station,Accident,2025-01-08,20
+Pune,Bhosari Police Station,Accident,2025-01-15,11
+Pune,Bhosari Police Station,Accident,2025-01-21,8
+Pune,Bhosari Police Station,Cybercrime,2025-01-04,11
+Pune,Bhosari Police Station,Cybercrime,2025-01-16,9
+Pune,Bhosari Police Station,Cybercrime,2025-01-19,16
+Pune,Bhosari Police Station,Cybercrime,2025-01-28,22
+Pune,Bhosari Police Station,Fight,2025-01-02,1
+Pune,Bhosari Police Station,Fight,2025-01-20,12
+Pune,Bhosari Police Station,Fight,2025-01-29,15
+Pune,Bhosari Police Station,Fraud,2025-01-03,22
+Pune,Bhosari Police Station,Hit and Run,2025-01-24,23
+Pune,Bhosari Police Station,Kidnapping,2025-01-05,25
+Pune,Bhosari Police Station,Kidnapping,2025-01-09,8
+Pune,Bhosari Police Station,Kidnapping,2025-01-14,14
+Pune,Bhosari Police Station,Kidnapping,2025-01-17,19
+Pune,Bhosari Police Station,Kidnapping,2025-01-18,23
+Pune,Bhosari Police Station,Kidnapping,2025-01-27,12
+Pune,Bhosari Police Station,Murder,2025-01-07,22
+Pune,Bhosari Police Station,Other,2025-01-25,14
+Pune,Bhosari Police Station,Rape,2025-01-23,4
+Pune,Bhosari Police Station,Robbery,2025-01-01,8
+Pune,Bhosari Police Station,Robbery,2025-01-31,15
+Pune,Bhosari Police Station,Sexual Harassment,2025-01-22,9
+Pune,Bhosari Police Station,Sexual Harassment,2025-01-26,2
+Pune,Bhosari Police Station,Sexual Harassment,2025-01-30,22
+Pune,Bhosari Police Station,Stalking,2025-01-10,12
+Pune,Bhosari Police Station,Stalking,2025-01-12,2
+Pune,Bhosari Police Station,Theft,2025-01-06,14
+Pune,Bhosari Police Station,Theft,2025-01-11,15
+Pune,Bhosari Police Station,Theft,2025-01-13,4
+Pune,Chandan Nagar Police Station,Accident,2025-01-01,5
+Pune,Chandan Nagar Police Station,Accident,2025-01-09,18
+Pune,Chandan Nagar Police Station,Accident,2025-01-15,2
+Pune,Chandan Nagar Police Station,Accident,2025-01-18,17
+Pune,Chandan Nagar Police Station,Accident,2025-01-19,10
+Pune,Chandan Nagar Police Station,Accident,2025-01-21,24
+Pune,Chandan Nagar Police Station,Accident,2025-01-31,19
+Pune,Chandan Nagar Police Station,Cybercrime,2025-01-05,20
+Pune,Chandan Nagar Police Station,Fraud,2025-01-02,22
+Pune,Chandan Nagar Police Station,Fraud,2025-01-17,16
+Pune,Chandan Nagar Police Station,Fraud,2025-01-20,13
+Pune,Chandan Nagar Police Station,Fraud,2025-01-22,20
+Pune,Chandan Nagar Police Station,Kidnapping,2025-01-03,7
+Pune,Chandan Nagar Police Station,Kidnapping,2025-01-07,9
+Pune,Chandan Nagar Police Station,Kidnapping,2025-01-12,10
+Pune,Chandan Nagar Police Station,Kidnapping,2025-01-24,9
+Pune,Chandan Nagar Police Station,Kidnapping,2025-01-25,25
+Pune,Chandan Nagar Police Station,Kidnapping,2025-01-30,4
+Pune,Chandan Nagar Police Station,Murder,2025-01-06,3
+Pune,Chandan Nagar Police Station,Rape,2025-01-10,25
+Pune,Chandan Nagar Police Station,Rape,2025-01-14,18
+Pune,Chandan Nagar Police Station,Robbery,2025-01-16,17
+Pune,Chandan Nagar Police Station,Robbery,2025-01-26,10
+Pune,Chandan Nagar Police Station,Robbery,2025-01-27,10
+Pune,Chandan Nagar Police Station,Sexual Harassment,2025-01-08,16
+Pune,Chandan Nagar Police Station,Sexual Harassment,2025-01-13,17
+Pune,Chandan Nagar Police Station,Sexual Harassment,2025-01-23,9
+Pune,Chandan Nagar Police Station,Stalking,2025-01-04,4
+Pune,Chandan Nagar Police Station,Stalking,2025-01-11,4
+Pune,Chandan Nagar Police Station,Stalking,2025-01-29,25
+Pune,Chandan Nagar Police Station,Theft,2025-01-28,19
+Pune,Chaturshrungi Police Station,Accident,2025-01-09,1
+Pune,Chaturshrungi Police Station,Accident,2025-01-15,12
+Pune,Chaturshrungi Police Station,Accident,2025-01-31,3
+Pune,Chaturshrungi Police Station,Cybercrime,2025-01-02,15
+Pune,Chaturshrungi Police Station,Cybercrime,2025-01-08,19
+Pune,Chaturshrungi Police Station,Cybercrime,2025-01-23,3
+Pune,Chaturshrungi Police Station,Cybercrime,2025-01-26,20
+Pune,Chaturshrungi Police Station,Fight,2025-01-03,24
+Pune,Chaturshrungi Police Station,Fight,2025-01-10,25
+Pune,Chaturshrungi Police Station,Fight,2025-01-21,7
+Pune,Chaturshrungi Police Station,Fight,2025-01-22,7
+Pune,Chaturshrungi Police Station,Fight,2025-01-25,3
+Pune,Chaturshrungi Police Station,Fraud,2025-01-17,25
+Pune,Chaturshrungi Police Station,Fraud,2025-01-29,9
+Pune,Chaturshrungi Police Station,Hit and Run,2025-01-04,21
+Pune,Chaturshrungi Police Station,Hit and Run,2025-01-16,4
+Pune,Chaturshrungi Police Station,Hit and Run,2025-01-20,10
+Pune,Chaturshrungi Police Station,Hit and Run,2025-01-24,11
+Pune,Chaturshrungi Police Station,Hit and Run,2025-01-30,18
+Pune,Chaturshrungi Police Station,Kidnapping,2025-01-11,12
+Pune,Chaturshrungi Police Station,Murder,2025-01-06,10
+Pune,Chaturshrungi Police Station,Murder,2025-01-14,8
+Pune,Chaturshrungi Police Station,Other,2025-01-27,11
+Pune,Chaturshrungi Police Station,Other,2025-01-28,15
+Pune,Chaturshrungi Police Station,Rape,2025-01-01,22
+Pune,Chaturshrungi Police Station,Rape,2025-01-19,23
+Pune,Chaturshrungi Police Station,Robbery,2025-01-12,6
+Pune,Chaturshrungi Police Station,Stalking,2025-01-05,8
+Pune,Chaturshrungi Police Station,Stalking,2025-01-18,4
+Pune,Chaturshrungi Police Station,Theft,2025-01-07,2
+Pune,Chaturshrungi Police Station,Theft,2025-01-13,24
+Pune,Dattawadi Police Station,Accident,2025-01-04,11
+Pune,Dattawadi Police Station,Accident,2025-01-18,16
+Pune,Dattawadi Police Station,Accident,2025-01-29,4
+Pune,Dattawadi Police Station,Accident,2025-01-31,22
+Pune,Dattawadi Police Station,Cybercrime,2025-01-01,11
+Pune,Dattawadi Police Station,Cybercrime,2025-01-06,19
+Pune,Dattawadi Police Station,Cybercrime,2025-01-09,9
+Pune,Dattawadi Police Station,Cybercrime,2025-01-26,18
+Pune,Dattawadi Police Station,Fight,2025-01-07,2
+Pune,Dattawadi Police Station,Fight,2025-01-16,7
+Pune,Dattawadi Police Station,Fight,2025-01-17,24
+Pune,Dattawadi Police Station,Fight,2025-01-30,19
+Pune,Dattawadi Police Station,Fraud,2025-01-03,24
+Pune,Dattawadi Police Station,Hit and Run,2025-01-24,1
+Pune,Dattawadi Police Station,Kidnapping,2025-01-15,18
+Pune,Dattawadi Police Station,Kidnapping,2025-01-25,17
+Pune,Dattawadi Police Station,Murder,2025-01-05,25
+Pune,Dattawadi Police Station,Murder,2025-01-10,5
+Pune,Dattawadi Police Station,Murder,2025-01-12,18
+Pune,Dattawadi Police Station,Murder,2025-01-28,22
+Pune,Dattawadi Police Station,Other,2025-01-19,17
+Pune,Dattawadi Police Station,Other,2025-01-23,15
+Pune,Dattawadi Police Station,Rape,2025-01-14,2
+Pune,Dattawadi Police Station,Sexual Harassment,2025-01-02,22
+Pune,Dattawadi Police Station,Sexual Harassment,2025-01-08,21
+Pune,Dattawadi Police Station,Sexual Harassment,2025-01-21,21
+Pune,Dattawadi Police Station,Sexual Harassment,2025-01-27,25
+Pune,Dattawadi Police Station,Stalking,2025-01-22,24
+Pune,Dattawadi Police Station,Theft,2025-01-11,13
+Pune,Dattawadi Police Station,Theft,2025-01-13,11
+Pune,Dattawadi Police Station,Theft,2025-01-20,8
+Pune,Deccan Gymkhana Police Station,Accident,2025-01-02,19
+Pune,Deccan Gymkhana Police Station,Accident,2025-01-12,8
+Pune,Deccan Gymkhana Police Station,Accident,2025-01-25,3
+Pune,Deccan Gymkhana Police Station,Cybercrime,2025-01-04,7
+Pune,Deccan Gymkhana Police Station,Fight,2025-01-08,23
+Pune,Deccan Gymkhana Police Station,Fight,2025-01-26,13
+Pune,Deccan Gymkhana Police Station,Fight,2025-01-30,2
+Pune,Deccan Gymkhana Police Station,Fraud,2025-01-09,16
+Pune,Deccan Gymkhana Police Station,Fraud,2025-01-16,20
+Pune,Deccan Gymkhana Police Station,Hit and Run,2025-01-20,20
+Pune,Deccan Gymkhana Police Station,Hit and Run,2025-01-22,21
+Pune,Deccan Gymkhana Police Station,Hit and Run,2025-01-23,2
+Pune,Deccan Gymkhana Police Station,Murder,2025-01-15,10
+Pune,Deccan Gymkhana Police Station,Murder,2025-01-27,3
+Pune,Deccan Gymkhana Police Station,Other,2025-01-06,15
+Pune,Deccan Gymkhana Police Station,Other,2025-01-13,15
+Pune,Deccan Gymkhana Police Station,Other,2025-01-29,18
+Pune,Deccan Gymkhana Police Station,Rape,2025-01-05,5
+Pune,Deccan Gymkhana Police Station,Robbery,2025-01-03,20
+Pune,Deccan Gymkhana Police Station,Robbery,2025-01-07,18
+Pune,Deccan Gymkhana Police Station,Robbery,2025-01-17,19
+Pune,Deccan Gymkhana Police Station,Robbery,2025-01-24,15
+Pune,Deccan Gymkhana Police Station,Robbery,2025-01-28,4
+Pune,Deccan Gymkhana Police Station,Robbery,2025-01-31,12
+Pune,Deccan Gymkhana Police Station,Sexual Harassment,2025-01-10,21
+Pune,Deccan Gymkhana Police Station,Sexual Harassment,2025-01-11,8
+Pune,Deccan Gymkhana Police Station,Sexual Harassment,2025-01-14,23
+Pune,Deccan Gymkhana Police Station,Sexual Harassment,2025-01-18,12
+Pune,Deccan Gymkhana Police Station,Sexual Harassment,2025-01-21,14
+Pune,Deccan Gymkhana Police Station,Theft,2025-01-01,21
+Pune,Deccan Gymkhana Police Station,Theft,2025-01-19,22
+Pune,Deccan Police Station,Accident,2025-01-01,19
+Pune,Deccan Police Station,Cybercrime,2025-01-02,13
+Pune,Deccan Police Station,Cybercrime,2025-01-04,1
+Pune,Deccan Police Station,Cybercrime,2025-01-08,2
+Pune,Deccan Police Station,Cybercrime,2025-01-10,25
+Pune,Deccan Police Station,Cybercrime,2025-01-15,7
+Pune,Deccan Police Station,Cybercrime,2025-01-24,18
+Pune,Deccan Police Station,Cybercrime,2025-01-26,4
+Pune,Deccan Police Station,Fight,2025-01-22,14
+Pune,Deccan Police Station,Fraud,2025-01-13,18
+Pune,Deccan Police Station,Fraud,2025-01-18,22
+Pune,Deccan Police Station,Hit and Run,2025-01-06,6
+Pune,Deccan Police Station,Hit and Run,2025-01-16,5
+Pune,Deccan Police Station,Hit and Run,2025-01-21,1
+Pune,Deccan Police Station,Hit and Run,2025-01-25,4
+Pune,Deccan Police Station,Hit and Run,2025-01-31,8
+Pune,Deccan Police Station,Kidnapping,2025-01-28,1
+Pune,Deccan Police Station,Kidnapping,2025-01-29,3
+Pune,Deccan Police Station,Murder,2025-01-03,22
+Pune,Deccan Police Station,Murder,2025-01-05,19
+Pune,Deccan Police Station,Murder,2025-01-12,25
+Pune,Deccan Police Station,Murder,2025-01-19,7
+Pune,Deccan Police Station,Murder,2025-01-30,20
+Pune,Deccan Police Station,Other,2025-01-17,19
+Pune,Deccan Police Station,Rape,2025-01-11,24
+Pune,Deccan Police Station,Robbery,2025-01-09,21
+Pune,Deccan Police Station,Robbery,2025-01-14,7
+Pune,Deccan Police Station,Robbery,2025-01-20,8
+Pune,Deccan Police Station,Sexual Harassment,2025-01-27,10
+Pune,Deccan Police Station,Stalking,2025-01-07,1
+Pune,Deccan Police Station,Stalking,2025-01-23,6
+Pune,Dighi Police Station,Accident,2025-01-06,3
+Pune,Dighi Police Station,Accident,2025-01-09,5
+Pune,Dighi Police Station,Accident,2025-01-30,22
+Pune,Dighi Police Station,Cybercrime,2025-01-25,8
+Pune,Dighi Police Station,Cybercrime,2025-01-31,2
+Pune,Dighi Police Station,Fight,2025-01-20,22
+Pune,Dighi Police Station,Fraud,2025-01-05,21
+Pune,Dighi Police Station,Fraud,2025-01-14,2
+Pune,Dighi Police Station,Fraud,2025-01-16,7
+Pune,Dighi Police Station,Fraud,2025-01-21,10
+Pune,Dighi Police Station,Hit and Run,2025-01-11,23
+Pune,Dighi Police Station,Hit and Run,2025-01-17,21
+Pune,Dighi Police Station,Hit and Run,2025-01-22,17
+Pune,Dighi Police Station,Kidnapping,2025-01-02,3
+Pune,Dighi Police Station,Kidnapping,2025-01-15,22
+Pune,Dighi Police Station,Kidnapping,2025-01-24,21
+Pune,Dighi Police Station,Other,2025-01-04,5
+Pune,Dighi Police Station,Other,2025-01-10,24
+Pune,Dighi Police Station,Other,2025-01-26,10
+Pune,Dighi Police Station,Other,2025-01-28,20
+Pune,Dighi Police Station,Rape,2025-01-23,18
+Pune,Dighi Police Station,Rape,2025-01-29,8
+Pune,Dighi Police Station,Robbery,2025-01-03,4
+Pune,Dighi Police Station,Robbery,2025-01-07,12
+Pune,Dighi Police Station,Robbery,2025-01-19,21
+Pune,Dighi Police Station,Sexual Harassment,2025-01-13,23
+Pune,Dighi Police Station,Stalking,2025-01-01,21
+Pune,Dighi Police Station,Stalking,2025-01-12,15
+Pune,Dighi Police Station,Theft,2025-01-08,15
+Pune,Dighi Police Station,Theft,2025-01-18,3
+Pune,Dighi Police Station,Theft,2025-01-27,6
+Pune,Faraskhana Police Station,Accident,2025-01-13,10
+Pune,Faraskhana Police Station,Accident,2025-01-26,24
+Pune,Faraskhana Police Station,Cybercrime,2025-01-10,23
+Pune,Faraskhana Police Station,Cybercrime,2025-01-11,19
+Pune,Faraskhana Police Station,Fight,2025-01-01,19
+Pune,Faraskhana Police Station,Fight,2025-01-03,16
+Pune,Faraskhana Police Station,Fight,2025-01-06,17
+Pune,Faraskhana Police Station,Fight,2025-01-08,23
+Pune,Faraskhana Police Station,Fight,2025-01-28,22
+Pune,Faraskhana Police Station,Fraud,2025-01-25,11
+Pune,Faraskhana Police Station,Hit and Run,2025-01-07,9
+Pune,Faraskhana Police Station,Hit and Run,2025-01-18,12
+Pune,Faraskhana Police Station,Hit and Run,2025-01-27,22
+Pune,Faraskhana Police Station,Hit and Run,2025-01-29,6
+Pune,Faraskhana Police Station,Kidnapping,2025-01-19,3
+Pune,Faraskhana Police Station,Kidnapping,2025-01-23,2
+Pune,Faraskhana Police Station,Murder,2025-01-12,15
+Pune,Faraskhana Police Station,Murder,2025-01-16,9
+Pune,Faraskhana Police Station,Murder,2025-01-21,25
+Pune,Faraskhana Police Station,Other,2025-01-20,14
+Pune,Faraskhana Police Station,Other,2025-01-22,11
+Pune,Faraskhana Police Station,Rape,2025-01-14,15
+Pune,Faraskhana Police Station,Rape,2025-01-15,4
+Pune,Faraskhana Police Station,Rape,2025-01-17,20
+Pune,Faraskhana Police Station,Sexual Harassment,2025-01-05,14
+Pune,Faraskhana Police Station,Sexual Harassment,2025-01-09,13
+Pune,Faraskhana Police Station,Sexual Harassment,2025-01-24,10
+Pune,Faraskhana Police Station,Sexual Harassment,2025-01-31,21
+Pune,Faraskhana Police Station,Stalking,2025-01-02,13
+Pune,Faraskhana Police Station,Theft,2025-01-04,1
+Pune,Faraskhana Police Station,Theft,2025-01-30,22
+Pune,Hadapsar Police Station,Accident,2025-01-14,12
+Pune,Hadapsar Police Station,Accident,2025-01-18,15
+Pune,Hadapsar Police Station,Accident,2025-01-22,25
+Pune,Hadapsar Police Station,Accident,2025-01-23,25
+Pune,Hadapsar Police Station,Cybercrime,2025-01-05,8
+Pune,Hadapsar Police Station,Cybercrime,2025-01-10,5
+Pune,Hadapsar Police Station,Fight,2025-01-26,10
+Pune,Hadapsar Police Station,Fraud,2025-01-16,12
+Pune,Hadapsar Police Station,Kidnapping,2025-01-08,25
+Pune,Hadapsar Police Station,Kidnapping,2025-01-13,5
+Pune,Hadapsar Police Station,Murder,2025-01-03,7
+Pune,Hadapsar Police Station,Murder,2025-01-04,10
+Pune,Hadapsar Police Station,Murder,2025-01-17,4
+Pune,Hadapsar Police Station,Other,2025-01-01,14
+Pune,Hadapsar Police Station,Other,2025-01-07,2
+Pune,Hadapsar Police Station,Other,2025-01-09,6
+Pune,Hadapsar Police Station,Rape,2025-01-28,8
+Pune,Hadapsar Police Station,Robbery,2025-01-20,22
+Pune,Hadapsar Police Station,Robbery,2025-01-30,23
+Pune,Hadapsar Police Station,Robbery,2025-01-31,2
+Pune,Hadapsar Police Station,Sexual Harassment,2025-01-02,23
+Pune,Hadapsar Police Station,Sexual Harassment,2025-01-24,16
+Pune,Hadapsar Police Station,Stalking,2025-01-15,13
+Pune,Hadapsar Police Station,Stalking,2025-01-19,10
+Pune,Hadapsar Police Station,Stalking,2025-01-25,22
+Pune,Hadapsar Police Station,Theft,2025-01-06,11
+Pune,Hadapsar Police Station,Theft,2025-01-11,1
+Pune,Hadapsar Police Station,Theft,2025-01-12,12
+Pune,Hadapsar Police Station,Theft,2025-01-21,7
+Pune,Hadapsar Police Station,Theft,2025-01-27,10
+Pune,Hadapsar Police Station,Theft,2025-01-29,1
+Pune,Katraj Police Station,Accident,2025-01-04,8
+Pune,Katraj Police Station,Accident,2025-01-08,1
+Pune,Katraj Police Station,Accident,2025-01-26,10
+Pune,Katraj Police Station,Cybercrime,2025-01-06,16
+Pune,Katraj Police Station,Cybercrime,2025-01-07,10
+Pune,Katraj Police Station,Cybercrime,2025-01-11,23
+Pune,Katraj Police Station,Fight,2025-01-13,11
+Pune,Katraj Police Station,Fight,2025-01-21,12
+Pune,Katraj Police Station,Hit and Run,2025-01-03,11
+Pune,Katraj Police Station,Hit and Run,2025-01-18,7
+Pune,Katraj Police Station,Hit and Run,2025-01-30,11
+Pune,Katraj Police Station,Kidnapping,2025-01-10,3
+Pune,Katraj Police Station,Kidnapping,2025-01-12,7
+Pune,Katraj Police Station,Kidnapping,2025-01-24,5
+Pune,Katraj Police Station,Murder,2025-01-05,12
+Pune,Katraj Police Station,Murder,2025-01-14,21
+Pune,Katraj Police Station,Murder,2025-01-17,1
+Pune,Katraj Police Station,Murder,2025-01-20,17
+Pune,Katraj Police Station,Murder,2025-01-29,5
+Pune,Katraj Police Station,Other,2025-01-16,6
+Pune,Katraj Police Station,Other,2025-01-31,21
+Pune,Katraj Police Station,Rape,2025-01-15,13
+Pune,Katraj Police Station,Rape,2025-01-22,24
+Pune,Katraj Police Station,Rape,2025-01-25,19
+Pune,Katraj Police Station,Robbery,2025-01-19,15
+Pune,Katraj Police Station,Sexual Harassment,2025-01-01,4
+Pune,Katraj Police Station,Sexual Harassment,2025-01-02,9
+Pune,Katraj Police Station,Sexual Harassment,2025-01-09,15
+Pune,Katraj Police Station,Stalking,2025-01-23,11
+Pune,Katraj Police Station,Stalking,2025-01-28,3
+Pune,Katraj Police Station,Theft,2025-01-27,9
+Pune,Khadki Police Station,Accident,2025-01-19,3
+Pune,Khadki Police Station,Cybercrime,2025-01-10,18
+Pune,Khadki Police Station,Cybercrime,2025-01-12,18
+Pune,Khadki Police Station,Cybercrime,2025-01-20,9
+Pune,Khadki Police Station,Cybercrime,2025-01-27,10
+Pune,Khadki Police Station,Fight,2025-01-08,14
+Pune,Khadki Police Station,Fraud,2025-01-13,20
+Pune,Khadki Police Station,Fraud,2025-01-21,15
+Pune,Khadki Police Station,Fraud,2025-01-22,15
+Pune,Khadki Police Station,Fraud,2025-01-31,11
+Pune,Khadki Police Station,Hit and Run,2025-01-03,11
+Pune,Khadki Police Station,Hit and Run,2025-01-05,17
+Pune,Khadki Police Station,Hit and Run,2025-01-07,25
+Pune,Khadki Police Station,Kidnapping,2025-01-29,2
+Pune,Khadki Police Station,Kidnapping,2025-01-30,25
+Pune,Khadki Police Station,Murder,2025-01-04,12
+Pune,Khadki Police Station,Murder,2025-01-06,16
+Pune,Khadki Police Station,Murder,2025-01-14,24
+Pune,Khadki Police Station,Murder,2025-01-26,8
+Pune,Khadki Police Station,Rape,2025-01-18,10
+Pune,Khadki Police Station,Robbery,2025-01-01,4
+Pune,Khadki Police Station,Robbery,2025-01-09,4
+Pune,Khadki Police Station,Robbery,2025-01-23,3
+Pune,Khadki Police Station,Robbery,2025-01-24,19
+Pune,Khadki Police Station,Robbery,2025-01-25,15
+Pune,Khadki Police Station,Sexual Harassment,2025-01-15,21
+Pune,Khadki Police Station,Sexual Harassment,2025-01-17,23
+Pune,Khadki Police Station,Stalking,2025-01-11,7
+Pune,Khadki Police Station,Theft,2025-01-02,1
+Pune,Khadki Police Station,Theft,2025-01-16,4
+Pune,Khadki Police Station,Theft,2025-01-28,5
+Pune,Kondhwa Police Station,Accident,2025-01-12,6
+Pune,Kondhwa Police Station,Accident,2025-01-21,20
+Pune,Kondhwa Police Station,Cybercrime,2025-01-07,11
+Pune,Kondhwa Police Station,Cybercrime,2025-01-16,20
+Pune,Kondhwa Police Station,Fraud,2025-01-01,4
+Pune,Kondhwa Police Station,Fraud,2025-01-24,13
+Pune,Kondhwa Police Station,Hit and Run,2025-01-08,4
+Pune,Kondhwa Police Station,Hit and Run,2025-01-11,18
+Pune,Kondhwa Police Station,Hit and Run,2025-01-19,24
+Pune,Kondhwa Police Station,Kidnapping,2025-01-03,23
+Pune,Kondhwa Police Station,Kidnapping,2025-01-18,21
+Pune,Kondhwa Police Station,Kidnapping,2025-01-22,18
+Pune,Kondhwa Police Station,Kidnapping,2025-01-26,22
+Pune,Kondhwa Police Station,Kidnapping,2025-01-30,24
+Pune,Kondhwa Police Station,Murder,2025-01-02,18
+Pune,Kondhwa Police Station,Murder,2025-01-04,5
+Pune,Kondhwa Police Station,Murder,2025-01-20,15
+Pune,Kondhwa Police Station,Murder,2025-01-23,15
+Pune,Kondhwa Police Station,Murder,2025-01-25,18
+Pune,Kondhwa Police Station,Other,2025-01-06,11
+Pune,Kondhwa Police Station,Robbery,2025-01-09,21
+Pune,Kondhwa Police Station,Robbery,2025-01-13,9
+Pune,Kondhwa Police Station,Robbery,2025-01-15,12
+Pune,Kondhwa Police Station,Sexual Harassment,2025-01-05,22
+Pune,Kondhwa Police Station,Sexual Harassment,2025-01-17,1
+Pune,Kondhwa Police Station,Sexual Harassment,2025-01-27,25
+Pune,Kondhwa Police Station,Sexual Harassment,2025-01-28,22
+Pune,Kondhwa Police Station,Sexual Harassment,2025-01-29,5
+Pune,Kondhwa Police Station,Theft,2025-01-10,4
+Pune,Kondhwa Police Station,Theft,2025-01-14,18
+Pune,Kondhwa Police Station,Theft,2025-01-31,4
+Pune,Koregaon Park Police Station,Accident,2025-01-12,20
+Pune,Koregaon Park Police Station,Accident,2025-01-14,8
+Pune,Koregaon Park Police Station,Accident,2025-01-27,2
+Pune,Koregaon Park Police Station,Cybercrime,2025-01-04,7
+Pune,Koregaon Park Police Station,Cybercrime,2025-01-07,17
+Pune,Koregaon Park Police Station,Cybercrime,2025-01-15,14
+Pune,Koregaon Park Police Station,Cybercrime,2025-01-28,3
+Pune,Koregaon Park Police Station,Fight,2025-01-02,23
+Pune,Koregaon Park Police Station,Fight,2025-01-10,10
+Pune,Koregaon Park Police Station,Fight,2025-01-17,20
+Pune,Koregaon Park Police Station,Fight,2025-01-18,8
+Pune,Koregaon Park Police Station,Fraud,2025-01-31,8
+Pune,Koregaon Park Police Station,Kidnapping,2025-01-03,4
+Pune,Koregaon Park Police Station,Kidnapping,2025-01-24,2
+Pune,Koregaon Park Police Station,Other,2025-01-22,17
+Pune,Koregaon Park Police Station,Rape,2025-01-05,1
+Pune,Koregaon Park Police Station,Rape,2025-01-11,8
+Pune,Koregaon Park Police Station,Rape,2025-01-21,6
+Pune,Koregaon Park Police Station,Robbery,2025-01-13,3
+Pune,Koregaon Park Police Station,Robbery,2025-01-19,19
+Pune,Koregaon Park Police Station,Robbery,2025-01-25,1
+Pune,Koregaon Park Police Station,Sexual Harassment,2025-01-06,19
+Pune,Koregaon Park Police Station,Sexual Harassment,2025-01-20,9
+Pune,Koregaon Park Police Station,Sexual Harassment,2025-01-29,4
+Pune,Koregaon Park Police Station,Sexual Harassment,2025-01-30,24
+Pune,Koregaon Park Police Station,Stalking,2025-01-01,19
+Pune,Koregaon Park Police Station,Stalking,2025-01-08,5
+Pune,Koregaon Park Police Station,Stalking,2025-01-23,7
+Pune,Koregaon Park Police Station,Stalking,2025-01-26,10
+Pune,Koregaon Park Police Station,Theft,2025-01-09,23
+Pune,Koregaon Park Police Station,Theft,2025-01-16,21
+Pune,Kothrud Police Station,Accident,2025-01-02,24
+Pune,Kothrud Police Station,Accident,2025-01-19,9
+Pune,Kothrud Police Station,Cybercrime,2025-01-08,10
+Pune,Kothrud Police Station,Cybercrime,2025-01-12,7
+Pune,Kothrud Police Station,Cybercrime,2025-01-25,24
+Pune,Kothrud Police Station,Fraud,2025-01-23,10
+Pune,Kothrud Police Station,Hit and Run,2025-01-04,21
+Pune,Kothrud Police Station,Hit and Run,2025-01-07,25
+Pune,Kothrud Police Station,Hit and Run,2025-01-09,13
+Pune,Kothrud Police Station,Hit and Run,2025-01-13,18
+Pune,Kothrud Police Station,Hit and Run,2025-01-14,16
+Pune,Kothrud Police Station,Hit and Run,2025-01-18,1
+Pune,Kothrud Police Station,Hit and Run,2025-01-20,4
+Pune,Kothrud Police Station,Kidnapping,2025-01-05,7
+Pune,Kothrud Police Station,Kidnapping,2025-01-17,23
+Pune,Kothrud Police Station,Kidnapping,2025-01-24,23
+Pune,Kothrud Police Station,Murder,2025-01-03,16
+Pune,Kothrud Police Station,Murder,2025-01-06,3
+Pune,Kothrud Police Station,Rape,2025-01-22,12
+Pune,Kothrud Police Station,Rape,2025-01-26,5
+Pune,Kothrud Police Station,Rape,2025-01-29,20
+Pune,Kothrud Police Station,Robbery,2025-01-10,2
+Pune,Kothrud Police Station,Sexual Harassment,2025-01-01,25
+Pune,Kothrud Police Station,Sexual Harassment,2025-01-15,15
+Pune,Kothrud Police Station,Sexual Harassment,2025-01-16,11
+Pune,Kothrud Police Station,Sexual Harassment,2025-01-28,4
+Pune,Kothrud Police Station,Stalking,2025-01-11,18
+Pune,Kothrud Police Station,Theft,2025-01-21,14
+Pune,Kothrud Police Station,Theft,2025-01-27,13
+Pune,Kothrud Police Station,Theft,2025-01-30,23
+Pune,Kothrud Police Station,Theft,2025-01-31,3
+Pune,Market Yard Police Station,Accident,2025-01-12,25
+Pune,Market Yard Police Station,Cybercrime,2025-01-03,23
+Pune,Market Yard Police Station,Cybercrime,2025-01-21,5
+Pune,Market Yard Police Station,Fight,2025-01-13,20
+Pune,Market Yard Police Station,Fight,2025-01-19,24
+Pune,Market Yard Police Station,Fight,2025-01-26,12
+Pune,Market Yard Police Station,Fight,2025-01-28,19
+Pune,Market Yard Police Station,Fraud,2025-01-07,23
+Pune,Market Yard Police Station,Fraud,2025-01-27,15
+Pune,Market Yard Police Station,Hit and Run,2025-01-10,10
+Pune,Market Yard Police Station,Hit and Run,2025-01-17,12
+Pune,Market Yard Police Station,Kidnapping,2025-01-18,25
+Pune,Market Yard Police Station,Kidnapping,2025-01-23,22
+Pune,Market Yard Police Station,Kidnapping,2025-01-25,8
+Pune,Market Yard Police Station,Murder,2025-01-04,6
+Pune,Market Yard Police Station,Murder,2025-01-08,19
+Pune,Market Yard Police Station,Murder,2025-01-14,8
+Pune,Market Yard Police Station,Murder,2025-01-16,21
+Pune,Market Yard Police Station,Other,2025-01-01,20
+Pune,Market Yard Police Station,Other,2025-01-02,5
+Pune,Market Yard Police Station,Other,2025-01-09,14
+Pune,Market Yard Police Station,Other,2025-01-15,25
+Pune,Market Yard Police Station,Other,2025-01-30,21
+Pune,Market Yard Police Station,Rape,2025-01-22,21
+Pune,Market Yard Police Station,Robbery,2025-01-29,21
+Pune,Market Yard Police Station,Robbery,2025-01-31,7
+Pune,Market Yard Police Station,Theft,2025-01-05,21
+Pune,Market Yard Police Station,Theft,2025-01-06,17
+Pune,Market Yard Police Station,Theft,2025-01-11,23
+Pune,Market Yard Police Station,Theft,2025-01-20,8
+Pune,Market Yard Police Station,Theft,2025-01-24,1
+Pune,Mundhwa Police Station,Accident,2025-01-11,24
+Pune,Mundhwa Police Station,Accident,2025-01-15,15
+Pune,Mundhwa Police Station,Accident,2025-01-23,10
+Pune,Mundhwa Police Station,Accident,2025-01-31,2
+Pune,Mundhwa Police Station,Cybercrime,2025-01-21,21
+Pune,Mundhwa Police Station,Cybercrime,2025-01-28,9
+Pune,Mundhwa Police Station,Fight,2025-01-01,3
+Pune,Mundhwa Police Station,Fight,2025-01-30,23
+Pune,Mundhwa Police Station,Fraud,2025-01-19,24
+Pune,Mundhwa Police Station,Fraud,2025-01-25,24
+Pune,Mundhwa Police Station,Hit and Run,2025-01-07,13
+Pune,Mundhwa Police Station,Hit and Run,2025-01-09,13
+Pune,Mundhwa Police Station,Kidnapping,2025-01-02,9
+Pune,Mundhwa Police Station,Kidnapping,2025-01-05,3
+Pune,Mundhwa Police Station,Kidnapping,2025-01-12,1
+Pune,Mundhwa Police Station,Kidnapping,2025-01-24,24
+Pune,Mundhwa Police Station,Murder,2025-01-14,11
+Pune,Mundhwa Police Station,Murder,2025-01-16,6
+Pune,Mundhwa Police Station,Murder,2025-01-17,5
+Pune,Mundhwa Police Station,Murder,2025-01-26,15
+Pune,Mundhwa Police Station,Other,2025-01-18,6
+Pune,Mundhwa Police Station,Rape,2025-01-04,6
+Pune,Mundhwa Police Station,Rape,2025-01-08,24
+Pune,Mundhwa Police Station,Rape,2025-01-10,5
+Pune,Mundhwa Police Station,Rape,2025-01-20,14
+Pune,Mundhwa Police Station,Rape,2025-01-22,9
+Pune,Mundhwa Police Station,Sexual Harassment,2025-01-06,23
+Pune,Mundhwa Police Station,Sexual Harassment,2025-01-13,21
+Pune,Mundhwa Police Station,Sexual Harassment,2025-01-29,17
+Pune,Mundhwa Police Station,Stalking,2025-01-27,11
+Pune,Mundhwa Police Station,Theft,2025-01-03,6
+Pune,Nigdi Police Station,Accident,2025-01-30,25
+Pune,Nigdi Police Station,Cybercrime,2025-01-02,19
+Pune,Nigdi Police Station,Cybercrime,2025-01-04,18
+Pune,Nigdi Police Station,Cybercrime,2025-01-17,4
+Pune,Nigdi Police Station,Cybercrime,2025-01-27,18
+Pune,Nigdi Police Station,Fight,2025-01-14,1
+Pune,Nigdi Police Station,Fight,2025-01-18,1
+Pune,Nigdi Police Station,Fraud,2025-01-12,18
+Pune,Nigdi Police Station,Hit and Run,2025-01-01,2
+Pune,Nigdi Police Station,Hit and Run,2025-01-21,19
+Pune,Nigdi Police Station,Kidnapping,2025-01-07,2
+Pune,Nigdi Police Station,Kidnapping,2025-01-10,25
+Pune,Nigdi Police Station,Murder,2025-01-09,24
+Pune,Nigdi Police Station,Murder,2025-01-24,11
+Pune,Nigdi Police Station,Other,2025-01-22,5
+Pune,Nigdi Police Station,Other,2025-01-31,9
+Pune,Nigdi Police Station,Rape,2025-01-05,23
+Pune,Nigdi Police Station,Rape,2025-01-19,25
+Pune,Nigdi Police Station,Rape,2025-01-20,15
+Pune,Nigdi Police Station,Rape,2025-01-26,9
+Pune,Nigdi Police Station,Robbery,2025-01-03,16
+Pune,Nigdi Police Station,Robbery,2025-01-08,18
+Pune,Nigdi Police Station,Robbery,2025-01-23,15
+Pune,Nigdi Police Station,Sexual Harassment,2025-01-11,21
+Pune,Nigdi Police Station,Stalking,2025-01-06,25
+Pune,Nigdi Police Station,Stalking,2025-01-16,4
+Pune,Nigdi Police Station,Stalking,2025-01-25,6
+Pune,Nigdi Police Station,Stalking,2025-01-28,1
+Pune,Nigdi Police Station,Theft,2025-01-13,1
+Pune,Nigdi Police Station,Theft,2025-01-15,23
+Pune,Nigdi Police Station,Theft,2025-01-29,17
+Pune,Ramwadi Police Station,Accident,2025-01-13,24
+Pune,Ramwadi Police Station,Accident,2025-01-27,4
+Pune,Ramwadi Police Station,Cybercrime,2025-01-02,10
+Pune,Ramwadi Police Station,Cybercrime,2025-01-11,11
+Pune,Ramwadi Police Station,Fight,2025-01-03,9
+Pune,Ramwadi Police Station,Fight,2025-01-08,8
+Pune,Ramwadi Police Station,Fight,2025-01-22,22
+Pune,Ramwadi Police Station,Fight,2025-01-23,16
+Pune,Ramwadi Police Station,Fight,2025-01-29,14
+Pune,Ramwadi Police Station,Fraud,2025-01-01,17
+Pune,Ramwadi Police Station,Fraud,2025-01-14,3
+Pune,Ramwadi Police Station,Fraud,2025-01-17,17
+Pune,Ramwadi Police Station,Hit and Run,2025-01-09,23
+Pune,Ramwadi Police Station,Kidnapping,2025-01-05,8
+Pune,Ramwadi Police Station,Kidnapping,2025-01-16,9
+Pune,Ramwadi Police Station,Kidnapping,2025-01-28,17
+Pune,Ramwadi Police Station,Other,2025-01-18,16
+Pune,Ramwadi Police Station,Other,2025-01-21,12
+Pune,Ramwadi Police Station,Other,2025-01-24,15
+Pune,Ramwadi Police Station,Rape,2025-01-06,24
+Pune,Ramwadi Police Station,Rape,2025-01-07,2
+Pune,Ramwadi Police Station,Rape,2025-01-12,1
+Pune,Ramwadi Police Station,Rape,2025-01-19,11
+Pune,Ramwadi Police Station,Robbery,2025-01-10,21
+Pune,Ramwadi Police Station,Robbery,2025-01-20,14
+Pune,Ramwadi Police Station,Robbery,2025-01-26,8
+Pune,Ramwadi Police Station,Sexual Harassment,2025-01-15,25
+Pune,Ramwadi Police Station,Stalking,2025-01-04,19
+Pune,Ramwadi Police Station,Stalking,2025-01-30,12
+Pune,Ramwadi Police Station,Theft,2025-01-25,17
+Pune,Ramwadi Police Station,Theft,2025-01-31,5
+Pune,Sahakar Nagar Police Station,Accident,2025-01-31,6
+Pune,Sahakar Nagar Police Station,Cybercrime,2025-01-06,18
+Pune,Sahakar Nagar Police Station,Cybercrime,2025-01-08,9
+Pune,Sahakar Nagar Police Station,Cybercrime,2025-01-26,5
+Pune,Sahakar Nagar Police Station,Cybercrime,2025-01-28,16
+Pune,Sahakar Nagar Police Station,Fight,2025-01-01,1
+Pune,Sahakar Nagar Police Station,Fight,2025-01-16,22
+Pune,Sahakar Nagar Police Station,Fight,2025-01-20,13
+Pune,Sahakar Nagar Police Station,Fight,2025-01-25,24
+Pune,Sahakar Nagar Police Station,Fraud,2025-01-02,18
+Pune,Sahakar Nagar Police Station,Fraud,2025-01-22,10
+Pune,Sahakar Nagar Police Station,Fraud,2025-01-30,25
+Pune,Sahakar Nagar Police Station,Hit and Run,2025-01-05,2
+Pune,Sahakar Nagar Police Station,Hit and Run,2025-01-10,19
+Pune,Sahakar Nagar Police Station,Hit and Run,2025-01-19,4
+Pune,Sahakar Nagar Police Station,Kidnapping,2025-01-03,6
+Pune,Sahakar Nagar Police Station,Kidnapping,2025-01-27,2
+Pune,Sahakar Nagar Police Station,Murder,2025-01-04,21
+Pune,Sahakar Nagar Police Station,Murder,2025-01-11,12
+Pune,Sahakar Nagar Police Station,Murder,2025-01-12,15
+Pune,Sahakar Nagar Police Station,Murder,2025-01-14,2
+Pune,Sahakar Nagar Police Station,Murder,2025-01-17,16
+Pune,Sahakar Nagar Police Station,Other,2025-01-09,3
+Pune,Sahakar Nagar Police Station,Other,2025-01-13,25
+Pune,Sahakar Nagar Police Station,Other,2025-01-23,22
+Pune,Sahakar Nagar Police Station,Rape,2025-01-29,20
+Pune,Sahakar Nagar Police Station,Robbery,2025-01-15,15
+Pune,Sahakar Nagar Police Station,Stalking,2025-01-07,9
+Pune,Sahakar Nagar Police Station,Stalking,2025-01-24,15
+Pune,Sahakar Nagar Police Station,Theft,2025-01-18,19
+Pune,Sahakar Nagar Police Station,Theft,2025-01-21,21
+Pune,Shivajinagar Police Station,Accident,2025-01-06,16
+Pune,Shivajinagar Police Station,Accident,2025-01-14,14
+Pune,Shivajinagar Police Station,Cybercrime,2025-01-04,19
+Pune,Shivajinagar Police Station,Cybercrime,2025-01-22,7
+Pune,Shivajinagar Police Station,Cybercrime,2025-01-31,16
+Pune,Shivajinagar Police Station,Fight,2025-01-16,12
+Pune,Shivajinagar Police Station,Fight,2025-01-24,6
+Pune,Shivajinagar Police Station,Fight,2025-01-28,7
+Pune,Shivajinagar Police Station,Fraud,2025-01-02,1
+Pune,Shivajinagar Police Station,Fraud,2025-01-08,24
+Pune,Shivajinagar Police Station,Fraud,2025-01-29,16
+Pune,Shivajinagar Police Station,Hit and Run,2025-01-10,11
+Pune,Shivajinagar Police Station,Hit and Run,2025-01-23,21
+Pune,Shivajinagar Police Station,Kidnapping,2025-01-12,10
+Pune,Shivajinagar Police Station,Kidnapping,2025-01-13,19
+Pune,Shivajinagar Police Station,Kidnapping,2025-01-27,7
+Pune,Shivajinagar Police Station,Other,2025-01-21,22
+Pune,Shivajinagar Police Station,Rape,2025-01-17,19
+Pune,Shivajinagar Police Station,Rape,2025-01-19,9
+Pune,Shivajinagar Police Station,Rape,2025-01-30,21
+Pune,Shivajinagar Police Station,Robbery,2025-01-20,8
+Pune,Shivajinagar Police Station,Sexual Harassment,2025-01-03,4
+Pune,Shivajinagar Police Station,Sexual Harassment,2025-01-07,11
+Pune,Shivajinagar Police Station,Sexual Harassment,2025-01-11,15
+Pune,Shivajinagar Police Station,Sexual Harassment,2025-01-18,4
+Pune,Shivajinagar Police Station,Stalking,2025-01-01,23
+Pune,Shivajinagar Police Station,Stalking,2025-01-05,7
+Pune,Shivajinagar Police Station,Stalking,2025-01-09,12
+Pune,Shivajinagar Police Station,Theft,2025-01-15,20
+Pune,Shivajinagar Police Station,Theft,2025-01-25,16
+Pune,Shivajinagar Police Station,Theft,2025-01-26,5
+Pune,Swargate Police Station,Accident,2025-01-14,19
+Pune,Swargate Police Station,Accident,2025-01-29,8
+Pune,Swargate Police Station,Cybercrime,2025-01-19,25
+Pune,Swargate Police Station,Cybercrime,2025-01-20,9
+Pune,Swargate Police Station,Fight,2025-01-27,9
+Pune,Swargate Police Station,Fraud,2025-01-03,25
+Pune,Swargate Police Station,Hit and Run,2025-01-13,4
+Pune,Swargate Police Station,Hit and Run,2025-01-30,23
+Pune,Swargate Police Station,Kidnapping,2025-01-05,24
+Pune,Swargate Police Station,Kidnapping,2025-01-25,3
+Pune,Swargate Police Station,Murder,2025-01-07,14
+Pune,Swargate Police Station,Murder,2025-01-12,4
+Pune,Swargate Police Station,Murder,2025-01-21,3
+Pune,Swargate Police Station,Murder,2025-01-22,12
+Pune,Swargate Police Station,Murder,2025-01-28,12
+Pune,Swargate Police Station,Other,2025-01-04,3
+Pune,Swargate Police Station,Other,2025-01-18,15
+Pune,Swargate Police Station,Rape,2025-01-08,22
+Pune,Swargate Police Station,Rape,2025-01-17,7
+Pune,Swargate Police Station,Rape,2025-01-26,22
+Pune,Swargate Police Station,Robbery,2025-01-02,6
+Pune,Swargate Police Station,Robbery,2025-01-06,13
+Pune,Swargate Police Station,Sexual Harassment,2025-01-10,21
+Pune,Swargate Police Station,Sexual Harassment,2025-01-15,21
+Pune,Swargate Police Station,Stalking,2025-01-11,25
+Pune,Swargate Police Station,Stalking,2025-01-16,6
+Pune,Swargate Police Station,Stalking,2025-01-24,17
+Pune,Swargate Police Station,Stalking,2025-01-31,8
+Pune,Swargate Police Station,Theft,2025-01-01,18
+Pune,Swargate Police Station,Theft,2025-01-09,5
+Pune,Swargate Police Station,Theft,2025-01-23,18
+Pune,Vimantal Police Station,Accident,2025-01-09,25
+Pune,Vimantal Police Station,Accident,2025-01-11,1
+Pune,Vimantal Police Station,Accident,2025-01-19,18
+Pune,Vimantal Police Station,Cybercrime,2025-01-28,23
+Pune,Vimantal Police Station,Fight,2025-01-01,22
+Pune,Vimantal Police Station,Fight,2025-01-16,5
+Pune,Vimantal Police Station,Fight,2025-01-22,7
+Pune,Vimantal Police Station,Fight,2025-01-31,3
+Pune,Vimantal Police Station,Fraud,2025-01-08,21
+Pune,Vimantal Police Station,Fraud,2025-01-14,1
+Pune,Vimantal Police Station,Hit and Run,2025-01-02,2
+Pune,Vimantal Police Station,Hit and Run,2025-01-10,6
+Pune,Vimantal Police Station,Kidnapping,2025-01-07,3
+Pune,Vimantal Police Station,Kidnapping,2025-01-20,2
+Pune,Vimantal Police Station,Kidnapping,2025-01-29,24
+Pune,Vimantal Police Station,Murder,2025-01-03,4
+Pune,Vimantal Police Station,Murder,2025-01-04,5
+Pune,Vimantal Police Station,Murder,2025-01-27,22
+Pune,Vimantal Police Station,Other,2025-01-12,6
+Pune,Vimantal Police Station,Other,2025-01-18,25
+Pune,Vimantal Police Station,Other,2025-01-25,5
+Pune,Vimantal Police Station,Robbery,2025-01-17,7
+Pune,Vimantal Police Station,Robbery,2025-01-26,24
+Pune,Vimantal Police Station,Sexual Harassment,2025-01-06,12
+Pune,Vimantal Police Station,Sexual Harassment,2025-01-21,1
+Pune,Vimantal Police Station,Sexual Harassment,2025-01-30,11
+Pune,Vimantal Police Station,Stalking,2025-01-13,12
+Pune,Vimantal Police Station,Stalking,2025-01-23,24
+Pune,Vimantal Police Station,Stalking,2025-01-24,19
+Pune,Vimantal Police Station,Theft,2025-01-05,7
+Pune,Vimantal Police Station,Theft,2025-01-15,15
+Pune,Vishrambaug Police Station,Accident,2025-01-21,1
+Pune,Vishrambaug Police Station,Cybercrime,2025-01-06,14
+Pune,Vishrambaug Police Station,Cybercrime,2025-01-20,3
+Pune,Vishrambaug Police Station,Cybercrime,2025-01-24,15
+Pune,Vishrambaug Police Station,Fight,2025-01-02,24
+Pune,Vishrambaug Police Station,Fight,2025-01-08,16
+Pune,Vishrambaug Police Station,Fraud,2025-01-14,16
+Pune,Vishrambaug Police Station,Fraud,2025-01-18,1
+Pune,Vishrambaug Police Station,Hit and Run,2025-01-25,5
+Pune,Vishrambaug Police Station,Kidnapping,2025-01-04,21
+Pune,Vishrambaug Police Station,Kidnapping,2025-01-27,10
+Pune,Vishrambaug Police Station,Kidnapping,2025-01-30,16
+Pune,Vishrambaug Police Station,Murder,2025-01-05,16
+Pune,Vishrambaug Police Station,Murder,2025-01-11,5
+Pune,Vishrambaug Police Station,Murder,2025-01-17,6
+Pune,Vishrambaug Police Station,Murder,2025-01-19,18
+Pune,Vishrambaug Police Station,Other,2025-01-07,16
+Pune,Vishrambaug Police Station,Other,2025-01-13,5
+Pune,Vishrambaug Police Station,Other,2025-01-28,4
+Pune,Vishrambaug Police Station,Other,2025-01-31,4
+Pune,Vishrambaug Police Station,Rape,2025-01-16,25
+Pune,Vishrambaug Police Station,Rape,2025-01-29,11
+Pune,Vishrambaug Police Station,Robbery,2025-01-01,24
+Pune,Vishrambaug Police Station,Robbery,2025-01-23,15
+Pune,Vishrambaug Police Station,Robbery,2025-01-26,22
+Pune,Vishrambaug Police Station,Sexual Harassment,2025-01-10,4
+Pune,Vishrambaug Police Station,Stalking,2025-01-09,6
+Pune,Vishrambaug Police Station,Stalking,2025-01-12,11
+Pune,Vishrambaug Police Station,Stalking,2025-01-15,9
+Pune,Vishrambaug Police Station,Theft,2025-01-03,1
+Pune,Vishrambaug Police Station,Theft,2025-01-22,14
+Pune,Warje Police Station,Accident,2025-01-06,9
+Pune,Warje Police Station,Accident,2025-01-07,6
+Pune,Warje Police Station,Accident,2025-01-09,6
+Pune,Warje Police Station,Cybercrime,2025-01-20,19
+Pune,Warje Police Station,Fight,2025-01-11,2
+Pune,Warje Police Station,Fraud,2025-01-04,5
+Pune,Warje Police Station,Fraud,2025-01-05,18
+Pune,Warje Police Station,Fraud,2025-01-13,19
+Pune,Warje Police Station,Fraud,2025-01-17,8
+Pune,Warje Police Station,Fraud,2025-01-18,17
+Pune,Warje Police Station,Fraud,2025-01-24,14
+Pune,Warje Police Station,Fraud,2025-01-25,5
+Pune,Warje Police Station,Hit and Run,2025-01-26,25
+Pune,Warje Police Station,Kidnapping,2025-01-23,24
+Pune,Warje Police Station,Murder,2025-01-03,17
+Pune,Warje Police Station,Murder,2025-01-15,15
+Pune,Warje Police Station,Murder,2025-01-28,12
+Pune,Warje Police Station,Other,2025-01-30,7
+Pune,Warje Police Station,Rape,2025-01-02,6
+Pune,Warje Police Station,Rape,2025-01-12,16
+Pune,Warje Police Station,Rape,2025-01-16,18
+Pune,Warje Police Station,Rape,2025-01-21,17
+Pune,Warje Police Station,Robbery,2025-01-01,9
+Pune,Warje Police Station,Robbery,2025-01-29,5
+Pune,Warje Police Station,Robbery,2025-01-31,10
+Pune,Warje Police Station,Sexual Harassment,2025-01-08,16
+Pune,Warje Police Station,Sexual Harassment,2025-01-19,15
+Pune,Warje Police Station,Sexual Harassment,2025-01-22,6
+Pune,Warje Police Station,Stalking,2025-01-10,12
+Pune,Warje Police Station,Stalking,2025-01-27,12
+Pune,Warje Police Station,Theft,2025-01-14,22
+Pune,Yerwada Police Station,Cybercrime,2025-01-17,9
+Pune,Yerwada Police Station,Cybercrime,2025-01-18,20
+Pune,Yerwada Police Station,Cybercrime,2025-01-27,10
+Pune,Yerwada Police Station,Fight,2025-01-01,12
+Pune,Yerwada Police Station,Fraud,2025-01-09,20
+Pune,Yerwada Police Station,Fraud,2025-01-28,24
+Pune,Yerwada Police Station,Hit and Run,2025-01-03,12
+Pune,Yerwada Police Station,Kidnapping,2025-01-16,10
+Pune,Yerwada Police Station,Kidnapping,2025-01-25,10
+Pune,Yerwada Police Station,Murder,2025-01-12,4
+Pune,Yerwada Police Station,Murder,2025-01-29,12
+Pune,Yerwada Police Station,Other,2025-01-11,7
+Pune,Yerwada Police Station,Rape,2025-01-02,19
+Pune,Yerwada Police Station,Rape,2025-01-22,17
+Pune,Yerwada Police Station,Rape,2025-01-23,16
+Pune,Yerwada Police Station,Rape,2025-01-31,11
+Pune,Yerwada Police Station,Robbery,2025-01-04,13
+Pune,Yerwada Police Station,Robbery,2025-01-13,15
+Pune,Yerwada Police Station,Robbery,2025-01-19,23
+Pune,Yerwada Police Station,Robbery,2025-01-21,17
+Pune,Yerwada Police Station,Sexual Harassment,2025-01-05,22
+Pune,Yerwada Police Station,Sexual Harassment,2025-01-10,4
+Pune,Yerwada Police Station,Stalking,2025-01-06,5
+Pune,Yerwada Police Station,Stalking,2025-01-15,12
+Pune,Yerwada Police Station,Stalking,2025-01-20,18
+Pune,Yerwada Police Station,Stalking,2025-01-24,18
+Pune,Yerwada Police Station,Theft,2025-01-07,17
+Pune,Yerwada Police Station,Theft,2025-01-08,2
+Pune,Yerwada Police Station,Theft,2025-01-14,11
+Pune,Yerwada Police Station,Theft,2025-01-26,4
+Pune,Yerwada Police Station,Theft,2025-01-30,17
+Ratnagiri,Chiplun Police Station,Accident,2025-01-03,13
+Ratnagiri,Chiplun Police Station,Accident,2025-01-18,12
+Ratnagiri,Chiplun Police Station,Accident,2025-01-28,7
+Ratnagiri,Chiplun Police Station,Cybercrime,2025-01-24,1
+Ratnagiri,Chiplun Police Station,Cybercrime,2025-01-30,17
+Ratnagiri,Chiplun Police Station,Fraud,2025-01-01,5
+Ratnagiri,Chiplun Police Station,Fraud,2025-01-16,18
+Ratnagiri,Chiplun Police Station,Fraud,2025-01-21,20
+Ratnagiri,Chiplun Police Station,Fraud,2025-01-27,5
+Ratnagiri,Chiplun Police Station,Hit and Run,2025-01-11,22
+Ratnagiri,Chiplun Police Station,Hit and Run,2025-01-29,20
+Ratnagiri,Chiplun Police Station,Murder,2025-01-08,12
+Ratnagiri,Chiplun Police Station,Murder,2025-01-31,22
+Ratnagiri,Chiplun Police Station,Other,2025-01-12,5
+Ratnagiri,Chiplun Police Station,Other,2025-01-19,3
+Ratnagiri,Chiplun Police Station,Rape,2025-01-02,6
+Ratnagiri,Chiplun Police Station,Rape,2025-01-15,23
+Ratnagiri,Chiplun Police Station,Rape,2025-01-22,8
+Ratnagiri,Chiplun Police Station,Rape,2025-01-23,1
+Ratnagiri,Chiplun Police Station,Robbery,2025-01-09,6
+Ratnagiri,Chiplun Police Station,Robbery,2025-01-13,3
+Ratnagiri,Chiplun Police Station,Robbery,2025-01-26,10
+Ratnagiri,Chiplun Police Station,Sexual Harassment,2025-01-20,6
+Ratnagiri,Chiplun Police Station,Stalking,2025-01-04,8
+Ratnagiri,Chiplun Police Station,Stalking,2025-01-05,24
+Ratnagiri,Chiplun Police Station,Stalking,2025-01-06,9
+Ratnagiri,Chiplun Police Station,Stalking,2025-01-07,13
+Ratnagiri,Chiplun Police Station,Stalking,2025-01-14,24
+Ratnagiri,Chiplun Police Station,Stalking,2025-01-17,7
+Ratnagiri,Chiplun Police Station,Stalking,2025-01-25,4
+Ratnagiri,Chiplun Police Station,Theft,2025-01-10,8
+Ratnagiri,Dapoli Police Station,Accident,2025-01-13,12
+Ratnagiri,Dapoli Police Station,Cybercrime,2025-01-03,12
+Ratnagiri,Dapoli Police Station,Cybercrime,2025-01-10,7
+Ratnagiri,Dapoli Police Station,Cybercrime,2025-01-23,15
+Ratnagiri,Dapoli Police Station,Cybercrime,2025-01-24,15
+Ratnagiri,Dapoli Police Station,Cybercrime,2025-01-28,25
+Ratnagiri,Dapoli Police Station,Fight,2025-01-04,16
+Ratnagiri,Dapoli Police Station,Fight,2025-01-31,3
+Ratnagiri,Dapoli Police Station,Fraud,2025-01-06,9
+Ratnagiri,Dapoli Police Station,Fraud,2025-01-30,24
+Ratnagiri,Dapoli Police Station,Hit and Run,2025-01-12,5
+Ratnagiri,Dapoli Police Station,Hit and Run,2025-01-22,1
+Ratnagiri,Dapoli Police Station,Kidnapping,2025-01-07,21
+Ratnagiri,Dapoli Police Station,Kidnapping,2025-01-08,18
+Ratnagiri,Dapoli Police Station,Murder,2025-01-15,18
+Ratnagiri,Dapoli Police Station,Murder,2025-01-19,7
+Ratnagiri,Dapoli Police Station,Murder,2025-01-25,24
+Ratnagiri,Dapoli Police Station,Other,2025-01-05,25
+Ratnagiri,Dapoli Police Station,Other,2025-01-09,15
+Ratnagiri,Dapoli Police Station,Other,2025-01-14,15
+Ratnagiri,Dapoli Police Station,Other,2025-01-20,16
+Ratnagiri,Dapoli Police Station,Other,2025-01-26,2
+Ratnagiri,Dapoli Police Station,Other,2025-01-29,11
+Ratnagiri,Dapoli Police Station,Robbery,2025-01-01,13
+Ratnagiri,Dapoli Police Station,Robbery,2025-01-02,1
+Ratnagiri,Dapoli Police Station,Sexual Harassment,2025-01-16,12
+Ratnagiri,Dapoli Police Station,Sexual Harassment,2025-01-18,14
+Ratnagiri,Dapoli Police Station,Stalking,2025-01-17,25
+Ratnagiri,Dapoli Police Station,Stalking,2025-01-21,18
+Ratnagiri,Dapoli Police Station,Theft,2025-01-11,21
+Ratnagiri,Dapoli Police Station,Theft,2025-01-27,19
+Ratnagiri,Khed Police Station,Accident,2025-01-10,16
+Ratnagiri,Khed Police Station,Accident,2025-01-13,19
+Ratnagiri,Khed Police Station,Accident,2025-01-20,24
+Ratnagiri,Khed Police Station,Cybercrime,2025-01-14,25
+Ratnagiri,Khed Police Station,Cybercrime,2025-01-21,25
+Ratnagiri,Khed Police Station,Fight,2025-01-03,10
+Ratnagiri,Khed Police Station,Fight,2025-01-08,9
+Ratnagiri,Khed Police Station,Fight,2025-01-15,12
+Ratnagiri,Khed Police Station,Fraud,2025-01-05,16
+Ratnagiri,Khed Police Station,Fraud,2025-01-18,6
+Ratnagiri,Khed Police Station,Hit and Run,2025-01-06,4
+Ratnagiri,Khed Police Station,Hit and Run,2025-01-19,19
+Ratnagiri,Khed Police Station,Murder,2025-01-12,13
+Ratnagiri,Khed Police Station,Other,2025-01-04,24
+Ratnagiri,Khed Police Station,Other,2025-01-26,8
+Ratnagiri,Khed Police Station,Other,2025-01-27,9
+Ratnagiri,Khed Police Station,Rape,2025-01-09,10
+Ratnagiri,Khed Police Station,Rape,2025-01-11,6
+Ratnagiri,Khed Police Station,Rape,2025-01-22,23
+Ratnagiri,Khed Police Station,Rape,2025-01-28,5
+Ratnagiri,Khed Police Station,Rape,2025-01-29,3
+Ratnagiri,Khed Police Station,Robbery,2025-01-02,13
+Ratnagiri,Khed Police Station,Robbery,2025-01-16,9
+Ratnagiri,Khed Police Station,Sexual Harassment,2025-01-01,25
+Ratnagiri,Khed Police Station,Sexual Harassment,2025-01-17,19
+Ratnagiri,Khed Police Station,Sexual Harassment,2025-01-24,4
+Ratnagiri,Khed Police Station,Sexual Harassment,2025-01-30,1
+Ratnagiri,Khed Police Station,Sexual Harassment,2025-01-31,10
+Ratnagiri,Khed Police Station,Stalking,2025-01-07,9
+Ratnagiri,Khed Police Station,Stalking,2025-01-25,15
+Ratnagiri,Khed Police Station,Theft,2025-01-23,12
+Ratnagiri,Ratnagiri City Police Station,Accident,2025-01-14,15
+Ratnagiri,Ratnagiri City Police Station,Accident,2025-01-22,21
+Ratnagiri,Ratnagiri City Police Station,Accident,2025-01-24,11
+Ratnagiri,Ratnagiri City Police Station,Accident,2025-01-26,17
+Ratnagiri,Ratnagiri City Police Station,Cybercrime,2025-01-03,3
+Ratnagiri,Ratnagiri City Police Station,Cybercrime,2025-01-29,9
+Ratnagiri,Ratnagiri City Police Station,Fight,2025-01-01,25
+Ratnagiri,Ratnagiri City Police Station,Fight,2025-01-04,4
+Ratnagiri,Ratnagiri City Police Station,Fight,2025-01-10,4
+Ratnagiri,Ratnagiri City Police Station,Fight,2025-01-19,10
+Ratnagiri,Ratnagiri City Police Station,Fraud,2025-01-11,11
+Ratnagiri,Ratnagiri City Police Station,Hit and Run,2025-01-20,3
+Ratnagiri,Ratnagiri City Police Station,Hit and Run,2025-01-21,25
+Ratnagiri,Ratnagiri City Police Station,Kidnapping,2025-01-17,16
+Ratnagiri,Ratnagiri City Police Station,Murder,2025-01-09,17
+Ratnagiri,Ratnagiri City Police Station,Murder,2025-01-16,19
+Ratnagiri,Ratnagiri City Police Station,Other,2025-01-06,7
+Ratnagiri,Ratnagiri City Police Station,Rape,2025-01-02,3
+Ratnagiri,Ratnagiri City Police Station,Sexual Harassment,2025-01-12,14
+Ratnagiri,Ratnagiri City Police Station,Sexual Harassment,2025-01-18,25
+Ratnagiri,Ratnagiri City Police Station,Sexual Harassment,2025-01-28,1
+Ratnagiri,Ratnagiri City Police Station,Sexual Harassment,2025-01-30,13
+Ratnagiri,Ratnagiri City Police Station,Stalking,2025-01-15,19
+Ratnagiri,Ratnagiri City Police Station,Stalking,2025-01-27,4
+Ratnagiri,Ratnagiri City Police Station,Stalking,2025-01-31,2
+Ratnagiri,Ratnagiri City Police Station,Theft,2025-01-05,2
+Ratnagiri,Ratnagiri City Police Station,Theft,2025-01-07,24
+Ratnagiri,Ratnagiri City Police Station,Theft,2025-01-08,21
+Ratnagiri,Ratnagiri City Police Station,Theft,2025-01-13,15
+Ratnagiri,Ratnagiri City Police Station,Theft,2025-01-23,3
+Ratnagiri,Ratnagiri City Police Station,Theft,2025-01-25,22
+Thane,Kopri Police Station,Accident,2025-01-01,13
+Thane,Kopri Police Station,Accident,2025-01-11,10
+Thane,Kopri Police Station,Cybercrime,2025-01-27,9
+Thane,Kopri Police Station,Fight,2025-01-24,7
+Thane,Kopri Police Station,Fraud,2025-01-08,5
+Thane,Kopri Police Station,Fraud,2025-01-17,24
+Thane,Kopri Police Station,Fraud,2025-01-22,1
+Thane,Kopri Police Station,Hit and Run,2025-01-12,8
+Thane,Kopri Police Station,Hit and Run,2025-01-28,1
+Thane,Kopri Police Station,Kidnapping,2025-01-02,17
+Thane,Kopri Police Station,Kidnapping,2025-01-04,3
+Thane,Kopri Police Station,Kidnapping,2025-01-14,4
+Thane,Kopri Police Station,Kidnapping,2025-01-18,2
+Thane,Kopri Police Station,Kidnapping,2025-01-23,25
+Thane,Kopri Police Station,Murder,2025-01-06,7
+Thane,Kopri Police Station,Murder,2025-01-07,10
+Thane,Kopri Police Station,Murder,2025-01-21,6
+Thane,Kopri Police Station,Murder,2025-01-29,3
+Thane,Kopri Police Station,Murder,2025-01-31,16
+Thane,Kopri Police Station,Rape,2025-01-03,8
+Thane,Kopri Police Station,Rape,2025-01-05,20
+Thane,Kopri Police Station,Rape,2025-01-16,8
+Thane,Kopri Police Station,Rape,2025-01-26,5
+Thane,Kopri Police Station,Robbery,2025-01-13,6
+Thane,Kopri Police Station,Robbery,2025-01-15,15
+Thane,Kopri Police Station,Stalking,2025-01-09,25
+Thane,Kopri Police Station,Stalking,2025-01-19,5
+Thane,Kopri Police Station,Stalking,2025-01-20,24
+Thane,Kopri Police Station,Stalking,2025-01-25,4
+Thane,Kopri Police Station,Stalking,2025-01-30,21
+Thane,Kopri Police Station,Theft,2025-01-10,15
+Thane,Naupada Police Station,Accident,2025-01-12,22
+Thane,Naupada Police Station,Cybercrime,2025-01-11,13
+Thane,Naupada Police Station,Cybercrime,2025-01-15,24
+Thane,Naupada Police Station,Cybercrime,2025-01-17,18
+Thane,Naupada Police Station,Cybercrime,2025-01-18,24
+Thane,Naupada Police Station,Fight,2025-01-21,24
+Thane,Naupada Police Station,Fight,2025-01-22,17
+Thane,Naupada Police Station,Fight,2025-01-24,22
+Thane,Naupada Police Station,Fraud,2025-01-06,21
+Thane,Naupada Police Station,Fraud,2025-01-09,10
+Thane,Naupada Police Station,Fraud,2025-01-25,20
+Thane,Naupada Police Station,Kidnapping,2025-01-04,14
+Thane,Naupada Police Station,Kidnapping,2025-01-07,21
+Thane,Naupada Police Station,Kidnapping,2025-01-10,18
+Thane,Naupada Police Station,Kidnapping,2025-01-20,15
+Thane,Naupada Police Station,Murder,2025-01-23,2
+Thane,Naupada Police Station,Murder,2025-01-31,22
+Thane,Naupada Police Station,Rape,2025-01-28,16
+Thane,Naupada Police Station,Robbery,2025-01-02,8
+Thane,Naupada Police Station,Robbery,2025-01-05,18
+Thane,Naupada Police Station,Robbery,2025-01-16,4
+Thane,Naupada Police Station,Robbery,2025-01-29,22
+Thane,Naupada Police Station,Robbery,2025-01-30,25
+Thane,Naupada Police Station,Sexual Harassment,2025-01-08,10
+Thane,Naupada Police Station,Sexual Harassment,2025-01-13,3
+Thane,Naupada Police Station,Stalking,2025-01-03,2
+Thane,Naupada Police Station,Theft,2025-01-01,14
+Thane,Naupada Police Station,Theft,2025-01-14,18
+Thane,Naupada Police Station,Theft,2025-01-19,10
+Thane,Naupada Police Station,Theft,2025-01-26,20
+Thane,Naupada Police Station,Theft,2025-01-27,22
+Thane,Vartak Nagar Police Station,Accident,2025-01-19,15
+Thane,Vartak Nagar Police Station,Accident,2025-01-24,1
+Thane,Vartak Nagar Police Station,Accident,2025-01-31,3
+Thane,Vartak Nagar Police Station,Cybercrime,2025-01-05,24
+Thane,Vartak Nagar Police Station,Cybercrime,2025-01-08,9
+Thane,Vartak Nagar Police Station,Cybercrime,2025-01-11,10
+Thane,Vartak Nagar Police Station,Cybercrime,2025-01-25,21
+Thane,Vartak Nagar Police Station,Cybercrime,2025-01-30,9
+Thane,Vartak Nagar Police Station,Fight,2025-01-03,20
+Thane,Vartak Nagar Police Station,Fraud,2025-01-15,20
+Thane,Vartak Nagar Police Station,Fraud,2025-01-20,16
+Thane,Vartak Nagar Police Station,Hit and Run,2025-01-12,9
+Thane,Vartak Nagar Police Station,Hit and Run,2025-01-14,25
+Thane,Vartak Nagar Police Station,Hit and Run,2025-01-18,11
+Thane,Vartak Nagar Police Station,Hit and Run,2025-01-21,3
+Thane,Vartak Nagar Police Station,Murder,2025-01-01,24
+Thane,Vartak Nagar Police Station,Murder,2025-01-06,13
+Thane,Vartak Nagar Police Station,Murder,2025-01-07,16
+Thane,Vartak Nagar Police Station,Murder,2025-01-17,4
+Thane,Vartak Nagar Police Station,Other,2025-01-16,4
+Thane,Vartak Nagar Police Station,Other,2025-01-29,24
+Thane,Vartak Nagar Police Station,Rape,2025-01-04,1
+Thane,Vartak Nagar Police Station,Robbery,2025-01-02,23
+Thane,Vartak Nagar Police Station,Robbery,2025-01-26,25
+Thane,Vartak Nagar Police Station,Robbery,2025-01-28,3
+Thane,Vartak Nagar Police Station,Sexual Harassment,2025-01-09,3
+Thane,Vartak Nagar Police Station,Sexual Harassment,2025-01-13,25
+Thane,Vartak Nagar Police Station,Sexual Harassment,2025-01-22,23
+Thane,Vartak Nagar Police Station,Sexual Harassment,2025-01-23,12
+Thane,Vartak Nagar Police Station,Stalking,2025-01-10,10
+Thane,Vartak Nagar Police Station,Theft,2025-01-27,16
+Thane,Wagle Estate Police Station,Accident,2025-01-09,5
+Thane,Wagle Estate Police Station,Accident,2025-01-16,5
+Thane,Wagle Estate Police Station,Cybercrime,2025-01-06,9
+Thane,Wagle Estate Police Station,Cybercrime,2025-01-07,21
+Thane,Wagle Estate Police Station,Fight,2025-01-18,10
+Thane,Wagle Estate Police Station,Fraud,2025-01-02,1
+Thane,Wagle Estate Police Station,Fraud,2025-01-05,11
+Thane,Wagle Estate Police Station,Fraud,2025-01-26,19
+Thane,Wagle Estate Police Station,Hit and Run,2025-01-10,21
+Thane,Wagle Estate Police Station,Hit and Run,2025-01-19,8
+Thane,Wagle Estate Police Station,Hit and Run,2025-01-21,17
+Thane,Wagle Estate Police Station,Hit and Run,2025-01-23,20
+Thane,Wagle Estate Police Station,Hit and Run,2025-01-27,17
+Thane,Wagle Estate Police Station,Hit and Run,2025-01-29,1
+Thane,Wagle Estate Police Station,Kidnapping,2025-01-31,5
+Thane,Wagle Estate Police Station,Murder,2025-01-15,25
+Thane,Wagle Estate Police Station,Murder,2025-01-22,16
+Thane,Wagle Estate Police Station,Other,2025-01-28,18
+Thane,Wagle Estate Police Station,Rape,2025-01-13,17
+Thane,Wagle Estate Police Station,Robbery,2025-01-03,14
+Thane,Wagle Estate Police Station,Robbery,2025-01-11,18
+Thane,Wagle Estate Police Station,Robbery,2025-01-17,17
+Thane,Wagle Estate Police Station,Robbery,2025-01-25,15
+Thane,Wagle Estate Police Station,Sexual Harassment,2025-01-08,25
+Thane,Wagle Estate Police Station,Stalking,2025-01-01,15
+Thane,Wagle Estate Police Station,Stalking,2025-01-20,3
+Thane,Wagle Estate Police Station,Stalking,2025-01-30,14
+Thane,Wagle Estate Police Station,Theft,2025-01-04,19
+Thane,Wagle Estate Police Station,Theft,2025-01-12,6
+Thane,Wagle Estate Police Station,Theft,2025-01-14,4
+Thane,Wagle Estate Police Station,Theft,2025-01-24,16

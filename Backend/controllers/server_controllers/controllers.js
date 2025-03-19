@@ -64,6 +64,7 @@ export const emergency_alert = async (req, res) => {
       video,
     } = req.body;
 
+    console.log(userId);
     // Extract latitude and longitude from the location string
     const [lat, lng] = location
       .replace("Lat:", "")
@@ -110,27 +111,30 @@ export const emergency_alert = async (req, res) => {
     const nearestStationId = policeStation._id;
 
     // Prepare alert data
-    const alert = {
+    // const alert = {
+    //   UserID: userId,
+    //   PoliceStationID: nearestStationId,
+    //   AlertType: alertType,
+    //   Location: location,
+    //   Description: description,
+    //   Image: image || null,
+    //   Video: video || null,
+    // };
+
+     //will use when required
+    // Save the alert to the database
+    const alert = await AlertReport.create({
       UserID: userId,
       PoliceStationID: nearestStationId,
       AlertType: alertType,
       Location: location,
+      Priority: "Low",
+      Status: "Pending",
       Description: description,
       Image: image || null,
       Video: video || null,
-    };
-
-     //will use when required
-    // Save the alert to the database
-    // const alert = await AlertReport.create({
-    //   UserID: userId,
-      // PoliceStationID: nearestStationId,
-      // AlertType: alertType,
-      // Location: location,
-      // Description: description,
-      // Image: image || null,
-      // Video: video || null,
-    // });
+    });
+    alert.save();
 
 
     // Notify the police station via WebSocket

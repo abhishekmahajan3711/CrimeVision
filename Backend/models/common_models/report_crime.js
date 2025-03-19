@@ -33,8 +33,8 @@ const AlertReportSchema = new mongoose.Schema(
     },
     Status: {
       type: String, // Status of the alert/report (Pending/Closed)
-      enum: ["Pending", "Closed"],
-      default: "Pending",
+      enum: ["Pending", "Closed","Open"],
+      default: "Open",
     },
     ActionReport: {
       type: String, // Action taken by the police station

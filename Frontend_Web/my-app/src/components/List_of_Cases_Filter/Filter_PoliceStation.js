@@ -7,36 +7,42 @@ const data = [
     Time: "2025-01-06T01:31:24.543Z",
     AlertType: "Cybercrime",
     Status: "Pending",
+    Priority: "High",
   },
   {
     _id: "676e9304c8a1bea20495fa3c",
     Time: "2025-02-19T20:05:54.857Z",
     AlertType: "Cybercrime",
     Status: "Closed",
+    Priority: "High",
   },
   {
     _id: "676e9304c8a1bea20495fa45",
     Time: "2025-02-23T13:54:28.339Z",
     AlertType: "Sexual Harassment",
     Status: "Pending",
+    Priority: "High",
   },
   {
     _id: "676e9304c8a1bea20495fa53",
     Time: "2025-02-12T18:53:48.801Z",
     AlertType: "Stalking",
     Status: "Closed",
+    Priority: "High",
   },
   {
     _id: "676e9304c8a1bea20495fa31",
     Time: "2025-01-22T07:14:31.785Z",
     AlertType: "Cybercrime",
     Status: "Closed",
+    Priority: "High",
   },
   {
     _id: "676e9304c8a1bea20495fa60",
     Time: "2025-03-01T17:32:12.743Z",
     AlertType: "Sexual Harassment",
     Status: "Pending",
+    Priority: "High",
   },
 ];
 
@@ -46,6 +52,7 @@ const FilterPoliceStation = () => {
   const [statusFilter, setStatusFilter] = useState("");
   const [fromDate, setFromDate] = useState("");
   const [toDate, setToDate] = useState("");
+   const [priorityFilter, setPriorityFilter] = useState("");
 
   const crimeTypes = [
     "Murder",
@@ -63,6 +70,8 @@ const FilterPoliceStation = () => {
     "Other",
   ];
 
+  const priorities = ["High", "Medium", "Low"];
+
   const filterData = () => {
     return data.filter((alert) => {
       const alertDate = new Date(alert.Time);
@@ -72,8 +81,9 @@ const FilterPoliceStation = () => {
       const matchesDate =
         (!fromDate || alertDate >= new Date(fromDate)) &&
         (!toDate || alertDate <= new Date(toDate));
+        const matchesPriority = !priorityFilter || alert.Priority === priorityFilter;
 
-      return matchesType && matchesStatus && matchesDate;
+      return matchesType && matchesStatus && matchesDate && matchesPriority;
     });
   };
 
@@ -115,6 +125,15 @@ const FilterPoliceStation = () => {
               <option value="">All</option>
               <option value="Pending">Pending</option>
               <option value="Closed">Closed</option>
+              <option value="Open">Open</option>
+            </select>
+          </div>
+
+          <div className="mb-4">
+            <label className="block font-bold mb-2">Priority</label>
+            <select className="w-full p-2 border rounded" value={priorityFilter} onChange={(e) => setPriorityFilter(e.target.value)}>
+              <option value="">All</option>
+              {priorities.map((priority) => <option key={priority} value={priority}>{priority}</option>)}
             </select>
           </div>
 
@@ -147,6 +166,7 @@ const FilterPoliceStation = () => {
                 <th className="border border-gray-300 p-2">Type</th>
                 <th className="border border-gray-300 p-2">Date</th>
                 <th className="border border-gray-300 p-2">Status</th>
+                <th className="border border-gray-300 p-2">Priority</th>
                 <th className="border border-gray-300 p-2">Details</th>
               </tr>
             </thead>
@@ -162,6 +182,7 @@ const FilterPoliceStation = () => {
                       {new Date(alert.Time).toLocaleDateString()}
                     </td>
                     <td className="border border-gray-300 p-2">{alert.Status}</td>
+                    <td className="border border-gray-300 p-2">{alert.Priority}</td>
                     <td className="border border-gray-300 p-2 text-[#003366] underline cursor-pointer">
                       <Link to="/detail_case">Details</Link>
                     </td>

@@ -52,7 +52,6 @@ const AlertPopup = ({ alert, onClose, onSeeDetails, hasInteracted }) => {
           >
             OK
           </button>
-          <Link to="/detail_case">
           <button
             onClick={() => {
               handleStopSound(); // Stop the sound when clicked
@@ -62,7 +61,6 @@ const AlertPopup = ({ alert, onClose, onSeeDetails, hasInteracted }) => {
           >
             See Details
           </button>
-          </Link>
         </div>
       </div>
 

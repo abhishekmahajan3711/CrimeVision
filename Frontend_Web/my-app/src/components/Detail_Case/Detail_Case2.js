@@ -1,7 +1,10 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
+import { useParams } from "react-router-dom";
+import axios from "axios";
+import { toast } from "react-hot-toast";
 
 const customIcon = L.icon({
   iconUrl:
@@ -9,80 +12,161 @@ const customIcon = L.icon({
   iconSize: [25, 25],
 });
 
-export default function Detail_Case() {
-  // Data
-  const alertData = {
-    _id: "676e9304c8a1bea20495fa53",
-    AlertType: "Stalking",
-    Time: "2025-02-12T18:53:48.801Z",
-    Location: "Lat: 18.4508, Lng: 73.9020",
-    Description: "Description for alert 40",
-    Status: "Closed",
-    Priority: "Medium",
-    Comments: [],
-    Timeline: [],
-  };
+export default function Detail_Case2() {
+  const { id } = useParams();
 
-  const userData = {
-    name: "Abhishek Mahajan",
-    email: "abhishekmahajan3711@gmail.com",
-    aadhar: "123456789111",
-    phone: "8080142710",
-  };
+  const [alertData, setalertData] = useState(null);
+  const [userData, setuserData] = useState(null);
+  const [policeStationData, setpoliceStationData] = useState(null);
+  const [status, setStatus] = useState(null);
+  const [priority, setPriority] = useState(null);
+  const [comments, setComments] = useState(null);
+  const [newComment, setNewComment] = useState("");
+  const [timeline, setTimeline] = useState(null);
+  const [uploadedFile, setUploadedFile] = useState(null);
+  const [fileURL, setFileURL] = useState(null);
 
-  const policeStationData = {
-    name: "Nigdi Police Station",
-    address:
-      "Sector No. 24, Pradhikaran, Nigdi, Pimpri-Chinchwad, Pune, Maharashtra 411044",
-  };
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await axios.get(
+          "http://localhost:3001/api/v1/web/detail_case",
+          {
+            params: {
+              id: id,
+            },
+          }
+        );
+        setalertData(response.data);
+        setpoliceStationData(response.data.PoliceStationID);
+        setuserData(response.data.UserID);
+        setStatus(response.data.Status);
+        setPriority(response.data.Priority);
+        setComments(response.data.Comments || []);
+        setTimeline(response.data.ActivityLog || []);
+        console.log(alertData);
+        console.log(userData);
+        console.log(policeStationData);
+      } catch (error) {
+        console.error("Error in fetching data", error);
+      }
+    };
+
+    if (id) fetchData();
+  }, [id]);
+
+  if (!alertData || !userData || !policeStationData)
+    return (
+      <div className="flex items-center justify-center min-h-screen bg-white">
+        <div className="flex flex-col items-center">
+          {/* Loading Spinner */}
+          <div className="flex justify-center items-center">
+            <div className="animate-spin h-12 w-12 border-4 border-gray-300 rounded-full border-t-black"></div>
+          </div>
+          {/* Loading Text */}
+          <p className="text-black text-lg mt-4 font-medium">LOADING...</p>
+        </div>
+      </div>
+    );
 
   const [lat, lng] = alertData.Location.split(", ").map((coord) =>
     parseFloat(coord.split(": ")[1])
   );
-  const [status, setStatus] = useState(alertData.Status);
-  const [priority, setPriority] = useState(alertData.Priority);
-  const [comments, setComments] = useState(alertData.Comments);
-  const [newComment, setNewComment] = useState("");
-  const [timeline, setTimeline] = useState(alertData.Timeline);
-  const [uploadedFile, setUploadedFile] = useState(null);
-  const [fileURL, setFileURL] = useState(null);
+  const updateStatusInBackend = async () => {
+    try {
+      await axios.put(`http://localhost:3001/api/v1/web/status/${id}`, {
+        status,
+        logEntry: {
+          action: `Status changed to ${status}`,
+          performedAt: new Date().toISOString(),
+        },
+      });
+      toast.success("Status updated successfully!");
+    } catch (error) {
+      console.error("Error updating status", error);
+      toast.error("Failed to update status");
+    }
+  };
 
   const handleStatusChange = () => {
+    updateStatusInBackend();
     setTimeline((prev) => [
       ...prev,
       {
         action: `Status changed to ${status}`,
-        timestamp: new Date().toISOString(),
+        performedAt: new Date().toISOString(),
       },
     ]);
   };
 
+  const updatePriorityInBackend = async () => {
+    try {
+      await axios.put(`http://localhost:3001/api/v1/web/priority/${id}`, {
+        priority,
+        logEntry: {
+          action: `Priority changed to ${priority}`,
+          performedAt: new Date().toISOString(),
+        },
+      });
+      toast.success("Priority updated successfully!");
+    } catch (error) {
+      console.error("Error updating priority", error);
+      toast.error("Failed to update priority");
+    }
+  };
+
   const handlePriorityChange = () => {
+    updatePriorityInBackend();
     setTimeline((prev) => [
       ...prev,
       {
         action: `Priority changed to ${priority}`,
-        timestamp: new Date().toISOString(),
+        performedAt: new Date().toISOString(),
       },
     ]);
   };
 
-  const handleAddComment = () => {
-    if (newComment.trim()) {
+  const addCommentToBackend = async () => {
+    try {
       const commentEntry = {
         text: newComment,
-        timestamp: new Date().toISOString(),
+        addedAt: new Date().toISOString(),
       };
-      setComments((prev) => [...prev, commentEntry]);
+
+      await axios.put(`http://localhost:3001/api/v1/web/comment/${id}`, {
+        comment: commentEntry,
+        logEntry: {
+          action: `Added comment: ${newComment}`,
+          performedAt: new Date().toISOString(),
+        },
+      });
+
+      toast.success("Comment added successfully!");
+    } catch (error) {
+      console.error("Error adding comment", error);
+      toast.error("Failed to add comment");
+    }
+  };
+
+  const handleAddComment = () => {
+    if (newComment.trim()) {
+      addCommentToBackend();
       setTimeline((prev) => [
         ...prev,
         {
           action: `Added comment: ${newComment}`,
-          timestamp: new Date().toISOString(),
+          addedAt: new Date().toISOString(),
         },
       ]);
-      setNewComment("");
+      setComments((prev) => [
+        ...prev,
+        {
+          text: `Added comment: ${newComment}`,
+          addedAt: new Date().toISOString(),
+        },
+      ]);
     }
+    setNewComment("");
   };
 
   const handleFileUpload = (event) => {
@@ -198,8 +282,8 @@ export default function Detail_Case() {
         </MapContainer>
       </div>
 
-       {/* Timeline Section */}
-       <div className="max-w-5xl mx-auto mt-6 bg-white rounded-lg shadow-lg p-6 border border-gray-300">
+      {/* Timeline Section */}
+      <div className="max-w-5xl mx-auto mt-6 bg-white rounded-lg shadow-lg p-6 border border-gray-300">
         <h2 className="text-xl font-bold text-gray-800 mb-6">Timeline</h2>
         <div className="relative border-l-4 border-blue-500 pl-6">
           {timeline.map((entry, index) => (
@@ -207,7 +291,7 @@ export default function Detail_Case() {
               <div className="absolute -left-2.5 w-5 h-5 bg-blue-500 rounded-full border-4 border-white"></div>
               <p className="text-gray-900 font-medium">{entry.action}</p>
               <p className="text-sm text-gray-600 mt-1">
-                {new Date(entry.timestamp).toLocaleString()}
+                {new Date(entry.performedAt).toLocaleString()}
               </p>
             </div>
           ))}
@@ -221,7 +305,7 @@ export default function Detail_Case() {
           {comments.map((comment, index) => (
             <div key={index} className="p-3 bg-gray-50 rounded-lg shadow-sm">
               <p className="text-gray-800 font-medium">{comment.text}</p>
-              <p className="text-xs text-gray-500">{new Date(comment.timestamp).toLocaleString()}</p>
+              <p className="text-xs text-gray-500">{new Date(comment.addedAt).toLocaleString()}</p>
             </div>
           ))}
         </div>

@@ -1,20 +1,15 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import Notifications from '../Notifications/Notifications';
+import { LogOut } from "lucide-react"; // Logout icon
 
 export default function District_home_page() {
-  const userInfo = {
-    name: 'Gita Kumari',
-    email: 'gita.kumari@example.com',
-    phone: '1234567890',
-    district: {
-      name: 'Nigdi District',
-      no_of_cases_this_month: 15,
-      no_of_cases_last_month: 20,
-    },
-    policeStation: {
-      name: 'Nigdi Police Station',
-    },
+  const navigate = useNavigate();
+
+  // Logout function
+  const handleLogout = () => {
+    localStorage.removeItem("Authority_token"); // Remove token from localStorage
+    navigate("/"); // Redirect to home page
   };
 
   return (
@@ -22,8 +17,19 @@ export default function District_home_page() {
       {/* Full Screen Container */}
       <div className="w-full h-screen bg-green-50 flex flex-col">
         {/* Header Section */}
-        <header className="bg-[#003366] text-white p-4 text-center font-bold text-lg">
-          District : Pune
+        <header className="bg-[#003366] text-white p-4 font-bold text-lg flex items-center justify-between relative">
+          {/* Centered District Name */}
+          <span className="absolute left-1/2 transform -translate-x-1/2">
+            District: Pune
+          </span>
+
+          {/* Logout Button */}
+          <button
+            onClick={handleLogout}
+            className="flex items-center gap-2 bg-gray-500 px-3 py-1 rounded-md hover:bg-red-700"
+          >
+            <LogOut className="w-4 h-4 text-white" /> {/* Smaller Logout Icon */}
+          </button>
         </header>
 
         {/* Main Content */}
@@ -36,30 +42,30 @@ export default function District_home_page() {
               </button>
             </Link>
             <Link to="/district_filter_cases">
-            <button className="w-full bg-[#ffcc00] text-black py-2 mb-4 rounded-md font-semibold hover:bg-yellow-600">
-              List of Cases (Filter)
-            </button>
+              <button className="w-full bg-[#ffcc00] text-black py-2 mb-4 rounded-md font-semibold hover:bg-yellow-600">
+                List of Cases (Filter)
+              </button>
             </Link>
             <Link to="/list_of_police_stations">
-            <button className="w-full bg-[#ffcc00] text-black py-2 mb-4 rounded-md font-semibold hover:bg-yellow-600">
-               List of Police Stations
-            </button>
+              <button className="w-full bg-[#ffcc00] text-black py-2 mb-4 rounded-md font-semibold hover:bg-yellow-600">
+                List of Police Stations
+              </button>
             </Link>
             <button className="w-full bg-[#ffcc00] text-black py-2 mb-4 rounded-md font-semibold hover:bg-yellow-600">
-               List of Notifications (Warnings)
+              List of Notifications
             </button>
             <button className="w-full bg-[#ffcc00] text-black py-2 mb-4 rounded-md font-semibold hover:bg-yellow-600">
               Crime Prediction
             </button>
             <Link to="/aboutme_district">
-            <button className="w-full bg-[#ffcc00] text-black py-2 mb-4 rounded-md font-semibold hover:bg-yellow-600">
-               About Me
-            </button>
+              <button className="w-full bg-[#ffcc00] text-black py-2 mb-4 rounded-md font-semibold hover:bg-yellow-600">
+                About Me
+              </button>
             </Link>
           </div>
 
           {/* Right Panel */}
-           <Notifications />
+          <Notifications />
         </div>
       </div>
     </div>
