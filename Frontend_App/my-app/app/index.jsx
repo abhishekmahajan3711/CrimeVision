@@ -1,13 +1,16 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import { View, Text, TextInput, Button, StyleSheet, Alert } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useRouter } from 'expo-router';
+import { AuthContext } from './Context/userContext';
+
+
 // import {BACKEND_URL} from "@env";
 export default function SignInScreen() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const router = useRouter();
-
+  const {user,setUser} = useContext(AuthContext);
   // Check if the user has a valid token on app startup
   useEffect(() => {
     const checkToken = async () => {
@@ -43,9 +46,10 @@ export default function SignInScreen() {
       }
 
       const data = await response.json();
-
+      Alert.alert('data',data.token)
       if (data.token) {
         await AsyncStorage.setItem('authToken', data.token); // Store token in AsyncStorage
+        setUser(data.user);
         Alert.alert('Success', 'You are now signed in!');
         router.replace('/home'); // Redirect to Home page
       } else {
@@ -66,7 +70,10 @@ export default function SignInScreen() {
         },
         body: JSON.stringify({ token }),
       });
-      return response.ok;
+      const data = response.json();
+      const {valid,user} = data;
+      setUser(user)
+      return valid;
     } catch (error) {
       return false;
     }

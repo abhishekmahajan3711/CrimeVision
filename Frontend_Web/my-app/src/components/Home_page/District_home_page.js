@@ -2,7 +2,6 @@ import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import Notifications from '../Notifications/Notifications';
 import { LogOut } from "lucide-react"; // Logout icon
-
 export default function District_home_page() {
   const navigate = useNavigate();
 
@@ -54,9 +53,12 @@ export default function District_home_page() {
             <button className="w-full bg-[#ffcc00] text-black py-2 mb-4 rounded-md font-semibold hover:bg-yellow-600">
               List of Notifications
             </button>
+            <Link to="/crime_prediction_police">
             <button className="w-full bg-[#ffcc00] text-black py-2 mb-4 rounded-md font-semibold hover:bg-yellow-600">
               Crime Prediction
             </button>
+            </Link>
+            
             <Link to="/aboutme_district">
               <button className="w-full bg-[#ffcc00] text-black py-2 mb-4 rounded-md font-semibold hover:bg-yellow-600">
                 About Me
