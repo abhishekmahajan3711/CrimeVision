@@ -11,6 +11,7 @@ import { Server } from "socket.io";
 const app = express();
 
 app.use(express.json());
+app.use("/files",express.static("files"));
 app.use(cors());
 app.use(bodyParser.json());
 dotenv.config();

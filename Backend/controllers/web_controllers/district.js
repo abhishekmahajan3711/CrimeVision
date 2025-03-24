@@ -176,3 +176,45 @@ export const getDistrictAnalytics = async (req, res) => {
     }
   };
   
+
+
+
+  // filter alerts for district
+
+    export const filterAlertsDistrict = async (req,res) =>{
+      try {
+        const { policeStationID, type, status, fromDate, toDate, priority } = req.query;
+        
+        // console.log(req.query);
+        let query = { PoliceStationID: policeStationID };
+    
+        if (type) query.AlertType = type;
+        if (status) query.Status = status;
+        if (priority) query.Priority = priority;
+        if (fromDate && toDate) {
+          query.Time = { $gte: new Date(fromDate), $lte: new Date(toDate) };
+        }
+        
+        // console.log(query);
+        const alerts = await AlertReport.find(query);
+        // console.log(alerts[2]);
+        res.json(alerts);
+      } catch (error) {
+        console.error("Error fetching alerts:", error);
+        res.status(500).json({ message: "Server Error" });
+      }
+    }
+
+
+// get all policestation list of particular district
+
+export const getAllPoliceStations = async (req,res) =>{
+  try {
+    const { districtId } = req.params;
+    const policeStations = await PoliceStation.find({ district_id: districtId }).populate("authority_id");
+    res.json(policeStations);
+  } catch (error) {
+    console.error("Error fetching police stations:", error);
+    res.status(500).json({ message: "Internal Server Error" });
+  }
+}
