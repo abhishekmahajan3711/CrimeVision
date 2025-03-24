@@ -11,7 +11,6 @@ import Police_home_page from "./components/Home_page/Police_home_page";
 import District_home_page from "./components/Home_page/District_home_page";
 import Filter_PoliceStation from "./components/List_of_Cases_Filter/Filter_PoliceStation";
 import Filter_District from "./components/List_of_Cases_Filter/Filter_District";
-import Detail_Case from "./components/Detail_Case/Detail_Case";
 import Detail_Case2 from "./components/Detail_Case/Detail_Case2";
 import List_of_Police_Stations from "./components/List_of_Police_Stations/List_of_Police_Stations";
 import AboutMePoliceStation from "./components/AboutMe/AboutMePoliceStation";
@@ -19,6 +18,7 @@ import AboutMeDistrict from "./components/AboutMe/AboutMeDistrict";
 import CrimeForecast_Police from "./components/Crime_prediction/CrimeForecast_Police";
 import { Toaster } from "react-hot-toast";
 import Warnings from "./components/Warnings/Warnings";
+import Detail_Case1 from "./components/Detail_Case/Detail_Case1";
 
 function App() {
   return (
@@ -65,7 +65,7 @@ function AppContent() {
           <Route path="/districtHomePage" element={<District_home_page />} />
           <Route path="/police_filter_cases" element={<Filter_PoliceStation />} />
           <Route path="/district_filter_cases" element={<Filter_District />} />
-          <Route path="/detail_case" element={<Detail_Case />} />
+          <Route path="/detail_case1/:id" element={<Detail_Case1 />} />
           <Route path="/detail_case2/:id" element={<Detail_Case2 />} />
           <Route path="/list_of_police_stations" element={<List_of_Police_Stations />} />
           <Route path="/aboutme_policestation" element={<AboutMePoliceStation />} />
