@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { View, Text, StyleSheet } from "react-native";
 import { Picker } from "@react-native-picker/picker";
+
 const CrimeDashboard = () => {
   // State for selected crime category
   const [selectedCategory, setSelectedCategory] = useState("All");
