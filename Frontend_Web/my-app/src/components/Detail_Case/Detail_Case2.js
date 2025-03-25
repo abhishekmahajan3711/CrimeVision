@@ -23,8 +23,10 @@ export default function Detail_Case2() {
   const [comments, setComments] = useState(null);
   const [newComment, setNewComment] = useState("");
   const [timeline, setTimeline] = useState(null);
-  const [uploadedFile, setUploadedFile] = useState(null);
-  const [fileURL, setFileURL] = useState(null);
+  //pdf related
+  const [title, setTitle] = useState("");
+  const [file, setFile] = useState("");
+  const [allImage, setAllImage] = useState(null);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -44,15 +46,25 @@ export default function Detail_Case2() {
         setPriority(response.data.Priority);
         setComments(response.data.Comments || []);
         setTimeline(response.data.ActivityLog || []);
-        console.log(alertData);
-        console.log(userData);
-        console.log(policeStationData);
+        // console.log(alertData);
+        // console.log(userData);
+        // console.log(policeStationData);
       } catch (error) {
         console.error("Error in fetching data", error);
       }
     };
 
+    //get files
+    const getPdf = async () => {
+      const result = await axios.get(
+        `http://localhost:3001/api/v1/web/get-files?id=${id}`
+      );
+      console.log(result.data.data);
+      setAllImage(result.data.data);
+    };
+
     if (id) fetchData();
+    getPdf();
   }, [id]);
 
   if (!alertData || !userData || !policeStationData)
@@ -68,6 +80,52 @@ export default function Detail_Case2() {
         </div>
       </div>
     );
+
+  //pdf related functions
+  //ger files
+
+  const getPdf = async () => {
+    const result = await axios.get(
+      `http://localhost:3001/api/v1/web/get-files?id=${id}`
+    );
+    console.log(result.data.data);
+    setAllImage(result.data.data);
+  };
+
+  //upload files
+  const submitImage = async (e) => {
+    e.preventDefault();
+    const formData = new FormData();
+    formData.append("title", id + "_" + title);
+    formData.append("file", file);
+    // console.log(title, file);
+
+    const result = await axios.post(
+      "http://localhost:3001/api/v1/web/upload-files",
+      formData,
+      {
+        headers: { "Content-Type": "multipart/form-data" },
+      }
+    );
+    if (result) {
+      toast.success("File uploaded successfully");
+      getPdf();
+      setTitle("");
+      setFile("");
+    }
+  };
+
+  //show pdf
+
+  const showPdf = (pdf) => {
+    // Ensure the file name has a .pdf extension
+    const fileName = pdf.endsWith(".pdf") ? pdf : `${pdf}.pdf`;
+    window.open(
+      `http://localhost:3001/files/${fileName}`,
+      "_blank",
+      "noreferrer"
+    );
+  };
 
   const [lat, lng] = alertData.Location.split(", ").map((coord) =>
     parseFloat(coord.split(": ")[1])
@@ -169,36 +227,6 @@ export default function Detail_Case2() {
     setNewComment("");
   };
 
-  const handleFileUpload = (event) => {
-    const file = event.target.files[0];
-    if (file && file.type === "application/pdf") {
-      setUploadedFile(file);
-      setFileURL(URL.createObjectURL(file)); // Create a temporary URL for the file
-      console.log(fileURL);
-    } else {
-      alert("Please upload a valid PDF file.");
-    }
-  };
-
-  const UploadButton = () => {
-    if (uploadedFile == null || fileURL == null) {
-      alert("Please upload a valid file first");
-    } else {
-      setTimeline((prev) => [
-        ...prev,
-        {
-          action: `Uploaded file: ${uploadedFile.name}`,
-          timestamp: new Date().toISOString(),
-        },
-      ]);
-    }
-  };
-
-  const handleFileReset = () => {
-    setUploadedFile(null);
-    setFileURL(null);
-  };
-
   return (
     <div>
       {/* Header */}
@@ -226,12 +254,11 @@ export default function Detail_Case2() {
             <strong>Priority:</strong> {priority}
           </p>
           <p className="text-gray-700 text-sm mb-1">
-            <strong>Date:</strong>{" "}
-            {new Date(alertData.Time).toLocaleDateString()}
+            <strong>Date and Time:</strong>{" "}
+            {new Date(alertData.Time).toLocaleDateString()}{" "}{new Date(alertData.Time).toLocaleTimeString()}
           </p>
           <p className="text-gray-700 text-sm">
-            <strong>Time:</strong>{" "}
-            {new Date(alertData.Time).toLocaleTimeString()}
+            <strong>Description:</strong>{alertData.Description}
           </p>
         </div>
 
@@ -298,14 +325,18 @@ export default function Detail_Case2() {
         </div>
       </div>
 
-       {/* Comment Section */}
-       <div className="max-w-5xl mx-auto mt-6 bg-white rounded-lg shadow-md p-4 border border-gray-200">
-        <h2 className="text-lg font-semibold text-gray-800 border-b pb-2 mb-3">Comments</h2>
+      {/* Comment Section */}
+      <div className="max-w-5xl mx-auto mt-6 bg-white rounded-lg shadow-md p-4 border border-gray-200">
+        <h2 className="text-lg font-semibold text-gray-800 border-b pb-2 mb-3">
+          Comments
+        </h2>
         <div className="space-y-4">
           {comments.map((comment, index) => (
             <div key={index} className="p-3 bg-gray-50 rounded-lg shadow-sm">
               <p className="text-gray-800 font-medium">{comment.text}</p>
-              <p className="text-xs text-gray-500">{new Date(comment.addedAt).toLocaleString()}</p>
+              <p className="text-xs text-gray-500">
+                {new Date(comment.addedAt).toLocaleString()}
+              </p>
             </div>
           ))}
         </div>
@@ -394,38 +425,60 @@ export default function Detail_Case2() {
 
       {/* PDF Upload Section */}
       <div className="max-w-5xl mx-auto mt-6 bg-white rounded-lg shadow-md p-4 border border-gray-200">
-        <h2 className="text-lg font-semibold text-gray-800 border-b pb-2 mb-3">
+        <h2 className="text-xl font-bold text-gray-700 border-b pb-3 mb-4">
           Upload PDF File
         </h2>
-        <input
-          type="file"
-          accept="application/pdf"
-          onChange={handleFileUpload}
-          className="block w-full mb-4 border border-gray-300 rounded-md p-2"
-        />
-        <button
-          className="bg-[#003366] text-white px-4 py-2 mt-2 rounded hover:bg-blue-600"
-          onClick={UploadButton}
-        >
-          Upload
-        </button>
-        {uploadedFile && (
-          <div className="text-gray-700 text-sm mb-4">
-            <a
-              href={fileURL}
-              download={uploadedFile.name}
-              className="mt-2 px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 inline-block"
-            >
-              Download File
-            </a>
-            <button
-              onClick={handleFileReset}
-              className="mt-2 ml-2 px-4 py-2 bg-red-500 text-white rounded-md hover:bg-red-600"
-            >
-              Remove File
-            </button>
+
+        <div className="space-y-4">
+          {/* Title Input */}
+          <input
+            type="text"
+            className="w-full px-4 py-2 border rounded-lg text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            placeholder="Enter Title"
+            required
+            onChange={(e) => setTitle(e.target.value)}
+          />
+
+          {/* File Upload Input */}
+          <input
+            type="file"
+            className="w-full border border-gray-300 rounded-lg p-2 text-gray-700 cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-500"
+            accept="application/pdf"
+            required
+            onChange={(e) => setFile(e.target.files[0])}
+          />
+
+          {/* Submit Button */}
+          <button
+            onClick={submitImage}
+            className="bg-[#003366] text-white px-4 py-2 mt-2 rounded hover:bg-blue-600"
+            type="submit"
+          >
+            Upload PDF
+          </button>
+        </div>
+
+        {/* Uploaded PDFs Section */}
+        <div className="mt-6">
+          <h3 className="text-lg font-semibold text-gray-600 mb-2">
+            Uploaded PDFs:
+          </h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {allImage && allImage.length > 0 ? (
+              allImage.map((data, index) => (
+                <button
+                  key={index}
+                  className="bg-gray-100 text-gray-800 px-4 py-2 rounded-lg shadow-md hover:bg-gray-200 transition-all duration-200 w-full text-center truncate"
+                  onClick={() => showPdf(data.title)}
+                >
+                  {data.title.split("_")[1] + ".pdf"}
+                </button>
+              ))
+            ) : (
+              <p className="text-gray-500">No PDFs uploaded yet.</p>
+            )}
           </div>
-        )}
+        </div>
       </div>
     </div>
   );

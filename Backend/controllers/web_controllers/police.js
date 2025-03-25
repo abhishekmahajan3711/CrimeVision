@@ -155,3 +155,31 @@ export const getAlerts = async (req, res) => {
     }
   };
   
+
+
+
+  // filter alerts for police station 
+
+  export const filterAlerts = async (req,res) =>{
+    try {
+      const { policeStationID, type, status, fromDate, toDate, priority } = req.query;
+      
+      // console.log(req.query);
+      let query = { PoliceStationID: policeStationID };
+  
+      if (type) query.AlertType = type;
+      if (status) query.Status = status;
+      if (priority) query.Priority = priority;
+      if (fromDate && toDate) {
+        query.Time = { $gte: new Date(fromDate), $lte: new Date(toDate) };
+      }
+      
+      // console.log(query);
+      const alerts = await AlertReport.find(query);
+      // console.log(alerts[2]);
+      res.json(alerts);
+    } catch (error) {
+      console.error("Error fetching alerts:", error);
+      res.status(500).json({ message: "Server Error" });
+    }
+  }
