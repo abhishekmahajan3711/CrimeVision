@@ -30,9 +30,9 @@ ChartJS.register(
 const PoliceDataAnalytics = () => {
     const [data, setData] = useState(null);
     const [chartType, setChartType] = useState('Bar');
-    const [filter1, setFilter1] = useState('Fraud');
-    const [filter2, setFilter2] = useState('Fraud');
-    const [filter3, setFilter3] = useState('Fraud');
+    const [filter1, setFilter1] = useState('Fight');
+    const [filter2, setFilter2] = useState('Fight');
+    const [filter3, setFilter3] = useState('Fight');
     const { userInfo }=useUser();
 
     useEffect(() => {
