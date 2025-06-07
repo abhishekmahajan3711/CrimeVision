@@ -309,6 +309,91 @@ export default function Detail_Case2() {
         </MapContainer>
       </div>
 
+      {/* Evidence Section - Images and Videos */}
+      {(alertData.Image || alertData.Video) && (
+        <div className="max-w-5xl mx-auto mt-6 bg-white rounded-lg shadow-md p-4 border border-gray-200">
+          <h2 className="text-lg font-semibold text-gray-800 border-b pb-2 mb-4">
+            Crime Evidence
+          </h2>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {/* Image Section */}
+            {alertData.Image && (
+              <div className="bg-gray-50 rounded-lg p-4">
+                <h3 className="text-md font-semibold text-gray-700 mb-3 flex items-center">
+                  <svg className="w-5 h-5 mr-2 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                  </svg>
+                  Evidence Image
+                </h3>
+                <div className="space-y-2">
+                  <img
+                    src={`http://localhost:3001/api/v1/app/uploads/images/${alertData.Image.filename}`}
+                    alt="Crime Evidence"
+                    className="w-full h-64 object-cover rounded-lg shadow-md border border-gray-200 cursor-pointer hover:shadow-lg transition-shadow"
+                    onClick={() => window.open(`http://localhost:3001/api/v1/app/uploads/images/${alertData.Image.filename}`, '_blank')}
+                  />
+                  <div className="text-sm text-gray-600 space-y-1">
+                    <p><strong>Filename:</strong> {alertData.Image.filename}</p>
+                    <p><strong>Size:</strong> {(alertData.Image.size / 1024 / 1024).toFixed(2)} MB</p>
+                    <p><strong>Type:</strong> {alertData.Image.mimetype}</p>
+                    <p><strong>Uploaded:</strong> {new Date(alertData.Image.uploadedAt).toLocaleString()}</p>
+                  </div>
+                </div>
+              </div>
+            )}
+
+            {/* Video Section */}
+            {alertData.Video && (
+              <div className="bg-gray-50 rounded-lg p-4">
+                <h3 className="text-md font-semibold text-gray-700 mb-3 flex items-center">
+                  <svg className="w-5 h-5 mr-2 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                  </svg>
+                  Evidence Video
+                </h3>
+                <div className="space-y-2">
+                  <video
+                    controls
+                    className="w-full h-64 rounded-lg shadow-md border border-gray-200"
+                    preload="metadata"
+                  >
+                    <source src={`http://localhost:3001/api/v1/app/uploads/videos/${alertData.Video.filename}`} type={alertData.Video.mimetype} />
+                    Your browser does not support the video tag.
+                  </video>
+                  <div className="text-sm text-gray-600 space-y-1">
+                    <p><strong>Filename:</strong> {alertData.Video.filename}</p>
+                    <p><strong>Size:</strong> {(alertData.Video.size / 1024 / 1024).toFixed(2)} MB</p>
+                    <p><strong>Type:</strong> {alertData.Video.mimetype}</p>
+                    {alertData.Video.duration && (
+                      <p><strong>Duration:</strong> {Math.round(alertData.Video.duration / 1000)}s</p>
+                    )}
+                    <p><strong>Uploaded:</strong> {new Date(alertData.Video.uploadedAt).toLocaleString()}</p>
+                  </div>
+                  <button
+                    onClick={() => window.open(`http://localhost:3001/api/v1/app/uploads/videos/${alertData.Video.filename}`, '_blank')}
+                    className="bg-[#003366] text-white px-4 py-2 mt-2 rounded hover:bg-blue-600"
+                  >
+                    Open in New Tab
+                  </button>
+                </div>
+              </div>
+            )}
+          </div>
+
+          {/* No Evidence Message */}
+          {!alertData.Image && !alertData.Video && (
+            <div className="text-center py-8 text-gray-500">
+              <svg className="w-12 h-12 mx-auto mb-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 4V2a1 1 0 011-1h8a1 1 0 011 1v2h4a1 1 0 011 1v1a1 1 0 01-1 1h-1v12a2 2 0 01-2 2H6a2 2 0 01-2-2V7H3a1 1 0 01-1-1V5a1 1 0 011-1h4z" />
+              </svg>
+              <p className="text-lg font-medium">No Evidence Submitted</p>
+              <p className="text-sm">No images or videos were provided with this crime report.</p>
+            </div>
+          )}
+        </div>
+      )}
+
       {/* Timeline Section */}
       <div className="max-w-5xl mx-auto mt-6 bg-white rounded-lg shadow-lg p-6 border border-gray-300">
         <h2 className="text-xl font-bold text-gray-800 mb-6">Timeline</h2>

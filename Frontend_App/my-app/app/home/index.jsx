@@ -63,20 +63,44 @@ const Home = () => {
         </TouchableOpacity>
       </View>
 
-      <View style={styles.container}>
-      <PagerView style={styles.container} initialPage={0}>
-        <View style={styles.page} key="1">
-          <Text>First page</Text>
-          <Text>Swipe ➡️</Text>
-        </View>
-        <View style={styles.page} key="2">
-          <Text>Second page</Text>
-        </View>
-        <View style={styles.page} key="3">
-          <Text>Third page</Text>
-        </View>
-      </PagerView>
-    </View>
+      {/* Feature Slider */}
+      <View style={styles.sliderContainer}>
+        <PagerView style={styles.slider} initialPage={0}>
+          <View style={styles.page} key="1">
+            <View style={styles.pageContent}>
+              <MaterialIcons name="report" size={50} color="#FF6B6B" />
+              <Text style={styles.pageTitle}>Report Crime Instantly</Text>
+              <Text style={styles.pageDescription}>
+                Quickly report crimes with photo and video evidence. 
+                Your reports help build a safer community by providing 
+                real-time crime data to authorities.
+              </Text>
+            </View>
+          </View>
+          <View style={styles.page} key="2">
+            <View style={styles.pageContent}>
+              <MaterialIcons name="analytics" size={50} color="#4ECDC4" />
+              <Text style={styles.pageTitle}>Police Station Analytics</Text>
+              <Text style={styles.pageDescription}>
+                View comprehensive crime statistics organized by police stations. 
+                Track crime trends, patterns, and get insights into your area's 
+                safety profile with detailed data visualization.
+              </Text>
+            </View>
+          </View>
+          <View style={styles.page} key="3">
+            <View style={styles.pageContent}>
+              <MaterialCommunityIcons name="shield-check" size={50} color="#45B7D1" />
+              <Text style={styles.pageTitle}>Building Safer Society</Text>
+              <Text style={styles.pageDescription}>
+                Together we create a transparent, data-driven approach to 
+                community safety. Your participation helps law enforcement 
+                respond faster and makes neighborhoods safer.
+              </Text>
+            </View>
+          </View>
+        </PagerView>
+      </View>
 
     </View>
   );
@@ -84,11 +108,11 @@ const Home = () => {
 
 const styles = StyleSheet.create({
   container: {
-     flex: 1,
-      backgroundColor: 'white', 
-      padding: 20,
-      margin:3,
-      paddingTop:100,
+    flex: 1,
+    backgroundColor: 'white', 
+    paddingTop: 60,
+    paddingHorizontal: 20,
+    paddingBottom: 20,
   },
   header: { 
     flexDirection: 'row', 
@@ -98,31 +122,110 @@ const styles = StyleSheet.create({
     padding: 15, 
     borderRadius: 10 
   },
-  profileCircle: { width: 40, height: 40, borderRadius: 20, backgroundColor: 'white', justifyContent: 'center', alignItems: 'center' },
-  profileText: { fontSize: 18, fontWeight: 'bold', color: 'black' },
-  welcomeText: { fontSize: 20, fontWeight: 'bold', textAlign: 'center', marginVertical: 20 },
+  profileCircle: { 
+    width: 40, 
+    height: 40, 
+    borderRadius: 20, 
+    backgroundColor: 'white', 
+    justifyContent: 'center', 
+    alignItems: 'center' 
+  },
+  profileText: { 
+    fontSize: 18, 
+    fontWeight: 'bold', 
+    color: 'black' 
+  },
+  welcomeText: { 
+    fontSize: 20, 
+    fontWeight: 'bold', 
+    textAlign: 'center', 
+    marginVertical: 20 
+  },
   alertButton: {
-     flexDirection: 'row', 
-     alignItems: 'center', 
-     backgroundColor: 'red', 
-     padding: 15, borderRadius: 10, 
-     justifyContent: 'center',
-     borderWidth:1,
-     borderColor:'red'
+    flexDirection: 'row', 
+    alignItems: 'center', 
+    backgroundColor: '#e74c3c', 
+    padding: 15, 
+    borderRadius: 10, 
+    justifyContent: 'center',
+    marginBottom: 20,
   },
   alertText: {
     fontSize: 16, 
     fontWeight: 'bold',
-    color:'white'
+    color: 'white'
   },
   grid: { 
-      flexDirection: 'row',
-      flexWrap: 'wrap', 
-      justifyContent: 'space-between', 
-      marginTop: 20 
+    flexDirection: 'row',
+    flexWrap: 'wrap', 
+    justifyContent: 'space-between', 
+    marginBottom: 20,
   },
-  gridItem: { width: '30%', paddingVertical: 20, backgroundColor: '#e3f2fd', marginBottom: 15, alignItems: 'center', borderRadius: 8 },
-  gridText: { fontSize: 14, fontWeight: 'bold' },
+  gridItem: { 
+    width: '30%', 
+    paddingVertical: 20, 
+    backgroundColor: '#e3f2fd', 
+    marginBottom: 15, 
+    alignItems: 'center', 
+    borderRadius: 8 
+  },
+  gridText: { 
+    fontSize: 14, 
+    fontWeight: 'bold' 
+  },
+  sliderContainer: {
+    height: 250,
+    marginTop: 10,
+    marginBottom: 20,
+    borderRadius: 12,
+    overflow: 'hidden',
+    backgroundColor: '#fff',
+    elevation: 3,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.1,
+    shadowRadius: 4,
+  },
+  slider: {
+    height: 220,
+  },
+  page: {
+    justifyContent: 'center',
+    alignItems: 'center',
+    padding: 10,
+  },
+  pageContent: {
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: '#f8f9fa',
+    padding: 20,
+    borderRadius: 12,
+    width: '95%',
+    height: '90%',
+    marginHorizontal: 10,
+  },
+  pageTitle: {
+    fontSize: 18,
+    fontWeight: 'bold',
+    color: '#2c3e50',
+    marginTop: 10,
+    marginBottom: 8,
+    textAlign: 'center',
+  },
+  pageDescription: {
+    fontSize: 14,
+    color: '#5a6c7d',
+    textAlign: 'center',
+    lineHeight: 20,
+    marginBottom: 5,
+    paddingHorizontal: 5,
+  },
+  swipeText: {
+    fontSize: 12,
+    color: '#95a5a6',
+    fontStyle: 'italic',
+    textAlign: 'center',
+  },
 });
 
 export default Home;

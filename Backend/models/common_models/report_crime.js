@@ -41,11 +41,57 @@ const AlertReportSchema = new mongoose.Schema(
       default: "",
     },
     Image: {
-      type: String, // Path or URL of the image related to the report (optional)
+      type: {
+        filename: {
+          type: String,
+          default: null,
+        },
+        path: {
+          type: String,
+          default: null,
+        },
+        size: {
+          type: Number,
+          default: null,
+        },
+        mimetype: {
+          type: String,
+          default: null,
+        },
+        uploadedAt: {
+          type: Date,
+          default: Date.now,
+        }
+      },
       default: null,
     },
     Video: {
-      type: String, // Path or URL of the video related to the report (optional)
+      type: {
+        filename: {
+          type: String,
+          default: null,
+        },
+        path: {
+          type: String,
+          default: null,
+        },
+        size: {
+          type: Number,
+          default: null,
+        },
+        mimetype: {
+          type: String,
+          default: null,
+        },
+        duration: {
+          type: Number,
+          default: null,
+        },
+        uploadedAt: {
+          type: Date,
+          default: Date.now,
+        }
+      },
       default: null,
     },
     Priority: {

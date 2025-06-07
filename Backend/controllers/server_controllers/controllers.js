@@ -1,6 +1,70 @@
 import AlertReport from "../../models/common_models/report_crime.js";
 import { io, stationSockets } from "../../index.js";
 import PoliceStation from "../../models/web_models/police_station.js"; // Import PoliceStation schema
+import multer from "multer";
+import path from "path";
+import fs from "fs";
+
+// Create uploads directory if it doesn't exist
+const uploadsDir = path.join(process.cwd(), 'uploads');
+const imagesDir = path.join(uploadsDir, 'images');
+const videosDir = path.join(uploadsDir, 'videos');
+
+[uploadsDir, imagesDir, videosDir].forEach(dir => {
+  if (!fs.existsSync(dir)) {
+    fs.mkdirSync(dir, { recursive: true });
+  }
+});
+
+// Configure multer for file uploads
+const storage = multer.diskStorage({
+  destination: function (req, file, cb) {
+    if (file.fieldname === 'image') {
+      cb(null, imagesDir);
+    } else if (file.fieldname === 'video') {
+      cb(null, videosDir);
+    } else {
+      cb(new Error('Invalid field name'), null);
+    }
+  },
+  filename: function (req, file, cb) {
+    // Generate unique filename with timestamp
+    const uniqueSuffix = Date.now() + '-' + Math.round(Math.random() * 1E9);
+    const fileExtension = path.extname(file.originalname);
+    cb(null, `${file.fieldname}-${uniqueSuffix}${fileExtension}`);
+  }
+});
+
+// File filter to validate file types
+const fileFilter = (req, file, cb) => {
+  if (file.fieldname === 'image') {
+    // Accept only image files
+    if (file.mimetype.startsWith('image/')) {
+      cb(null, true);
+    } else {
+      cb(new Error('Only image files are allowed for image field'), false);
+    }
+  } else if (file.fieldname === 'video') {
+    // Accept only video files
+    if (file.mimetype.startsWith('video/')) {
+      cb(null, true);
+    } else {
+      cb(new Error('Only video files are allowed for video field'), false);
+    }
+  } else {
+    cb(new Error('Invalid field name'), false);
+  }
+};
+
+// Configure multer with size limits
+export const upload = multer({
+  storage: storage,
+  fileFilter: fileFilter,
+  limits: {
+    fileSize: 50 * 1024 * 1024, // 50MB limit
+    files: 2, // Maximum 2 files (1 image + 1 video)
+  }
+});
 
 // Sample map data for police stations and their locations
 const policeStations = new Map([
@@ -32,7 +96,6 @@ const policeStations = new Map([
   ["Nigdi Police Station", { lat: 18.6622, lng: 73.7721 }], 
 ]);
 
-
 // Haversine formula to calculate the distance between two latitude/longitude points
 const haversineDistance = (lat1, lng1, lat2, lng2) => {
   const toRadians = (degree) => (degree * Math.PI) / 180;
@@ -53,6 +116,106 @@ const haversineDistance = (lat1, lng1, lat2, lng2) => {
   return R * c; // Distance in km
 };
 
+// Helper function to handle base64 image uploads
+const handleBase64Image = async (base64Data) => {
+  try {
+    // Extract the base64 data and mime type
+    const matches = base64Data.match(/^data:([A-Za-z-+\/]+);base64,(.+)$/);
+    if (!matches || matches.length !== 3) {
+      throw new Error('Invalid base64 format');
+    }
+
+    const mimeType = matches[1];
+    const base64 = matches[2];
+    const buffer = Buffer.from(base64, 'base64');
+
+    // Generate unique filename
+    const uniqueSuffix = Date.now() + '-' + Math.round(Math.random() * 1E9);
+    const fileExtension = mimeType.split('/')[1];
+    const filename = `image-${uniqueSuffix}.${fileExtension}`;
+    const filepath = path.join(imagesDir, filename);
+
+    // Save file to disk
+    fs.writeFileSync(filepath, buffer);
+
+    return {
+      filename: filename,
+      path: filepath,
+      size: buffer.length,
+      mimetype: mimeType,
+    };
+  } catch (error) {
+    console.error('Error handling base64 image:', error);
+    throw error;
+  }
+};
+
+// Get all alerts by user ID
+export const getUserAlerts = async (req, res) => {
+  try {
+    const { userId } = req.params;
+
+    if (!userId) {
+      return res.status(400).json({
+        message: "userId is required",
+      });
+    }
+
+    // Fetch all alerts for the user
+    const alerts = await AlertReport.find({ UserID: userId })
+      .populate('PoliceStationID', 'name district')
+      .sort({ createdAt: -1 }); // Sort by newest first
+
+    res.status(200).json({
+      message: "User alerts fetched successfully",
+      alerts: alerts,
+      count: alerts.length
+    });
+
+  } catch (error) {
+    console.error('Error fetching user alerts:', error);
+    res.status(500).json({
+      message: "Internal server error",
+      error: error.message
+    });
+  }
+};
+
+// Get specific alert details by alert ID
+export const getAlertDetails = async (req, res) => {
+  try {
+    const { alertId } = req.params;
+
+    if (!alertId) {
+      return res.status(400).json({
+        message: "alertId is required",
+      });
+    }
+
+    // Fetch the specific alert with police station details
+    const alert = await AlertReport.findById(alertId)
+      .populate('PoliceStationID', 'name district contactInfo');
+
+    if (!alert) {
+      return res.status(404).json({
+        message: "Alert not found",
+      });
+    }
+
+    res.status(200).json({
+      message: "Alert details fetched successfully",
+      alert: alert
+    });
+
+  } catch (error) {
+    console.error('Error fetching alert details:', error);
+    res.status(500).json({
+      message: "Internal server error",
+      error: error.message
+    });
+  }
+};
+
 export const emergency_alert = async (req, res) => {
   try {
     const {
@@ -61,16 +224,64 @@ export const emergency_alert = async (req, res) => {
       location,
       description,
       image,
-      video,
     } = req.body;
 
-    console.log(userId);
+    console.log('Received alert request body:', req.body);
+    console.log('Received alert from user:', userId);
+    console.log('Files received:', req.files);
+
+    // Validate required fields
+    if (!userId) {
+      return res.status(400).json({
+        message: "userId is required",
+      });
+    }
+
+    if (!alertType) {
+      return res.status(400).json({
+        message: "alertType is required",
+      });
+    }
+
+    if (!location) {
+      return res.status(400).json({
+        message: "location is required",
+      });
+    }
+
+    if (!description) {
+      return res.status(400).json({
+        message: "description is required",
+      });
+    }
+
+    // Validate location format
+    if (typeof location !== 'string' || !location.includes('Lat:') || !location.includes('Lng:')) {
+      return res.status(400).json({
+        message: "Invalid location format. Expected format: 'Lat: X, Lng: Y'",
+      });
+    }
+
     // Extract latitude and longitude from the location string
-    const [lat, lng] = location
-      .replace("Lat:", "")
-      .replace("Lng:", "")
-      .split(",")
-      .map((coord) => parseFloat(coord.trim()));
+    let lat, lng;
+    try {
+      const coords = location
+        .replace("Lat:", "")
+        .replace("Lng:", "")
+        .split(",")
+        .map((coord) => parseFloat(coord.trim()));
+      
+      [lat, lng] = coords;
+      
+      if (isNaN(lat) || isNaN(lng)) {
+        throw new Error("Invalid coordinates");
+      }
+    } catch (error) {
+      return res.status(400).json({
+        message: "Invalid location coordinates",
+        error: error.message,
+      });
+    }
 
     // Find the nearest police station
     let nearestStationName = null;
@@ -84,7 +295,7 @@ export const emergency_alert = async (req, res) => {
         stationLocation.lng
       );
 
-      console.log(stationName,distance);
+      console.log(stationName, distance);
       if (distance < shortestDistance) {
         shortestDistance = distance;
         nearestStationName = stationName;
@@ -111,19 +322,7 @@ export const emergency_alert = async (req, res) => {
     const nearestStationId = policeStation._id;
 
     // Prepare alert data
-    // const alert = {
-    //   UserID: userId,
-    //   PoliceStationID: nearestStationId,
-    //   AlertType: alertType,
-    //   Location: location,
-    //   Description: description,
-    //   Image: image || null,
-    //   Video: video || null,
-    // };
-
-     //will use when required
-    // Save the alert to the database
-    const alert = await AlertReport.create({
+    const alertData = {
       UserID: userId,
       PoliceStationID: nearestStationId,
       AlertType: alertType,
@@ -131,11 +330,40 @@ export const emergency_alert = async (req, res) => {
       Priority: "Low",
       Status: "Pending",
       Description: description,
-      Image: image || null,
-      Video: video || null,
-    });
-    alert.save();
+    };
 
+    // Handle image upload
+    if (req.files && req.files.image) {
+      const imageFile = req.files.image[0];
+      alertData.Image = {
+        filename: imageFile.filename,
+        path: imageFile.path,
+        size: imageFile.size,
+        mimetype: imageFile.mimetype,
+      };
+    } else if (image && image.startsWith('data:image')) {
+      // Handle base64 image
+      try {
+        const imageData = await handleBase64Image(image);
+        alertData.Image = imageData;
+      } catch (error) {
+        console.error('Error processing base64 image:', error);
+      }
+    }
+
+    // Handle video upload
+    if (req.files && req.files.video) {
+      const videoFile = req.files.video[0];
+      alertData.Video = {
+        filename: videoFile.filename,
+        path: videoFile.path,
+        size: videoFile.size,
+        mimetype: videoFile.mimetype,
+      };
+    }
+
+    // Save the alert to the database
+    const alert = await AlertReport.create(alertData);
 
     // Notify the police station via WebSocket
     const socketId = stationSockets.get(nearestStationId.toString());
@@ -149,9 +377,31 @@ export const emergency_alert = async (req, res) => {
 
     res
       .status(201)
-      .json({ message: "Alert created and sent successfully.", alert });
+      .json({ 
+        message: "Alert created and sent successfully.", 
+        alert,
+        nearestStation: nearestStationName,
+        distance: shortestDistance.toFixed(2) + " km",
+        files: {
+          image: alertData.Image ? true : false,
+          video: alertData.Video ? true : false,
+        }
+      });
   } catch (err) {
-    console.error(err);
-    res.status(500).json({ message: "Internal server error." });
+    console.error('Emergency alert error:', err);
+    
+    // Clean up uploaded files if there was an error
+    if (req.files) {
+      Object.values(req.files).flat().forEach(file => {
+        if (fs.existsSync(file.path)) {
+          fs.unlinkSync(file.path);
+        }
+      });
+    }
+    
+    res.status(500).json({ 
+      message: "Internal server error.", 
+      error: err.message 
+    });
   }
 };

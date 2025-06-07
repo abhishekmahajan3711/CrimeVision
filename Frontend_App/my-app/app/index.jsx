@@ -1,14 +1,17 @@
 import React, { useState, useEffect, useContext } from 'react';
-import { View, Text, TextInput, Button, StyleSheet, Alert } from 'react-native';
+import { View, Text, TextInput, Button, StyleSheet, Alert, TouchableOpacity } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useRouter } from 'expo-router';
 import { AuthContext } from './Context/userContext';
+import AlertConfirmation from '../components/AlertConfirmation';
+import Ionicons from '@expo/vector-icons/Ionicons';
 
 
 // import {BACKEND_URL} from "@env";
 export default function SignInScreen() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [showEmergencyModal, setShowEmergencyModal] = useState(false);
   const router = useRouter();
   const {user,setUser} = useContext(AuthContext);
   // Check if the user has a valid token on app startup
@@ -81,6 +84,15 @@ export default function SignInScreen() {
 
   return (
     <View style={styles.container}>
+      {/* Emergency Alert Button */}
+      {/* <TouchableOpacity 
+        style={styles.emergencyButton} 
+        onPress={() => setShowEmergencyModal(true)}
+      >
+        <Ionicons name="warning" size={24} color="white" />
+        <Text style={styles.emergencyText}>EMERGENCY</Text>
+      </TouchableOpacity> */}
+
       <Text style={styles.title}>Sign In</Text>
       <TextInput
         style={styles.input}
@@ -106,12 +118,41 @@ export default function SignInScreen() {
         onPress={() => router.push('/signup')}
         color="gray"
       />
+
+      {/* Emergency Alert Modal */}
+      <AlertConfirmation
+        visible={showEmergencyModal}
+        onClose={() => setShowEmergencyModal(false)}
+      />
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: { flex: 1, justifyContent: 'center', padding: 20 },
+  emergencyButton: {
+    position: 'absolute',
+    top: 50,
+    right: 20,
+    backgroundColor: '#ff4444',
+    flexDirection: 'row',
+    alignItems: 'center',
+    paddingHorizontal: 15,
+    paddingVertical: 10,
+    borderRadius: 25,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.3,
+    shadowRadius: 4,
+    elevation: 5,
+    zIndex: 1000,
+  },
+  emergencyText: {
+    color: 'white',
+    fontWeight: 'bold',
+    fontSize: 12,
+    marginLeft: 5,
+  },
   title: { fontSize: 24, fontWeight: 'bold', marginBottom: 20 },
   input: {
     height: 40,
