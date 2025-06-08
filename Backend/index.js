@@ -35,7 +35,7 @@ const server = http.createServer(app);
 //initalizing websocket server using http server
 export const io = new Server(server, {
   cors: {
-    origin: "http://localhost:3000", // Frontend URL
+    origin: "*", // Frontend URL
     methods: ["GET", "POST"],
   },
 });
