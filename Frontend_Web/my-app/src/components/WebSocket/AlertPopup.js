@@ -1,10 +1,12 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
+import { useWebSocket } from "./WebSocketContext";
 
 // Notification sound
 const notificationSound = new Audio("/siren_alert.mp3"); // Path to your sound file
 
 const AlertPopup = ({ alert, onClose, onSeeDetails, hasInteracted }) => {
+  const { queuedWarnings } = useWebSocket();
   useEffect(() => {
     if (alert && hasInteracted) {
       notificationSound.play();
@@ -41,7 +43,16 @@ const AlertPopup = ({ alert, onClose, onSeeDetails, hasInteracted }) => {
         }}
       >
         <h2 className="text-xl font-bold text-gray-800 mb-4">Alert !!!! </h2>
-        <p className="text-gray-600 mb-6">{alert.message}</p>
+        <p className="text-gray-600 mb-4">{alert.message}</p>
+        
+        {/* Show queued warnings indicator */}
+        {queuedWarnings > 0 && (
+          <div className="bg-yellow-100 border border-yellow-400 text-yellow-700 px-3 py-2 rounded mb-4">
+            <p className="text-sm">
+              ⚠️ {queuedWarnings} warning{queuedWarnings > 1 ? 's' : ''} queued - will show after dismissing this alert
+            </p>
+          </div>
+        )}
         <div className="flex justify-end space-x-4">
           <button
             onClick={() => {

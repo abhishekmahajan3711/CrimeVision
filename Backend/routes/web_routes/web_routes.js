@@ -7,6 +7,14 @@ import { getDistrictAnalytics,getAlertsByDistrict, filterAlertsDistrict, getAllP
 import { get_Detail_Case } from "../../controllers/server_controllers/detail_case.js";
 import { updateStatus, updatePriority, addComment } from "../../controllers/server_controllers/detail_case.js";
 import { getFile, UploadFile } from "../../controllers/web_controllers/pdf_controllers.js";
+import { 
+  getWarnings, 
+  acknowledgeWarning, 
+  getWarningConfig, 
+  updateWarningConfig, 
+  getWarningDashboard,
+  checkAndGenerateWarnings 
+} from "../../controllers/web_controllers/warning.js";
 const web_router=express.Router();
 
 //in the following , after comma, pass the controller function
@@ -28,6 +36,23 @@ web_router.get("/web/filter_alerts_police",filterAlerts);
 //get pdf files 
 
 web_router.get("/web/get-files",getFile);
+
+// Warning routes (must come before generic :districtId route)
+web_router.get("/web/warnings", getWarnings);
+web_router.get("/web/district/:districtId/warnings", getWarnings);
+web_router.get("/web/warnings/dashboard", getWarningDashboard);
+web_router.post("/web/warnings/:warningId/acknowledge", acknowledgeWarning);
+web_router.get("/web/warnings/config", getWarningConfig);
+web_router.put("/web/warnings/config", updateWarningConfig);
+web_router.post("/web/warnings/check/:policeStationId", async (req, res) => {
+  try {
+    const { policeStationId } = req.params;
+    const warnings = await checkAndGenerateWarnings(policeStationId, true); // Treat manual checks as alert-triggered
+    res.json({ success: true, data: warnings });
+  } catch (error) {
+    res.status(500).json({ success: false, error: error.message });
+  }
+});
 
 //get all police stations related to all the police stations
 web_router.get("/web/:districtId",getAllPoliceStations);

@@ -21,7 +21,7 @@ const FilterPoliceStation = () => {
     setLoading(true);
     try {
       const response = await axios.get(
-        "http://localhost:3001/api/v1/web/filter_alerts_police",
+        "https://crimevision.onrender.com/api/v1/web/filter_alerts_police",
         {
           params: {
             policeStationID: userInfo.policeStation._id,

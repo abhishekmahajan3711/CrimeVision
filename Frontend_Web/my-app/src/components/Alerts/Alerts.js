@@ -24,7 +24,7 @@ function Alerts({PoliceStationID}) {
 
   const fetchAlerts = async () => {
     try {
-      const response = await axios.get("http://localhost:3001/api/v1/web/get_alerts", {
+      const response = await axios.get("https://crimevision.onrender.com/api/v1/web/get_alerts", {
         params: {
           time: selectedTime,
           status: selectedStatus,

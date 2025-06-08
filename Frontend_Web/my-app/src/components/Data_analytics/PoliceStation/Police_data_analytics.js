@@ -38,7 +38,7 @@ const PoliceDataAnalytics = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await axios.post('http://localhost:3001/api/v1/web/police-station-analytics', {
+                const response = await axios.post('https://crimevision.onrender.com/api/v1/web/police-station-analytics', {
                     stationId: userInfo.policeStation._id, //e.g "674dde5bf62a268693cf2371"
                 });
                 setData(response.data);

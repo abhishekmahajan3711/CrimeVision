@@ -44,7 +44,7 @@ const PinMapView = () => {
   useEffect(() => {
     const fetchCrimeData = async () => {
       try {
-        const response = await axios.post("http://localhost:3001/api/v1/web/alerts_district", { districtId: userInfo.district._id });
+        const response = await axios.post("https://crimevision.onrender.com/api/v1/web/alerts_district", { districtId: userInfo.district._id });
         setCrimeData(response.data);
       } catch (error) {
         console.error("Error fetching crime data:", error);

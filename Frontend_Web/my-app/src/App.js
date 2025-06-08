@@ -19,6 +19,8 @@ import CrimeForecast_Police from "./components/Crime_prediction/CrimeForecast_Po
 import { Toaster } from "react-hot-toast";
 import Warnings from "./components/Warnings/Warnings";
 import Detail_Case1 from "./components/Detail_Case/Detail_Case1";
+import NotificationsList from "./components/Notifications/NotificationsList";
+import NotificationDetails from "./components/Notifications/NotificationDetails";
 
 function App() {
   return (
@@ -72,6 +74,8 @@ function AppContent() {
           <Route path="/aboutme_district" element={<AboutMeDistrict />} />
           <Route path="/crime_prediction_police" element={<CrimeForecast_Police />} />
           <Route path="/warnings" element={<Warnings />} />
+          <Route path="/notifications_list" element={<NotificationsList />} />
+          <Route path="/notification_details/:id" element={<NotificationDetails />} />
         </Routes>
         <Toaster />
       </div>

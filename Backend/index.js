@@ -41,7 +41,8 @@ export const io = new Server(server, {
 });
 
 // In-memory store for WebSocket connections
-export const stationSockets = new Map(); // Key: PoliceStationID, Value: SocketID
+export const stationSockets = new Map(); // For police stations: policeStationId -> socketId
+export const districtSockets = new Map(); // For district officers: authorityId -> socketId
 
 // WebSocket connection
 //Purpose: This event is fired whenever a new client establishes a WebSocket connection with the server.
@@ -49,30 +50,57 @@ export const stationSockets = new Map(); // Key: PoliceStationID, Value: SocketI
 io.on("connection", (socket) => {
   console.log("New WebSocket connection:", socket.id);
 
-  //The register event allows the client to provide additional information (like policeStationId) that the server can use to identify and manage the connection.
-  // Register police station client
-  socket.on("register", async ({ policeStationId }) => {
-    console.log(
-      `Police Station ${policeStationId} registered with socket ${socket.id}`
-    );
-    stationSockets.set(policeStationId, socket.id);
+  //The register event allows the client to provide additional information (like policeStationId or districtId) that the server can use to identify and manage the connection.
+  socket.on("register", async ({ policeStationId, districtId, authorityId }) => {
+    if (policeStationId) {
+      // Register police station client
+      console.log(
+        `Police Station ${policeStationId} registered with socket ${socket.id}`
+      );
+      stationSockets.set(policeStationId, socket.id);
+    } else if (districtId && authorityId) {
+      // Register district officer client
+      console.log(
+        `District Officer ${authorityId} for District ${districtId} registered with socket ${socket.id}`
+      );
+      districtSockets.set(authorityId, socket.id);
+    }
   });
 
   // Handle disconnect
   socket.on("disconnect", () => {
+    // Check if disconnected socket was a police station
     const disconnectedStation = [...stationSockets.entries()].find(
       ([_, id]) => id === socket.id
     )?.[0];
     if (disconnectedStation) {
       stationSockets.delete(disconnectedStation);
       console.log(`Police Station ${disconnectedStation} disconnected`);
+      return;
+    }
+
+    // Check if disconnected socket was a district officer
+    const disconnectedDistrict = [...districtSockets.entries()].find(
+      ([_, id]) => id === socket.id
+    )?.[0];
+    if (disconnectedDistrict) {
+      districtSockets.delete(disconnectedDistrict);
+      console.log(`District Officer ${disconnectedDistrict} disconnected`);
     }
   });
 });
 
-server.listen(port, "0.0.0.0", () => {
+server.listen(port, "0.0.0.0", async () => {
   console.log(`Server started at http://localhost:${port}`);
-  db_connect();
+  await db_connect();
+  
+  // Initialize warning configuration
+  const seedWarningConfig = (await import("./utils/seedWarningConfig.js")).default;
+  await seedWarningConfig();
+  
+  // Start warning scheduler
+  const startWarningScheduler = (await import("./utils/warningScheduler.js")).default;
+  startWarningScheduler();
 });
 
 

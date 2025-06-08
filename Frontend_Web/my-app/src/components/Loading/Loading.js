@@ -7,7 +7,7 @@ import { useWebSocket } from "../WebSocket/WebSocketContext"; //for websocket co
 export default function Loading() {
   const { setUserInfo } = useUser(); // Access the setUserInfo function from context
   const navigate = useNavigate();
-  const { connectToStation } = useWebSocket(); // Access WebSocket contex
+  const { connectToStation, connectToDistrict } = useWebSocket(); // Access WebSocket context
 
   useEffect(() => {
     const verifyToken = async () => {
@@ -21,7 +21,7 @@ export default function Loading() {
         }
         
         // Verify the token with the backend
-        const response = await axios.post("http://localhost:3001/api/v1/web/verifyToken", 
+        const response = await axios.post("https://crimevision.onrender.com/api/v1/web/verifyToken", 
             {},
             {
           headers: {
@@ -33,9 +33,11 @@ export default function Loading() {
 
         // Redirect based on policeStationId
         if (policeStation === null || policeStation === "Not Applicable") {
+          // District officer - connect to district WebSocket
+          connectToDistrict(response.data.user.district._id, response.data.user._id);
           navigate("/districtHomePage"); // District homepage
         } else {
-          //websocket connection is only for police staations
+          // Police station officer - connect to station WebSocket
           connectToStation(policeStation._id); // Register police station on WebSocket
           navigate("/policeHomePage"); // Police homepage
         }

@@ -1,5 +1,5 @@
 import AlertReport from "../../models/common_models/report_crime.js";
-import { io, stationSockets } from "../../index.js";
+import { io, stationSockets, districtSockets } from "../../index.js";
 import PoliceStation from "../../models/web_models/police_station.js"; // Import PoliceStation schema
 import multer from "multer";
 import path from "path";
@@ -364,6 +364,14 @@ export const emergency_alert = async (req, res) => {
 
     // Save the alert to the database
     const alert = await AlertReport.create(alertData);
+
+    // Check and generate warnings after creating new alert
+    const { checkAndGenerateWarnings } = await import("../web_controllers/warning.js");
+    try {
+      await checkAndGenerateWarnings(nearestStationId, true);
+    } catch (warningError) {
+      console.error("Error checking warnings after alert creation:", warningError);
+    }
 
     // Notify the police station via WebSocket
     const socketId = stationSockets.get(nearestStationId.toString());

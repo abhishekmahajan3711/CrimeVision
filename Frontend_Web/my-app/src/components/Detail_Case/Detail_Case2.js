@@ -32,7 +32,7 @@ export default function Detail_Case2() {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:3001/api/v1/web/detail_case",
+          "https://crimevision.onrender.com/api/v1/web/detail_case",
           {
             params: {
               id: id,
@@ -57,7 +57,7 @@ export default function Detail_Case2() {
     //get files
     const getPdf = async () => {
       const result = await axios.get(
-        `http://localhost:3001/api/v1/web/get-files?id=${id}`
+        `https://crimevision.onrender.com/api/v1/web/get-files?id=${id}`
       );
       console.log(result.data.data);
       setAllImage(result.data.data);
@@ -86,7 +86,7 @@ export default function Detail_Case2() {
 
   const getPdf = async () => {
     const result = await axios.get(
-      `http://localhost:3001/api/v1/web/get-files?id=${id}`
+      `https://crimevision.onrender.com/api/v1/web/get-files?id=${id}`
     );
     console.log(result.data.data);
     setAllImage(result.data.data);
@@ -101,7 +101,7 @@ export default function Detail_Case2() {
     // console.log(title, file);
 
     const result = await axios.post(
-      "http://localhost:3001/api/v1/web/upload-files",
+      "https://crimevision.onrender.com/api/v1/web/upload-files",
       formData,
       {
         headers: { "Content-Type": "multipart/form-data" },
@@ -121,7 +121,7 @@ export default function Detail_Case2() {
     // Ensure the file name has a .pdf extension
     const fileName = pdf.endsWith(".pdf") ? pdf : `${pdf}.pdf`;
     window.open(
-      `http://localhost:3001/files/${fileName}`,
+      `https://crimevision.onrender.com/files/${fileName}`,
       "_blank",
       "noreferrer"
     );
@@ -132,7 +132,7 @@ export default function Detail_Case2() {
   );
   const updateStatusInBackend = async () => {
     try {
-      await axios.put(`http://localhost:3001/api/v1/web/status/${id}`, {
+      await axios.put(`https://crimevision.onrender.com/api/v1/web/status/${id}`, {
         status,
         logEntry: {
           action: `Status changed to ${status}`,
@@ -159,7 +159,7 @@ export default function Detail_Case2() {
 
   const updatePriorityInBackend = async () => {
     try {
-      await axios.put(`http://localhost:3001/api/v1/web/priority/${id}`, {
+      await axios.put(`https://crimevision.onrender.com/api/v1/web/priority/${id}`, {
         priority,
         logEntry: {
           action: `Priority changed to ${priority}`,
@@ -191,7 +191,7 @@ export default function Detail_Case2() {
         addedAt: new Date().toISOString(),
       };
 
-      await axios.put(`http://localhost:3001/api/v1/web/comment/${id}`, {
+      await axios.put(`https://crimevision.onrender.com/api/v1/web/comment/${id}`, {
         comment: commentEntry,
         logEntry: {
           action: `Added comment: ${newComment}`,
@@ -328,10 +328,10 @@ export default function Detail_Case2() {
                 </h3>
                 <div className="space-y-2">
                   <img
-                    src={`http://localhost:3001/api/v1/app/uploads/images/${alertData.Image.filename}`}
+                    src={`https://crimevision.onrender.com/api/v1/app/uploads/images/${alertData.Image.filename}`}
                     alt="Crime Evidence"
                     className="w-full h-64 object-cover rounded-lg shadow-md border border-gray-200 cursor-pointer hover:shadow-lg transition-shadow"
-                    onClick={() => window.open(`http://localhost:3001/api/v1/app/uploads/images/${alertData.Image.filename}`, '_blank')}
+                    onClick={() => window.open(`https://crimevision.onrender.com/api/v1/app/uploads/images/${alertData.Image.filename}`, '_blank')}
                   />
                   <div className="text-sm text-gray-600 space-y-1">
                     <p><strong>Filename:</strong> {alertData.Image.filename}</p>
@@ -358,7 +358,7 @@ export default function Detail_Case2() {
                     className="w-full h-64 rounded-lg shadow-md border border-gray-200"
                     preload="metadata"
                   >
-                    <source src={`http://localhost:3001/api/v1/app/uploads/videos/${alertData.Video.filename}`} type={alertData.Video.mimetype} />
+                    <source src={`https://crimevision.onrender.com/api/v1/app/uploads/videos/${alertData.Video.filename}`} type={alertData.Video.mimetype} />
                     Your browser does not support the video tag.
                   </video>
                   <div className="text-sm text-gray-600 space-y-1">
@@ -371,7 +371,7 @@ export default function Detail_Case2() {
                     <p><strong>Uploaded:</strong> {new Date(alertData.Video.uploadedAt).toLocaleString()}</p>
                   </div>
                   <button
-                    onClick={() => window.open(`http://localhost:3001/api/v1/app/uploads/videos/${alertData.Video.filename}`, '_blank')}
+                    onClick={() => window.open(`https://crimevision.onrender.com/api/v1/app/uploads/videos/${alertData.Video.filename}`, '_blank')}
                     className="bg-[#003366] text-white px-4 py-2 mt-2 rounded hover:bg-blue-600"
                   >
                     Open in New Tab

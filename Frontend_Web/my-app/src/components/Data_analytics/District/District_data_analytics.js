@@ -30,7 +30,7 @@ const DistrictAnalytics = () => {
     const fetchData = async () => {
       try {
         const response = await axios.post(
-          "http://localhost:3001/api/v1/web/district-analytics",
+          "https://crimevision.onrender.com/api/v1/web/district-analytics",
           {
             districtId: userInfo.district._id, //e.g."674dde5bf62a268693cf236f"
           }
