@@ -16,6 +16,7 @@ import List_of_Police_Stations from "./components/List_of_Police_Stations/List_o
 import AboutMePoliceStation from "./components/AboutMe/AboutMePoliceStation";
 import AboutMeDistrict from "./components/AboutMe/AboutMeDistrict";
 import CrimeForecast_Police from "./components/Crime_prediction/CrimeForecast_Police";
+import CrimeForecast_District from "./components/Crime_prediction/CrimeForecast_District";
 import { Toaster } from "react-hot-toast";
 import Warnings from "./components/Warnings/Warnings";
 import Detail_Case1 from "./components/Detail_Case/Detail_Case1";
@@ -73,6 +74,7 @@ function AppContent() {
           <Route path="/aboutme_policestation" element={<AboutMePoliceStation />} />
           <Route path="/aboutme_district" element={<AboutMeDistrict />} />
           <Route path="/crime_prediction_police" element={<CrimeForecast_Police />} />
+          <Route path="/crime_prediction_district" element={<CrimeForecast_District />} />
           <Route path="/warnings" element={<Warnings />} />
           <Route path="/notifications_list" element={<NotificationsList />} />
           <Route path="/notification_details/:id" element={<NotificationDetails />} />

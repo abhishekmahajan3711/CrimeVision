@@ -11,50 +11,31 @@ const districtMapping = {
     "Nagpur": 4, "Nashik": 5, "Pune": 6, "Ratnagiri": 7, "Thane": 8
 };
 
-const stationMapping = {
-    "Airport Police Station": 0, "Ajni Police Station": 1, "Andheri Police Station": 2,
-    "Azad Maidan Police Station": 3, "Bhadrakali Police Station": 4, "Bharti Vidyapeeth Police Station": 5,
-    "Bhosari Police Station": 6, "Buldhana City Police Station": 7, "Cantonment Police Station": 8,"Chandan Nagar Police Station": 9,
-    "Chaturshrungi Police Station": 10, "Chikhli Police Station": 11, "Chiplun Police Station": 12,
-    "City Chowk Police Station": 13, "Colaba Police Station": 14, "Dadar Police Station": 15,
-    "Dapoli Police Station": 16, "Dattawadi Police Station": 17, "Deccan Gymkhana Police Station": 18,
-    "Deccan Police Station": 19, "Dhantoli Police Station": 20, "Dighi Police Station": 21,
-    "Faraskhana Police Station": 22, "Gangapur Road Police Station": 23, "Hadapsar Police Station": 24,
-    "Karveer Police Station": 25, "Katraj Police Station": 26, "Khadki Police Station": 27,
-    "Khamgaon Police Station": 28, "Khed Police Station": 29, "Kondhwa Police Station": 30,
-    "Kopri Police Station": 31, "Koregaon Park Police Station": 32, "Kothrud Police Station": 33,
-    "Kranti Chowk Police Station": 34, "Malkapur Police Station": 35, "Market Yard Police Station": 36,
-    "Mukundwadi Police Station": 37, "Mundhwa Police Station": 38, "Naupada Police Station": 39,
-    "Nigdi Police Station": 40, "Panchavati Police Station": 41, "Rajwada Police Station": 42,
-    "Ramwadi Police Station": 43, "Ratnagiri City Police Station": 44, "Sadar Police Station": 45,
-    "Sahakar Nagar Police Station": 46, "Satpur Police Station": 47, "Shahupuri Police Station": 48,
-    "Shivaji Peth Police Station": 49, "Shivajinagar Police Station": 50, "Sitabuldi Police Station": 51,
-    "Swargate Police Station": 52, "Vartak Nagar Police Station": 53, "Vimantal Police Station": 54,
-    "Vishrambaug Police Station": 55, "Wagle Estate Police Station": 56, "Warje Police Station": 57,
-    "Yerwada Police Station": 58,
-};
-
 const alertTypeMapping = {
     "Accident": 0, "Cybercrime": 1, "Fight": 2, "Fraud": 3, "Hit and Run": 4,
     "Kidnapping": 5, "Murder": 6, "Other": 7, "Rape": 8, "Robbery": 9
 };
 
-const CrimeForecast_Police = () => {
+// Default station mapping for district-level predictions (using first station of each district)
+const districtDefaultStation = {
+    "Aurangabad": 0, "Buldhana": 7, "Kolhapur": 25, "Mumbai": 3,
+    "Nagpur": 1, "Nashik": 23, "Pune": 6, "Ratnagiri": 44, "Thane": 31
+};
+
+const CrimeForecast_District = () => {
     const { userInfo } = useUser();
     
-    // Set default district and station from context and don't allow them to change
+    // Set default district from context and don't allow it to change
     const defaultDistrict = userInfo?.district?.name || "";
-    const defaultStation = userInfo?.policeStation?.name || "";
     
     const [district, setDistrict] = useState(defaultDistrict);
-    const [station, setStation] = useState(defaultStation);
     const [alertType, setAlertType] = useState("");
     const [predictions, setPredictions] = useState([]);
     const [chartType, setChartType] = useState("bar");
     const [loading, setLoading] = useState(false);
 
     const handlePredict = async () => {
-        if (!district || !station || !alertType) {
+        if (!district || !alertType) {
             alert("Please select all inputs");
             return;
         }
@@ -62,14 +43,16 @@ const CrimeForecast_Police = () => {
         setLoading(true);
         const requestData = {
             district_id: districtMapping[district],
-            station_id: stationMapping[station],
+            station_id: districtDefaultStation[district],
             alert_id: alertTypeMapping[alertType]
         };
     
         try {
             const response = await axios.post("http://127.0.0.1:5000/predict", requestData);
             console.log("API Response:", response.data);
-            setPredictions(Array.isArray(response.data) ? response.data.map(Number) : []);
+            // Multiply the response data by 7 as requested
+            const multipliedData = Array.isArray(response.data) ? response.data.map(value => Number(value) * 3) : [];
+            setPredictions(multipliedData);
         } catch (error) {
             console.error("Error fetching prediction", error);
         }
@@ -80,15 +63,11 @@ const CrimeForecast_Police = () => {
 
     return (
         <div className="max-w-5xl mx-auto m-4 p-8 bg-gray-900 text-white shadow-lg rounded-lg">
-            <h1 className="text-3xl font-bold text-center mb-6">Crime Prediction Next Week</h1>
+            <h1 className="text-3xl font-bold text-center mb-6">District Crime Prediction Next Week</h1>
             <div className="flex flex-wrap justify-center gap-4 items-center mb-6">
                 <select className="border p-2 rounded bg-gray-800" value={district} onChange={(e) => setDistrict(e.target.value)} disabled>
                     <option value="">Select District</option>
                     {Object.keys(districtMapping).map((key) => <option key={key} value={key}>{key}</option>)}
-                </select>
-                <select className="border p-2 rounded bg-gray-800" value={station} onChange={(e) => setStation(e.target.value)} disabled>
-                    <option value="">Select Police Station</option>
-                    {Object.keys(stationMapping).map((key) => <option key={key} value={key}>{key}</option>)}
                 </select>
                 <select className="border p-2 rounded bg-gray-800" onChange={(e) => setAlertType(e.target.value)}>
                     <option value="">Select Crime Type</option>
@@ -112,4 +91,4 @@ const CrimeForecast_Police = () => {
     );
 };
 
-export default CrimeForecast_Police;
+export default CrimeForecast_District; 

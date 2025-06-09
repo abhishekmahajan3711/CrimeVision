@@ -55,7 +55,7 @@ export default function District_home_page() {
                 List of Notifications
               </button>
             </Link>
-            <Link to="/crime_prediction_police">
+            <Link to="/crime_prediction_district">
             <button className="w-full bg-[#ffcc00] text-black py-2 mb-4 rounded-md font-semibold hover:bg-yellow-600">
               Crime Prediction
             </button>
