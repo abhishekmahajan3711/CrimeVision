@@ -18,24 +18,24 @@ const seedWarningConfig = async () => {
       description: "Default thresholds for generating warnings and notifications",
       thresholds: {
         openCases: {
-          warning: 6,
-          notification: 10,
-        },
-        pendingCases: {
-          warning: 6,
-          notification: 10,
-        },
-        highPriority: {
-          warning: 3,
-          notification: 5,
-        },
-        mediumPriority: {
-          warning: 8,
+          warning: 10,
           notification: 15,
         },
-        lowPriority: {
+        pendingCases: {
+          warning: 8,
+          notification: 12,
+        },
+        highPriority: {
+          warning: 5,
+          notification: 8,
+        },
+        mediumPriority: {
           warning: 15,
-          notification: 25,
+          notification: 20,
+        },
+        lowPriority: {
+          warning: 25,
+          notification: 30,
         },
       },
       timeFrames: {
