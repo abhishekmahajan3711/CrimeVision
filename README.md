@@ -59,7 +59,8 @@ Particular Case Detail Information
 
 User (Common People) | Mobile Application 
 Home | SignUp | Emergency Alert
-![Home](https://github.com/user-attachments/assets/17215924-9ef8-4f8c-81d5-ef51de2598f1)![SignUp](https://github.com/user-attachments/assets/ed3e5d56-a9fb-4a0a-9ea8-f878e8e04b8b)![EmergencyAlert](https://github.com/user-attachments/assets/e2de51b3-e6ab-434f-9e4e-466094a2428a)
+<img width="1200" height="900" alt="collage" src="https://github.com/user-attachments/assets/e126e715-a29d-4f82-b457-53ed045c58fd" />
+
 Data Visualization 
 ![DataV](https://github.com/user-attachments/assets/c10de2a3-e83a-4366-92a5-6d084![DataV2](https://github.com/user-attachments/assets/6743eb07-3a8b-4a50-aac0-dc4f12d0fc2c)
 3c87a89)![DataV1](https://github.com/user-attachments/assets/bf7db085-cbf2-4a32-ba52-0d524ce5b8ae)
