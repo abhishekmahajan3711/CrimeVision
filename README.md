@@ -35,3 +35,7 @@ safety by providing real-time alerts and actionable insights for citizens and la
 
 We have official copyright for the idea of project from Goverment of India
 
+## Screenshots
+<img width="959" height="527" alt="PoliceStationDashboard" src="https://github.com/user-attachments/assets/23770bf7-6f68-4d38-8e4b-e0d0e551782c" />
+
+
