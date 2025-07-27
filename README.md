@@ -61,11 +61,9 @@ User (Common People) | Mobile Application
 Home | SignUp | Emergency Alert
 <img width="1200" height="900" alt="collage" src="https://github.com/user-attachments/assets/e126e715-a29d-4f82-b457-53ed045c58fd" />
 
-Data Visualization 
-![DataV](https://github.com/user-attachments/assets/c10de2a3-e83a-4366-92a5-6d084![DataV2](https://github.com/user-attachments/assets/6743eb07-3a8b-4a50-aac0-dc4f12d0fc2c)
-3c87a89)![DataV1](https://github.com/user-attachments/assets/bf7db085-cbf2-4a32-ba52-0d524ce5b8ae)
-MyAlerts | Alert Details | Profile
-![MyAlerts](https://github.com/user-attachments/assets/b33b449a-d39e-41aa-8e16-589efc1597f7)![AlertDetails](https://github.com/user-attachments/assets/520ffa32-e0b3-420f-8b31-04ca0ce5a0db)![Profile](https://github.com/user-attachments/assets/95ab3a0e-52f5-4638-be81-922829c45179)
+Data Visualization | MyAlerts | Alert Details | Profile
+![Mobile](https://github.com/user-attachments/assets/0e4086af-1dd3-404b-abde-4b265e6e046b)
+
 
 District Officer Dashboard
 <img width="959" height="530" alt="DistrictDashboard" src="https://github.com/user-attachments/assets/04be4f3d-8f38-45f6-b85b-99a3625f6126" />
